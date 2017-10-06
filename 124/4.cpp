@@ -19,20 +19,20 @@ using namespace std;
 #define LOG(A)
 #endif
 
-#define MM 300
 int n,k;
 int data[100000]={0};
 int main(){
     int p,k,t;
     cin>>p;
-    if(p>=90){
-        cout<<"A";
-    }else if(p>=80){
-        cout<<"B";
-    }else if(p>=60){
-        cout<<"C";
+    if(p%4!=0){
+        cout<<"normal year";
+    }else if(p%100!=0){
+        if(p%400!=0)
+            cout<<"normal year";
+        else
+            cout<<"leap year";
     }else{
-        cout<<"D";
+        cout<<"leap year";
     }
     return 0;
 }
