@@ -22,23 +22,19 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int p;
-    double k;
-    char a;
-    cin>>p>>k;
-    int bmi=((double) p)/k/k;
-    if(bmi<18){
-        cout<<"very thin";
-    }else if(bmi < 25){
-        cout<<"very good";
-    }else if(bmi < 30){
-        cout<<"overweight";
-    }else if(bmi<35){
-        cout<<"fat";
-    }else if(bmi < 40){
-        cout<<"normal fat";
+    int a[3];
+    cin>>a[0]>>a[1]>>a[2];
+    sort(a,3);
+    if(a[0]+a[1]<a[2]){
+        cout<<"impossible";
+    }else if(a[2]-a[1]>a[0]){
+        cout<<"impossible";
+    }else if(a[0]==a[1] and a[1]==a[2]){
+        cout<<"equilateral triangle";
+    }else if(a[0]==a[1] or a[1]==a[2]){
+        cout<<"isosceles triangle";
     }else{
-        cout<<"very fat";
+        cout<<"normal triangle";
     }
     return 0;
 }
