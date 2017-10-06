@@ -12,7 +12,9 @@ def main():
     print("Compile Endded")
     print("------------------------------------------------------------------------")
     system("./"+t)
+    print("git committing")
     system("git commit -a -m \"judged question"+t+"\"")
+    system("git push")
 
 if(__name__ == "__main__"):
     main()
