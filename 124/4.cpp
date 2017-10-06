@@ -22,19 +22,18 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int a[3];
-    cin>>a[0]>>a[1]>>a[2];
-    sort(a,a+3);
-    if(a[0]+a[1]<a[2]){
-        cout<<"impossible";
-    }else if(a[2]-a[1]>a[0]){
-        cout<<"impossible";
-    }else if(a[0]==a[1] and a[1]==a[2]){
-        cout<<"equilateral triangle";
-    }else if(a[0]==a[1] or a[1]==a[2]){
-        cout<<"isosceles triangle";
+    int a,b,c;
+    cin>>a>>b>>c;
+    int p;
+    p=(b*b-2*a*c);
+    if(a==0){
+        cout<<"one answer";
+    }else if(p>0){
+        cout<<"two answers";
+    }else if(p==0){
+        cout<<"two equal answers";
     }else{
-        cout<<"normal triangle";
+        cout<<"no answer";
     }
     return 0;
 }
