@@ -24,7 +24,7 @@ int data[100000]={0};
 int main(){
     int a[3];
     cin>>a[0]>>a[1]>>a[2];
-    sort(a,3);
+    sort(a,a+3);
     if(a[0]+a[1]<a[2]){
         cout<<"impossible";
     }else if(a[2]-a[1]>a[0]){
