@@ -12,6 +12,7 @@ def main():
     print("Compile Endded")
     print("------------------------------------------------------------------------")
     system("./"+t)
+    print("")
     print("git committing")
     system("git commit -a -m \"judged question"+t+"\"")
     system("git push")
