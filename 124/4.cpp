@@ -22,12 +22,10 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int a,b,c;
+    int a;
     cin>>a;
-    b=1;
-    for(int i=a;i>=1;--i){
-        b*=i;
-    }
-    cout<<b;
+    double b=0;
+    for(int i=1;i<=a;++i) b+=((double)1/i);
+    cout<<setpricision(2)<<fixed<<b;
     return 0;
 }
