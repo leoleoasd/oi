@@ -22,12 +22,23 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int p,k,t;
-    cin>>p;
-    int output=8;
-    p-=3;
-    if(p<=0) p=0;
-    output += 2*p;
-    cout<<output;
+    int p;
+    double k;
+    char a;
+    cin>>p>>k;
+    int bmi=((double) p)/k/k;
+    if(bmi<18){
+        cout<<"very thin";
+    }else if(bmi < 25){
+        cout<<"very good";
+    }else if(bmi < 30){
+        cout<<"overweight";
+    }else if(bmi<35){
+        cout<<"fat";
+    }else if(bmi < 40){
+        cout<<"normal fat";
+    }else{
+        cout<<"very fat";
+    }
     return 0;
 }
