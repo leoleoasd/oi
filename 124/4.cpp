@@ -25,7 +25,7 @@ int main(){
     int p,k,t;
     cin>>p;
     int output=8;
-    p=-3;
+    p-=3;
     if(p<=0) p=0;
     output += 2*p;
     cout<<output;
