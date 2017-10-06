@@ -23,15 +23,8 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int n;
-    cin>>n;
-    int sum=0;
-    sum+=n/5;
-    sum+=n/25;
-    sum+=n/125;
-    sum+=n/625;
-    sum+=n/3125;
-    sum+=n/15625;
-    cout<<sum;
+    int a,b;
+    cin>>a>>b;
+    cout<<(a>b)?a:b;
     return 0;
 }
