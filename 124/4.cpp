@@ -26,7 +26,7 @@ int main(){
     cin>>p;
     if(p%4!=0){
         cout<<"normal year";
-    }else if(p%100!=0){
+    }else if(p%100==0){
         if(p%400!=0)
             cout<<"normal year";
         else
