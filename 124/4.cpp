@@ -26,6 +26,6 @@ int main(){
     cin>>a;
     double b=0;
     for(int i=1;i<=a;++i) b+=((double)1/i);
-    cout<<setpricision(2)<<fixed<<b;
+    cout<<setprecision(2)<<fixed<<b;
     return 0;
 }
