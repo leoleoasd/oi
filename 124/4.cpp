@@ -23,8 +23,8 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int a,b,c;
-    cin>>a>>b>>c;
-    cout<<((a>b?a:b)>c?(a>b?a:b):c);
+    int p,k,t;
+    cin>>p>>k>>t;
+    cout<<(p+k>t?"happy":"unhappy");
     return 0;
 }
