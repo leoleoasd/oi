@@ -23,17 +23,19 @@ int n,k;
 int data[100000]={0};
 int main(){
     int a,b,c;
-    cin>>a>>b>>c;
-    int p;
-    p=(b*b-2*a*c);
-    if(a==0){
-        cout<<"one answer";
-    }else if(p>0){
-        cout<<"two answers";
-    }else if(p==0){
-        cout<<"two equal answers";
+    cin>>a;
+    if(a>=0){
+        if(a%2==0){
+            cout<<a*a;
+        }else{
+            cout<<a-10;
+        }
     }else{
-        cout<<"no answer";
+        if(a%2==0){
+            cout<<1-a*a*a;
+        }else{
+            cout<<10-a;
+        }
     }
     return 0;
 }
