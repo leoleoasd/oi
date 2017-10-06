@@ -24,7 +24,15 @@ int n,k;
 int data[100000]={0};
 int main(){
     int p,k,t;
-    cin>>p>>k>>t;
-    cout<<(p+k>t?"happy":"unhappy");
+    cin>>p;
+    if(p>=90){
+        cout<<"A";
+    }else if(p>=80){
+        cout<<"B";
+    }else if(p>=60){
+        cout<<"C";
+    }else{
+        cout<<"D";
+    }
     return 0;
 }

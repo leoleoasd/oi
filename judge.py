@@ -13,6 +13,7 @@ def main():
     print("------------------------------------------------------------------------")
     system("./"+t)
     print("")
+    print("------------------------------------------------------------------------")
     print("git committing")
     system("git commit -a -m \"judged question"+t+"\"")
     system("git push")
