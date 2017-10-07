@@ -22,10 +22,7 @@ using namespace std;
 int n,k;
 int data[100000]={0};
 int main(){
-    int a;
-    cin>>a;
-    double b=0;
-    for(int i=1;i<=a;++i) b+=((double)1/i);
-    cout<<setprecision(2)<<fixed<<b;
+    int a,b;
+    
     return 0;
 }
