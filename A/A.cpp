@@ -21,13 +21,14 @@ int n,m;
 int result;
 void baoli(int pos,int last){
     if(pos > n){
+        ++result;
         return;
     }else{
         
         for(int i=1;i<=m;i++){
             if(i==last) continue;
             LOG("pos"<<pos<<"now"<<i<<endl)
-            ++result;
+            
             baoli(pos+1,i);
         }
     }
