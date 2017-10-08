@@ -59,6 +59,7 @@ void solve(){
         result = 0;
         baoli(1,0);
         fout<<result;
+        fout<<"baoli！";
     }else{
         long long r=0;
         result = 0;
