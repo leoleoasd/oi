@@ -84,7 +84,6 @@ void solve(){
 }
 
 int main(){
-    cout<<qpow(2,4);
     ios::sync_with_stdio(false);
         solve();
     return 0;
