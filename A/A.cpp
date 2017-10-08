@@ -39,9 +39,12 @@ void baoli(int pos,int last){
 void solve(){
     
     fin>>n>>m;
-    result = 0;
-    baoli(1,0);
-    cout<<result;
+    if(n<=5){
+        result = 0;
+        baoli(1,0);
+        cout<<result;
+    }
+    
 }
 
 int main(){
