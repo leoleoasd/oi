@@ -19,18 +19,21 @@ ofstream fout("A.out");
 #endif
 int n,m;
 int result;
+int head,tail;
 void baoli(int pos,int last){
     if(pos > n){
         ++result;
+        if(head==last){
+            --result;
+        }
         return;
     }else{
         
         for(int i=1;i<=m;i++){
             if(i==last) continue;
-            cout<<i<<" ";
+            if(last==0) head=i;
             baoli(pos+1,i);
         }
-        cout<<endl;
     }
 }
 void solve(){
