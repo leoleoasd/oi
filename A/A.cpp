@@ -33,7 +33,7 @@ void baoli(int pos,int last){
 void solve(){
     result = 0;
     fin>>n>>m;
-    baoli(0,0);
+    baoli(1,0);
     cout<<result;
 }
 
