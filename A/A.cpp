@@ -30,7 +30,7 @@ void baoli(long long pos,long long last){
         }
         return;
     }else{
-        
+
         for(long long i=1;i<=m;i++){
             if(i==last) continue;
             if(last==0) head=i;
