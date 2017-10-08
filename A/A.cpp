@@ -38,13 +38,13 @@ void baoli(int pos,int last){
     }
 }
 int qpow(int a,int b){
-    int ans=a;
+    int ans=1;
     while(b){
         if(b%2==1){
             ans *= a;
             ans %= MOD;
         }
-        b*=b;
+        b/=2;
         b%=MOD;
         a*=a;
         a%=MOD;
@@ -63,10 +63,13 @@ void solve(){
         result = 0;
         result = m*(m-2);
         result %= MOD;
+        /*
         for(int i=0;i<n-2;i++){
             result *= m-1;
             result %= MOD;
         }
+        */
+        result *= qpow(m-1,n-2);
         if(n>=4) r=(m-1)*(m-1);
         for(int i=0;i<=n-1;++i){
             r*=(m-2);
@@ -81,7 +84,7 @@ void solve(){
 }
 
 int main(){
-    cout<<qpow(3,4);
+    cout<<qpow(2,4);
     ios::sync_with_stdio(false);
         solve();
     return 0;
