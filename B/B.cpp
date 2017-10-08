@@ -22,16 +22,16 @@ void solve(){
     
     int n,m,k;
     fin>>n>>m>>k;
-    for(int i=0;i<n;i++) fin>>m;
+    for(int i=0;i<n*k;i++) fin>>m;
     int a=0;
     while(k!=1) {
-        k<<1;
+        k>>1;
         a++;
     }
     while(--a){
-        k>>1;
+        k<<1;
     }
-    k>>1;
+    k<<1;
     fout<<k;
     
 }
