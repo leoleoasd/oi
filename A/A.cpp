@@ -8,9 +8,9 @@ using namespace std;
 ifstream fin("A.in");
 ofstream fout("A.out");
 
-#define fin cin
-#define fout cout
-#define debug 1
+//#define fin cin
+//#define fout cout
+//#define debug 1
 
 #ifdef debug
     #define LOG(A) cout<<A<<" ";
@@ -40,7 +40,7 @@ void baoli(int pos,int last){
 void solve(){
     
     fin>>n>>m;
-    if(n<=1){
+    if(n<=5){
         result = 0;
         baoli(1,0);
         cout<<result;
