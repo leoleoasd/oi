@@ -17,6 +17,7 @@ ofstream fout("A.out");
 #else
     #define LOG(A)
 #endif
+#define MOD 998244353
 int n,m;
 int result;
 int head,tail;
@@ -43,17 +44,30 @@ void solve(){
         result = 0;
         baoli(1,0);
         cout<<result;
+    }else{
+        int r=0;
+        result = 0;
+        result = m*(m-2);
+        result %= MOD;
+        for(int i=0;i<n-2;i++){
+            result *= m-1;
+            result %= MOD;
+        }
+        if(n>=4) r=(m-1)*(m-1);
+        for(int i=0;i<=n-1;++i){
+            r*=(m-2);
+            r%=MOD;
+        }
+        result += m*r/(m-1);
+        result %= MOD;
+        cout<<result;
+        
     }
     
 }
 
 int main(){
     ios::sync_with_stdio(false);
-    int n;
-    
-    fin>>n;
-    while(n--){
         solve();
-    }
     return 0;
 }
