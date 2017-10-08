@@ -23,9 +23,10 @@ void baoli(int pos,int last){
     if(pos > n){
         return;
     }else{
-        LOG("pos"<<pos<<"last"<<last<<endl)
+        
         for(int i=1;i<=m;i++){
             if(i==last) continue;
+            LOG("pos"<<pos<<"now"<<i<<endl)
             ++result;
             baoli(pos+1,i);
         }
