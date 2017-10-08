@@ -27,8 +27,6 @@ void baoli(int pos,int last){
         
         for(int i=1;i<=m;i++){
             if(i==last) continue;
-            LOG("pos"<<pos<<"now"<<i<<endl)
-            
             baoli(pos+1,i);
         }
     }
