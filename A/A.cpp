@@ -18,6 +18,7 @@ ofstream fout("A.out");
     #define LOG(A)
 #endif
 #define MOD 998244353
+#define int long long
 int n,m;
 int result;
 int head,tail;
@@ -83,7 +84,7 @@ void solve(){
     
 }
 
-int main(){
+int32_t main(){
     ios::sync_with_stdio(false);
         solve();
     return 0;
