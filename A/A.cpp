@@ -27,8 +27,10 @@ void baoli(int pos,int last){
         
         for(int i=1;i<=m;i++){
             if(i==last) continue;
+            cout<<i<<" ";
             baoli(pos+1,i);
         }
+        cout<<endl;
     }
 }
 void solve(){
