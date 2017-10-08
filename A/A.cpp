@@ -1,21 +1,48 @@
 #include <iostream>
-#include <algorithm>
 #include <fstream>
+#include <iomanip>
+#include <cmath>
+#include <map>
 using namespace std;
-#define int long long
-#define MAXN 1000010
-int f[MAXN]={0};
-inline int get(int n){
-    if(f[n]!=0) return f[n];
-    f[n] = get(n-1)+get(n-2);
-    return f[n];
+
+ifstream fin("A.in");
+ofstream fout("A.out");
+
+#define fin cin
+#define fout cout
+#define debug 1
+
+#ifdef debug
+    #define LOG(A) cout<<A<<" ";
+#else
+    #define LOG(A)
+#endif
+int n,m;
+int result;
+void baoli(int pos,int last){
+    if(pos > n){
+        return;
+    }else{
+        for(int i=1;i<=m;i++){
+            if(i==last) continue;
+            ++result;
+            baoli(pos+1,i);
+        }
+    }
 }
-int32_t main(){
+void solve(){
+    result = 0;
+    fin>>n>>m;
+    baoli(0,0);
+    cout<<result;
+}
+
+int main(){
     ios::sync_with_stdio(false);
-    ifstream fin("A.in");
-    ofstream fout("A.out");
-    f[1]=1;
-    f[2]=1;
-    cout<<get(3);
+    int n;
+    fin>>n;
+    while(n--){
+        solve();
+    }
     return 0;
 }
