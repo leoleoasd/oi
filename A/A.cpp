@@ -18,11 +18,11 @@ ofstream fout("A.out");
     #define LOG(A)
 #endif
 #define MOD 998244353
-#define int long long
-int n,m;
-int result;
-int head,tail;
-void baoli(int pos,int last){
+
+long long n,m;
+long long result;
+long long head,tail;
+void baoli(long long pos,long long last){
     if(pos > n){
         ++result;
         if(head==last){
@@ -31,15 +31,15 @@ void baoli(int pos,int last){
         return;
     }else{
         
-        for(int i=1;i<=m;i++){
+        for(long long i=1;i<=m;i++){
             if(i==last) continue;
             if(last==0) head=i;
             baoli(pos+1,i);
         }
     }
 }
-int qpow(int a,int b){
-    int ans=1;
+long long qpow(long long a,long long b){
+    long long ans=1;
     while(b){
         if(b%2==1){
             ans *= a;
@@ -60,19 +60,19 @@ void solve(){
         baoli(1,0);
         fout<<result;
     }else{
-        int r=0;
+        long long r=0;
         result = 0;
         result = m*(m-2);
         result %= MOD;
         /*
-        for(int i=0;i<n-2;i++){
+        for(long long i=0;i<n-2;i++){
             result *= m-1;
             result %= MOD;
         }
         */
         result *= qpow(m-1,n-2);
         if(n>=4) r=(m-1)*(m-1);
-        for(int i=0;i<=n-1;++i){
+        for(long long i=0;i<=n-1;++i){
             r*=(m-2);
             r%=MOD;
         }
@@ -83,8 +83,8 @@ void solve(){
     }
     
 }
-#define ASD int
-ASD main(){
+
+int main(){
     ios::sync_with_stdio(false);
         solve();
     return 0;
