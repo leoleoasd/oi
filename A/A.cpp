@@ -37,6 +37,20 @@ void baoli(int pos,int last){
         }
     }
 }
+int qpow(int a,int b){
+    int ans=0;
+    while(b){
+        if(b&1){
+            ans *= a;
+            ans %= MOD;
+        }
+        b*=b;
+        b%=MOD;
+        a*=a;
+        a%=MOD;
+    }
+    return ans;
+}
 void solve(){
     
     fin>>n>>m;
@@ -67,6 +81,7 @@ void solve(){
 }
 
 int main(){
+    cout<<qpow(1,2);
     ios::sync_with_stdio(false);
         solve();
     return 0;

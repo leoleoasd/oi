@@ -25,13 +25,13 @@ void solve(){
     for(int i=0;i<n*k;i++) fin>>m;
     int a=0;
     while(k!=1) {
-        k>>1;
+        k/=2; 
         a++;
     }
     while(--a){
-        k<<1;
+        k*=2;
     }
-    k<<1;
+    k*=2;
     fout<<k;
     
 }
