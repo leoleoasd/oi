@@ -42,13 +42,12 @@ long long qpow(long long a,long long b){
     long long ans=1;
     while(b){
         if(b%2==1){
-            ans *= a;
+            ans =(ans * a)%MOD;
             ans %= MOD;
         }
         b/=2;
         b%=MOD;
-        a*=a;
-        a%=MOD;
+        a=a*a%MOD;
     }
     return ans;
 }
@@ -62,7 +61,7 @@ void solve(){
     }else{
         long long r=0;
         result = 0;
-        result = m*(m-2);
+        result = m*(m-2)%MOD;
         result %= MOD;
         /*
         for(long long i=0;i<n-2;i++){
@@ -71,14 +70,14 @@ void solve(){
         }
         */
         result *= qpow(m-1,n-2);
-        if(n>=4) r=(m-1)*(m-1);
-        r *= qpow(m-2,n-4);
+        if(n>=4) r=(m-1)*(m-1)%MOD;
+        r *= qpow(m-2,n-4)%MOD;
         /*
         for(long long i=0;i<n-4;++i){
             r*=(m-2);
             r%=MOD;
         }*/
-        result += m*r/(m-1);
+        result += m*r/(m-1)%MOD;
         result %= MOD;
         fout<<result;
         
