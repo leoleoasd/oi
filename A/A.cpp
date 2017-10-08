@@ -38,7 +38,7 @@ void baoli(int pos,int last){
     }
 }
 int qpow(int a,int b){
-    int ans=0;
+    int ans=a;
     while(b){
         if(b&1){
             ans *= a;
@@ -81,7 +81,7 @@ void solve(){
 }
 
 int main(){
-    cout<<qpow(1,2);
+    cout<<qpow(3,4);
     ios::sync_with_stdio(false);
         solve();
     return 0;
