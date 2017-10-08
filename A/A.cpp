@@ -40,7 +40,7 @@ void baoli(int pos,int last){
 int qpow(int a,int b){
     int ans=a;
     while(b){
-        if(b&1){
+        if(b%2==1){
             ans *= a;
             ans %= MOD;
         }
