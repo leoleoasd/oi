@@ -72,7 +72,7 @@ void solve(){
         */
         result *= qpow(m-1,n-2);
         if(n>=4) r=(m-1)*(m-1);
-        for(long long i=0;i<=n-1;++i){
+        for(long long i=0;i<n-4;++i){
             r*=(m-2);
             r%=MOD;
         }
