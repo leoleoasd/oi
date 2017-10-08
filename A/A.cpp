@@ -83,8 +83,8 @@ void solve(){
     }
     
 }
-
-int32_t main(){
+#define ASD int
+ASD main(){
     ios::sync_with_stdio(false);
         solve();
     return 0;
