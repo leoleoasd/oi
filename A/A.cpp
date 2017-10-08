@@ -43,7 +43,7 @@ void solve(){
     if(n<=5){
         result = 0;
         baoli(1,0);
-        cout<<result;
+        fout<<result;
     }else{
         int r=0;
         result = 0;
@@ -60,7 +60,7 @@ void solve(){
         }
         result += m*r/(m-1);
         result %= MOD;
-        cout<<result;
+        fout<<result;
         
     }
     
