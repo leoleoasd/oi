@@ -55,7 +55,7 @@ long long qpow(long long a,long long b){
 void solve(){
     
     fin>>n>>m;
-    if(n<=5){
+    if(n<=1){
         result = 0;
         baoli(1,0);
         fout<<result;
