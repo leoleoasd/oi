@@ -15,8 +15,8 @@ def main():
     print("")
     print("------------------------------------------------------------------------")
     print("git committing")
-    system("git commit -a -m \"judged question"+t+"\"")
-    system("git push")
+    system("git commit -a -m \"judged question"+t+"\" 1>/dev/null 2>&1")
+    system("git push  1>/dev/null 2>&1")
 
 if(__name__ == "__main__"):
     main()
