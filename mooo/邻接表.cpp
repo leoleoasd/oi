@@ -31,7 +31,7 @@ int main(){
             data[b].add_edge(c,1);
         }
     }
-    for(int i=1;i<=n;++i){
+    for(int i=0;i<n;++i){
         cout<<i<<":";
         for(int j=0;j<data[i].e.size();++j){
             cout<<" "<<data[i].e[j].to;
