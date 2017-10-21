@@ -34,7 +34,7 @@ int main(){
     for(int i=1;i<=n;++i){
         cout<<i<<":";
         for(int j=0;j<data[i].e.size();++j){
-            cout<<" "<<data[i].e[j];
+            cout<<" "<<data[i].e[j].to;
         }
         cout<<endl;
     }
