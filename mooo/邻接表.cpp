@@ -26,7 +26,7 @@ int main(){
         cin>>a>>b>>c;
         if(a==1){
             data[b].add_edge(c,1);
-            data[a].add_edge(b,1);
+            data[c].add_edge(b,1);
         }else{
             data[b].add_edge(c,1);
         }
