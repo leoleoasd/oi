@@ -8,7 +8,6 @@ struct edge{
     int value;
 };
 struct node{
-    int id;
     vector<struct edge> e;
     void add_edge(int to,int value){
         struct edge asd;
@@ -19,11 +18,25 @@ struct node{
 };
 
 int main(){
-    node a;
-    a.add_edge(1,2);
-    a.add_edge(2,3);
-    for(int i=0;i<a.e.size();++i){
-        cout<<a.e[i].to<<" "<<a.e[i].value<<endl;;
+    node data[200];
+    int n,m;
+    cin>>n>>m;
+    int a,b,c;
+    for(int i=0;i<m;++i){
+        cin>>a>>b>>c;
+        if(a==1){
+            data[b].add_edge(c,1);
+            data[a].add_edge(b,1);
+        }else{
+            data[b].add_edge(c,1);
+        }
+    }
+    for(int i=1;i<=n;++i){
+        cout<<i<<":";
+        for(int j=0;j<data[i].e.size();++j){
+            cout<<" "<<data[i].e[j];
+        }
+        cout<<endl;
     }
     return 0;
 }
