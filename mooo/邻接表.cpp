@@ -33,7 +33,7 @@ int main(){
     }
     for(int i=0;i<n;++i){
         cout<<i<<":";
-        for(int j=0;j<data[i].e.size();++j){
+        for(int j=data[i].e.size()-1;j>=0;--j){
             cout<<" "<<data[i].e[j].to;
         }
         cout<<endl;
