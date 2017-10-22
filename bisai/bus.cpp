@@ -36,7 +36,7 @@ struct na{
         }
         return 0;
         */
-        auto iter = this->e.find(key);
+        map<int,int>::iterator iter = this->e.find(key);
         if(iter!=this->e.end())
         {
             return iter->second;
