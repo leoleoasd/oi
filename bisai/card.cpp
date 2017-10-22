@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <cstdint>
+#include <stdint.h>
 using namespace std;
 #define MAXN 100010
 
