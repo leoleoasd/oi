@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <cstdint>
 using namespace std;
 #define MAXN 100010
 
@@ -7,7 +8,7 @@ ifstream fin("card.in");
 ofstream fout("card.out");
 #define cin fin
 #define cout fout
-
+#define int long long
 int data[MAXN]={0};
 int n,k;
 void read(){
@@ -37,7 +38,7 @@ void dfs(int pos,int num){
 void solve(){
     dfs(1,0);
 }
-int main(){
+int32_t main(){
     ios::sync_with_stdio(false);
     read();
     solve();
