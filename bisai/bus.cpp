@@ -23,18 +23,23 @@ struct edge{
     int value;
 };
 struct na{
-    vector<struct edge> e;
+    map<int,int> e;//vector<struct edge> e;
     inline void add_edge(int to,int value){
-        struct edge asd;
-        asd.to = to;
-        asd.value = value;
-        this->e.push_back(asd);
+        e[to]=value;
     }
     inline int operator[](const int num){
+        /*
         for(int i=0;i<this->e.size();++i){
             if(this->e[i].to == num){
                 return this->e[i].value;
             }
+        }
+        return 0;
+        */
+        auto iter = this->e.find(key);
+        if(iter!=this->e.end())
+        {
+            return iter->second;
         }
         return 0;
     }
