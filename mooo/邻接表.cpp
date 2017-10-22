@@ -7,13 +7,21 @@ struct edge{
     int to;
     int value;
 };
-struct node{
+struct n{
     vector<struct edge> e;
     void add_edge(int to,int value){
         struct edge asd;
         asd.to = to;
         asd.value = value;
         this->e.push_back(asd);
+    }
+    int operator[](const int num){
+        for(int i=0;i<this->e.size();++i){
+            if(this->e[i].to == num){
+                return this->e[i].value;
+            }
+        }
+        return 0;
     }
 };
 
