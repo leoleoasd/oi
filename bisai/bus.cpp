@@ -46,15 +46,6 @@ struct na{
 };
 na node[MAXN];
 int n,maxc;
-void aoutput(){
-    for(int i=0;i<n;++i){
-        cout<<i<<":";
-        for(int j=node[i].e.size()-1;j>=0;--j){
-            cout<<" "<<node[i].e[j].to;
-        }
-        cout<<endl;
-    }
-}
 inline void read(){
     int a,b;
     cin>>n>>maxc;
