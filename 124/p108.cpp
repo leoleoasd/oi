@@ -14,6 +14,8 @@ int data[MAXN][MAXN]={0};
 int b = 0;
 int d = 0;
 int n;
+bool visited[MAXN]={0};
+int m;
 void bfs(int pos){
     
 }
@@ -34,8 +36,7 @@ void dfs(int pos){
         }
     }
 }
-bool visited[MAXN]={0};
-int m;
+
 int main(){
     int a,b;
     cin>>n>>m;
