@@ -24,8 +24,8 @@ void dfs(int pos){
         return;
     }
     visited[pos]=1;
-    if(d){
-        
+    if(d==0){
+        d=1;
     }else{
         cout<<"-";
     }
