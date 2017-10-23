@@ -18,10 +18,10 @@ void bfs(int pos){
     
 }
 void dfs(int pos){
-    if(visited[i]){
+    if(visited[pos]){
         return;
     }
-    visited[i]=1;
+    visited[pos]=1;
     if(d){
         
     }else{
