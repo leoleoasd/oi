@@ -44,12 +44,9 @@ int main(){
                 }
             }
         }
-        cout<<i<<"    ";
         for(int j=1;j<=n;++j){
             ans += rebuild[j];
-            cout<<rebuild[j]<<" ";
         }
-        cout<<" "<<endl;
         if(ans >max){
             max = ans;
             outputs.clear();
