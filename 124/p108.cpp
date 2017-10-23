@@ -12,5 +12,6 @@ using namespace std;
 #define MAXN 2020
 
 int main(){
+    cout<<123;
     return 0;
 }
