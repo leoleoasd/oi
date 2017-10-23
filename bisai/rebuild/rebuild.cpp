@@ -35,12 +35,17 @@ int main(){
         data[edge[i].to][edge[i].from]=1;
         floyd();
         int ans = 0;
+        int rebuild[MAXN]={0};
         for(int k=1;i<=n;++i){
             for(int j=1;j<=n;++j){
                 if(data[k][j]==1 and data[j][k]==1){
-                    ++ans;
+                    rebuild[i]=1;
+                    rebuild[j]=1;
                 }
             }
+        }
+        for(int i=0;i<=n;++i){
+            ans += rebuild[i];
         }
         if(ans >max){
             max = ans;
