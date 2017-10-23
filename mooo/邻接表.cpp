@@ -3,28 +3,28 @@
 #include <algorithm>
 #include <queue>
 using namespace std;
-struct edge{
-    int to;
-    int value;
-};
-struct n{
-    vector<struct edge> e;
-    void add_edge(int to,int value){
-        struct edge asd;
-        asd.to = to;
-        asd.value = value;
-        this->e.push_back(asd);
+struct na{
+    map<int,int> e;//vector<struct edge> e;
+    inline void add_edge(int to,int value){
+        e[to]=value;
     }
-    int operator[](const int num){
+    inline int operator[](const int num){
+        /*
         for(int i=0;i<this->e.size();++i){
             if(this->e[i].to == num){
                 return this->e[i].value;
             }
         }
         return 0;
+        */
+        map<int,int>::iterator iter = this->e.find(num);
+        if(iter!=this->e.end())
+        {
+            return iter->second;
+        }
+        return 0;
     }
 };
-
 int main(){
     node data[200];
     int n,m;
