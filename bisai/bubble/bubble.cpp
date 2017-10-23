@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-#define MAXN 100000
+#define MAXN 2000000
 ifstream fin("bubble.in");
 ofstream fout("bubble.out");
 #define cin fin
