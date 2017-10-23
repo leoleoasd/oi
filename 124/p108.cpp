@@ -31,11 +31,9 @@ void bfs(int pos){
     }
     cout<<pos;
     while(!que.empty()){
-        
         int now = que.front();
         visited[now]=1;
         que.pop();
-        if(visited[now]) continue;
         cout<<"-"<<now;
         for(int i=1;i<=n;++i){
             if(data[now][i]==1 and !visited[i]){
