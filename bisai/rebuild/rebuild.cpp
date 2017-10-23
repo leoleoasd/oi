@@ -1,8 +1,13 @@
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include <cstring>
 using namespace std;
 #define MAXN 1500
+ifstream fin("rebuild.in");
+ofstream fout("rebuild.out");
+#define cin fin
+#define cout fout
 int data[MAXN][MAXN]={0};
 int n,m;
 struct e{
@@ -19,6 +24,7 @@ void floyd(){
                     data[i][k]=1;
 }
 int main(){
+    ios::sync_with_stdio(false);
     cin>>n>>m;
     int x,y;
     for(int i=0;i<m;++i){
