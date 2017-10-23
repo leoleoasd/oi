@@ -36,7 +36,7 @@ int main(){
         floyd();
         int ans = 0;
         int rebuild[MAXN]={0};
-        for(int k=1;i<=n;++k){
+        for(int k=1;k<=n;++k){
             for(int j=1;j<=n;++j){
                 if(data[k][j]==1 and data[j][k]==1){
                     rebuild[i]=1;
