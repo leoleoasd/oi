@@ -17,7 +17,30 @@ int n;
 bool visited[MAXN]={0};
 int m;
 void bfs(int pos){
-    
+    queue<int> que;
+    visited[pops]=1;
+    for(int i=1;i<=n;++i){
+        if(data[pos][i]==1 and !visited[i]){
+            que.push(i);
+        }
+    }
+    if(b==0){
+        b=1;
+    }else{
+        cout<<"-";
+    }
+    cout<<pos;
+    while(!que.empty()){
+        int now = que.top();
+        que.pop();
+        if(visited[now]) continue;
+        cout<<"-"<<now;
+        for(int i=1;i<=n;++i){
+            if(data[now][i]==1 and !visited[i]){
+                que.push(i);
+            }
+        }
+    }
 }
 void dfs(int pos){
     if(visited[pos]){
@@ -49,6 +72,7 @@ int main(){
         if(!visited[i])
             dfs(i);
     }
+    cout<<endl;
     for(int i=0;i<MAXN;++i)visited[i]=false;
     for(int i=1;i<=n;++i){
         if(!visited[i])
