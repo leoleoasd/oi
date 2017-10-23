@@ -40,6 +40,7 @@ void dfs(int pos){
 int main(){
     int a,b;
     cin>>n>>m;
+    ++m;
     while(--m){
         cin>>a>>b;
         data[a][b]=data[b][a]=1;
