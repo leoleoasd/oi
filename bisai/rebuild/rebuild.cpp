@@ -44,7 +44,7 @@ int main(){
                 }
             }
         }
-        for(int j=0;j<=n;++j){
+        for(int j=1;j<=n;++j){
             ans += rebuild[j];
         }
         if(ans >max){
