@@ -18,7 +18,7 @@ bool visited[MAXN]={0};
 int m;
 void bfs(int pos){
     queue<int> que;
-    visited[pops]=1;
+    visited[pos]=1;
     for(int i=1;i<=n;++i){
         if(data[pos][i]==1 and !visited[i]){
             que.push(i);
