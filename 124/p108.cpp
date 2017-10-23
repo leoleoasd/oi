@@ -13,6 +13,7 @@ using namespace std;
 int data[MAXN][MAXN]={0};
 int b = 0;
 int d = 0;
+int n;
 void bfs(int pos){
     
 }
