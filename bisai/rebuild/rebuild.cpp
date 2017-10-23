@@ -59,7 +59,7 @@ int main(){
     cout<<max<<endl;
     cout<<outputs.size()<<endl;
     for(int i=0;i<outputs.size();++i){
-        cout<<outputs[i]<<" ";
+        cout<<outputs[i]+1<<" ";
     }
     return 0;
 }
