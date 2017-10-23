@@ -28,7 +28,7 @@ int main(){
     }
     int max = -1;
     for(int i=0;i<m;++i){
-        memset(data,data+MAXN*MAXN,0);
+        memset(data,0,MAXN*MAXN);
         for(int j=0;j<m;++j){
             data[edge[j].from][edge[j].to]=1;
         }
