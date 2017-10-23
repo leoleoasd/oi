@@ -35,9 +35,9 @@ int main(){
         data[edge[i].to][edge[i].from]=1;
         floyd();
         int ans = 0;
-        for(int i=1;i<=n;++i){
+        for(int k=1;i<=n;++i){
             for(int j=1;j<=n;++j){
-                if(data[i][j]==1 and data[j][i]==1){
+                if(data[k][j]==1 and data[j][k]==1){
                     ++ans;
                 }
             }
