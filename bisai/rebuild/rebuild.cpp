@@ -39,7 +39,7 @@ int main(){
         for(int k=1;k<=n;++k){
             for(int j=1;j<=n;++j){
                 if(data[k][j]==1 and data[j][k]==1){
-                    rebuild[i]=1;
+                    rebuild[k]=1;
                     rebuild[j]=1;
                 }
             }
