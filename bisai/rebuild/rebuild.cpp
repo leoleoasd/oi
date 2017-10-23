@@ -52,6 +52,9 @@ int main(){
             outputs.clear();
             outputs.push_back(i);
         }
+        if(ans == max){
+            outputs.push_back(i);
+        }
     }
     cout<<max<<endl;
     cout<<outputs.size()<<endl;
