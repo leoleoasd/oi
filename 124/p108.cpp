@@ -31,7 +31,9 @@ void bfs(int pos){
     }
     cout<<pos;
     while(!que.empty()){
-        int now = que.top();
+        
+        int now = que.front();
+        visited[now]=1;
         que.pop();
         if(visited[now]) continue;
         cout<<"-"<<now;
