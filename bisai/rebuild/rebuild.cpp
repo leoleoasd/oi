@@ -51,8 +51,7 @@ int main(){
             max = ans;
             outputs.clear();
             outputs.push_back(i);
-        }
-        if(ans == max){
+        }else if(ans == max){
             outputs.push_back(i);
         }
     }
