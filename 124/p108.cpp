@@ -34,7 +34,7 @@ void dfs(int pos){
     }
 }
 bool visited[MAXN]={0};
-
+int m;
 int main(){
     init();
     int a,b;
