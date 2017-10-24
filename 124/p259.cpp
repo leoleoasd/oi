@@ -20,6 +20,7 @@ namespace Leo{
                 dist[i]=INF;
             }
         }
+        visited[to]=1;
         int sum = 1;
         int max = -1;
         int pos = 0;
@@ -27,11 +28,12 @@ namespace Leo{
             max = -1;
             pos = 0;
             for(int i=1;i<=n;++i){
-                if(max < dist[i]){
+                if(max < dist[i] and !visited[i]){
                     max = dist[i];
                     pos = i;
                 }
             }
+            visited[pos]=1;
             if(pos == 0 ){
                 cout<<"fatal ERROR!!";
                 return;
