@@ -15,7 +15,7 @@ long long ASD(int n){
     return a;
 }
 int main(){
-    for(int i=0;i<=10;++i){
+    for(int i=0;i<=18;++i){
         cout<<ASD(i)<<",";
     }
     return 0;
