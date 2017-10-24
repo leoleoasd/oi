@@ -35,6 +35,11 @@ int main(){
     int output = 0;
     int mi,ma;
     int mim,mam;
+    cout<<"---------------------------------"<<endl;
+    for(int i=0;i<n;++i){
+        cout<<bian[i][0]<<" "<<bian[i][1]<<" "<<bian[i][2]<<" "<<bian[i][3]<<" "<<type[i]<<endl; 
+    }
+    cout<<"---------------------------------"<<endl;
     for(int i=0;i<n;++i){
         if(type[i]==1){
             for(int j=i+1;j<n;++j){
@@ -44,12 +49,17 @@ int main(){
                     ma = max(bian[i][3],bian[j][3]);
                     mim = min(bian[i][0],bian[j][0]);
                     mam = max(bian[i][0],bian[j][0]);
+                    cout<<"竖着的边 "<<i<<" "<<j<<endl;
+                    cout<<"横着的边 ";
                     for(int k=0;k<n;++k){
                         if(type[k]==0 and (mi <= bian[k][1] and ma >= bian[k][1]) and (bian[k][0]<=mim and bian[k][2] >= mam)){
                             ++cnt;
+                            cout<<k<<" ";
                         }
                     }
+                    cout<<endl;
                     output += C(cnt,2);
+                    cout<<"---------------------------------"<<endl;
                 }
             }
         }
