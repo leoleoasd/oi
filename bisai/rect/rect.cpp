@@ -52,7 +52,7 @@ int main(){
                     mam = max(bian[i][0],bian[j][0]);
                     cout<<"竖着的边 "<<i<<" "<<j<<endl;
                     cout<<"横着的边 ";
-                    for(int k=0;k<n;++k){
+                    for(int k=1;k<=n;++k){
                         if(type[k]==0 and (mi <= bian[k][1] and ma >= bian[k][1]) and (bian[k][0]<=mim and bian[k][2] >= mam)){
                             ++cnt;
                             cout<<k<<" ";
