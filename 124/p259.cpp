@@ -21,7 +21,6 @@ namespace Leo{
             }
         }
         int sum = 1;
-        int 
         while(sum != n){
             for(int i=1;i<n;++i){
 
