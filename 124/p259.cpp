@@ -2,11 +2,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <queue>
-
-//using namespace std;
 using std::cin;
-//#define cin std::cin
-//#define cout std::cout
 using std::cout;
 #define MAXN 1020
 #define INF 0xfffffff
@@ -25,9 +21,24 @@ namespace Leo{
         }
         int sum = 1;
         int max = -1;
+        int pos = 0;
         while(sum != n){
-            for(int i=1;i<n;++i){
-
+            max = -1;
+            pos = 0;
+            for(int i=1;i<=n;++i){
+                if(max < dist[i]){
+                    max = dist[i];
+                    pos = i;
+                }
+            }
+            if(pos == 0 ){
+                cout<<"fatal ERROR!!";
+                return;
+            }
+            for(int i=1;i<=n;++i){
+                if(dist[i] > dist[pos] + data[i][pos]){
+                    dist[i]=dist[pos]+dist[i][pos];
+                }
             }
         }
     }
@@ -44,5 +55,8 @@ int main(){
     }
     cin>>from>>to>>k;
     rev_djstl();
+    for(int i=1;i<=n;++i){
+        cout<<dist[i]<<" ";
+    }
     return 0;
 }
