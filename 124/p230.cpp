@@ -1,8 +1,6 @@
 #include <iostream>
-#include <stdint.h>
 using namespace std;
 #define MAXN 1000000
-#define int long long
 
 int n,m;
 int data[MAXN][MAXN];
@@ -45,7 +43,7 @@ inline void merge(int a,int b){
     }
 }
 
-int32_t main(){
+int main(){
     cin>>n;
     init();
     int tmp;
