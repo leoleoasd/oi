@@ -10,7 +10,7 @@ ofstream fout("rect.out");
 long long ASD(int n){
     long long a = 1;
     for(int i=1;i<=n;++i){
-        a *= n;
+        a *= i;
     }
     return a;
 }
