@@ -6,7 +6,8 @@
 //using namespace std;
 using std::cin;
 //#define cin std::cin
-#define cout std::cout
+//#define cout std::cout
+using std::cout;
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
