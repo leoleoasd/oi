@@ -10,6 +10,6 @@ long long C(int b,int a){
 }
 
 int main(){
-    cout<<C(3,1);
+    cout<<C(8,2);
     return 0;
 }
