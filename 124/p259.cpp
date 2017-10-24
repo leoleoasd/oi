@@ -40,6 +40,7 @@ namespace Leo{
                     dist[i]=dist[pos]+data[i][pos];
                 }
             }
+            ++sum;
         }
     }
     int max = -1;
