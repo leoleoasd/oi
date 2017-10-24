@@ -4,6 +4,7 @@
 #include <queue>
 using std::cin;
 using std::cout;
+using std::endl;
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
