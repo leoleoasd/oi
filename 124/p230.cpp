@@ -19,7 +19,7 @@ struct na{
         return 0;
     }
 };
-na node[MAXM];
+na node[MAXN];
 void init(){
     for(int i=1;i<=n;++i){
         father[i]=i;
