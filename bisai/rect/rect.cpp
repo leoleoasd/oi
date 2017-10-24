@@ -50,6 +50,7 @@ int main(){
                     ma = max(bian[i][3],bian[j][3]);
                     mim = min(bian[i][0],bian[j][0]);
                     mam = max(bian[i][0],bian[j][0]);
+                    cout<<"m"<<mi<<" "<<ma<<" "<<mim<<" "<<mam<<endl;
                     cout<<"竖着的边 "<<i<<" "<<j<<endl;
                     cout<<"横着的边 ";
                     for(int k=0;k<n;++k){
