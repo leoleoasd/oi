@@ -46,10 +46,10 @@ int main(){
             for(int j=i+1;j<n;++j){
                 if(type[j]==1){
                     int cnt = 0;
-                    mi = min(bian[i][1],bian[j][1]);
-                    ma = max(bian[i][3],bian[j][3]);
-                    mim = min(bian[i][0],bian[j][0]);
-                    mam = max(bian[i][0],bian[j][0]);
+                    mi = max(bian[i][1],bian[j][1]);
+                    ma = min(bian[i][3],bian[j][3]);
+                    mim = max(bian[i][0],bian[j][0]);
+                    mam = min(bian[i][0],bian[j][0]);
                     cout<<"m"<<mi<<" "<<ma<<" "<<mim<<" "<<mam<<endl;
                     cout<<"竖着的边 "<<i<<" "<<j<<endl;
                     cout<<"横着的边 ";
