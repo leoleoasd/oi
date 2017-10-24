@@ -10,6 +10,7 @@ int fall(){
         now = now*2 + tree[now];
         tree[now/2]=!tree[now/2];
     }
+    now /= 2;
     return now;
 }
 int main(){
