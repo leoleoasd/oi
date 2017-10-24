@@ -55,8 +55,6 @@ int main(){
     cin>>to>>from;
     //cin>>from>>to>>k;
     rev_djstl();
-    cout<<dist[from];
-    return 0;
     for(int i=1;i<=n;++i){
         if(dist[i]==INF){
             cout<<"-1 ";
