@@ -17,6 +17,7 @@ long long C(int b,int a){
 LL bian[MAXN][4]={0};
 LL type[MAXN]={0};   // 1为竖直  0 水平
 #define cout fout
+#define cin fin
 int n;
 int main(){
     cin>>n;
