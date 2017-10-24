@@ -20,7 +20,13 @@ struct tree{
     }
 };
 void buildtree(int l,int r,int root,struct tree & tr){
-    tr.node
+    if(l>r){
+        return;
+    }
+    if(l==r){
+        
+    }
+    tr.node[]
 }
 int main(){
     return 0;
