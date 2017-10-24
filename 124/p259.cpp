@@ -4,7 +4,8 @@
 #include <queue>
 
 //using namespace std;
-#define cin std::cin
+using std::cin;
+//#define cin std::cin
 #define cout std::cout
 #define MAXN 1020
 #define INF 0xfffffff
