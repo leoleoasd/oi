@@ -54,6 +54,7 @@ int main(){
         cin>>a>>b>>c;
         data[a][b]=c;
     }
+    cout<<data[1][2];
     cin>>from>>to>>k;
     rev_djstl();
     for(int i=1;i<=n;++i){
