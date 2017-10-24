@@ -5,7 +5,7 @@ bool tree[1100000]={false};
 int d,l;
 int fall(){
     int now = 1;
-    while(now>>(d-1)<1){
+    while(now>>(d-1)<=1){
         cout<<now<<endl;
         now = now*2+1;
     }
