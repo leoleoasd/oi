@@ -3,15 +3,24 @@ using namespace std;
 #define MAXN 1000000
 
 int n,m;
-int data[MAXN][MAXN];
 int rank[MAXN]={0};
 int father[MAXN]={0};
-void init(){
-    for(int i=1;i<=n;++i){
-        for(int j=1;j<=n;++j){
-            data[i][j]=1;
-        }
+struct na{
+    map<int,int> e;
+    inline void add_edge(int to,int value){
+        e[to]=value;
     }
+    inline int operator[](const int num){
+        map<int,int>::iterator iter = this->e.find(num);
+        if(iter!=this->e.end())
+        {
+            return iter->second;
+        }
+        return 0;
+    }
+};
+na node[MAXM];
+void init(){
     for(int i=1;i<=n;++i){
         father[i]=i;
     }
@@ -50,12 +59,12 @@ int main(){
     for(int i=1;i<=n;++i){
         cin>>rank[i];
         cin>>tmp;
-        data[i][tmp]=0;
-        data[tmp][i]=0;
+        node[i].add_edge(tmp,1);
+        node[tmp].add_edge(i,1);
     }
     for(int i=1;i<=n;++i){
         for(int j=1;j<=n;++j){
-            if(data[i][j]){
+            if(node[i][j]==0){
                 merge(i,j);
             }
         }
