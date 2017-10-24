@@ -9,14 +9,6 @@ struct na{
         e[to]=value;
     }
     inline int operator[](const int num){
-        /*
-        for(int i=0;i<this->e.size();++i){
-            if(this->e[i].to == num){
-                return this->e[i].value;
-            }
-        }
-        return 0;
-        */
         map<int,int>::iterator iter = this->e.find(num);
         if(iter!=this->e.end())
         {

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-struct no{    //[l,r] 闭区间
+struct no{
     int l;
     int r;
     int value;
@@ -19,8 +19,8 @@ struct tree{
         buildtree(l,r,0,*this);
     }
 };
-void buildtree(int l,int r,int root,struct tree tr){
-    
+void buildtree(int l,int r,int root,struct tree & tr){
+    tr.node
 }
 int main(){
     return 0;
