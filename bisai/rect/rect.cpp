@@ -45,7 +45,7 @@ int main(){
                     mim = min(bian[i][0],bian[j][0]);
                     mam = max(bian[i][0],bian[j][0]);
                     for(int k=0;k<n;++k){
-                        if(type[k]==0 and (mi <= bian[k][1] and max >= bian[k][1]) and (bian[k][0]<=mim and bian[k][2] >= mam)){
+                        if(type[k]==0 and (mi <= bian[k][1] and ma >= bian[k][1]) and (bian[k][0]<=mim and bian[k][2] >= mam)){
                             ++cnt;
                         }
                     }
