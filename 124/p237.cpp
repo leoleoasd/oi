@@ -15,6 +15,6 @@ int main(){
     for(int i=1;i<l;++i){
         fall();
     }
-    //cout<<fall();
+    cout<<fall();
     return 0;
 }
