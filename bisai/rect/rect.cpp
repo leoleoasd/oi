@@ -15,6 +15,7 @@ LL bian[MAXN][4]={0};
 LL type[MAXN]={0};   // 1为竖直  0 水平
 int n;
 int main(){
+    /*
     cin>>n;
     for(int i=0;i<n;++i){
         cin>>bian[i][0]>>bian[i][1]>>bian[i][2]>>bian[i][3];
@@ -35,6 +36,7 @@ int main(){
         if(type[i]==1){
             for(int j=i+1;j<n;++j){
                 if(type[j]==1){
+                    int cnt = 0;
                     mi = min(bian[i][1],bian[j][1]);
                     ma = max(bian[i][3],bian[j][3]);
                     for(int k=0;k<n;++k){
@@ -45,6 +47,7 @@ int main(){
                 }
             }
         }
-    }
+    }*/
+    cout<<C(0,2);
     return 0;
 }
