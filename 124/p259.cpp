@@ -28,6 +28,7 @@ using namespace std;
             }
         }
     }
+int max = -1;
 //}
 //using namespace Leo;
 int main(){
