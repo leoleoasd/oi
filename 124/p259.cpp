@@ -7,7 +7,7 @@ using namespace std;
 
 #define MAXN 1020
 #define INF 0xfffffff
-namespace Leo{
+//namespace Leo{
     int data[MAXN][MAXN]={0};
     bool visited[MAXN]={false};
     int dist[MAXN]={0};
@@ -28,8 +28,8 @@ namespace Leo{
             }
         }
     }
-}
-using namespace Leo;
+//}
+//using namespace Leo;
 int main(){
     cin>>n>>m;
     int a,b,c;
