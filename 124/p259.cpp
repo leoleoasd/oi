@@ -51,6 +51,7 @@ int main(){
     for(int i=0;i<m;++i){
         cin>>a>>b>>c;
         data[a][b]=c;
+        data[b][a]=c;
     }
     cin>>to>>from;
     //cin>>from>>to>>k;
