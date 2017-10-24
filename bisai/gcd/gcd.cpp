@@ -8,6 +8,6 @@ int main(){
     int n =0;
     cin>>n;
     srand((unsigned)time(NULL));
-　　for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++)
 　　　　cout<<rand()<<" ";
 }
