@@ -9,5 +9,5 @@ int main(){
     cin>>n;
     srand((unsigned)time(NULL));
     for(int i=0;i<n;i++)
-　　　　cout<<rand()<<" ";
+        cout<<rand()<<" ";
 }
