@@ -32,6 +32,7 @@ int max = -1;
 //}
 //using namespace Leo;
 int main(){
+    cout<<max;
     cin>>n>>m;
     int a,b,c;
     for(int i=0;i<m;++i){
