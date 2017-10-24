@@ -41,7 +41,7 @@ int main(){
         cout<<bian[i][0]<<" "<<bian[i][1]<<" "<<bian[i][2]<<" "<<bian[i][3]<<" "<<type[i]<<endl; 
     }
     cout<<"---------------------------------"<<endl;
-    for(int i=0;i<n;++i){
+    for(int i=1;i<=n;++i){
         if(type[i]==1){
             for(int j=i+1;j<n;++j){
                 if(type[j]==1){
