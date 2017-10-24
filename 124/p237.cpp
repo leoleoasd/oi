@@ -6,9 +6,11 @@ int d,l;
 int fall(){
     int now = 1;
     while(now>>(d-1)<=1){
-        cout<<now<<endl;
-        now = now*2+1;
+        //cout<<now<<endl;
+        now = now*2 + tree[now];
+        tree[now/2]=!tree[now/2];
     }
+    return now;
 }
 int main(){
     cin>>d>>l;
