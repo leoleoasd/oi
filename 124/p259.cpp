@@ -43,21 +43,26 @@ namespace Leo{
             ++sum;
         }
     }
-    int max = -1;
 }
 using namespace Leo;
 int main(){
-    cout<<max;
     cin>>n>>m;
     int a,b,c;
     for(int i=0;i<m;++i){
         cin>>a>>b>>c;
-        data[a][b]=c;
+        data[a][b]=c
     }
     cout<<data[1][2];
-    cin>>from>>to>>k;
+    cin>>to>>from;
+    //cin>>from>>to>>k;
     rev_djstl();
+    cout<<dist[from];
+    return 0;
     for(int i=1;i<=n;++i){
+        if(dist[i]==INF){
+            cout<<"-1 ";
+            continue;
+        }
         cout<<dist[i]<<" ";
     }
     return 0;
