@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-#incldue <queue>
+#include <queue>
 
 using namespace std;
 
