@@ -1,13 +1,16 @@
 #include <cstdio>
+#include <fstream>
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
 
+ifstream fin("gcd.in");
+ofstream fout("gcd.out");
 int main(){
     int n =0;
-    cin>>n;
+    fin>>n;
     srand((unsigned)time(NULL));
     for(int i=0;i<n;i++)
-        cout<<rand()<<" ";
+        fout<<rand()<<" ";
 }
