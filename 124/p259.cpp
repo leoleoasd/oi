@@ -50,7 +50,7 @@ int main(){
     int a,b,c;
     for(int i=0;i<m;++i){
         cin>>a>>b>>c;
-        data[a][b]=c
+        data[a][b]=c;
     }
     cout<<data[1][2];
     cin>>to>>from;
