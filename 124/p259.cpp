@@ -20,14 +20,6 @@ namespace Leo{
                 dist[i]=INF;
             }
         }
-            for(int i=1;i<=n;++i){
-        if(dist[i]==INF){
-            cout<<"-1 ";
-            continue;
-        }
-        cout<<dist[i]<<" ";
-    }
-        cout<<endl;
         int sum = 1;
         int max = -1;
         int pos = 0;
@@ -44,6 +36,7 @@ namespace Leo{
                 cout<<"fatal ERROR!!";
                 return;
             }
+            cout<<pos<<endl;
             for(int i=1;i<=n;++i){
                 if(dist[i] > dist[pos] + data[pos][i] and data[pos][i] != 0){
                     dist[i]=dist[pos]+data[pos][i];
