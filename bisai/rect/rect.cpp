@@ -17,7 +17,7 @@ int n;
 int main(){
     cin>>n;
     for(int i=0;i<n;++i){
-        cin>>bian[i][0]>>bian[i][1]>>bian[i][2]>bian[i][3];
+        cin>>bian[i][0]>>bian[i][1]>>bian[i][2]>>bian[i][3];
         if(bian[i][0]==bian[i][2]){
             type[i]=1;
             if(bian[i][3]<bian[i][1]){
