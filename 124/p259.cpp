@@ -14,7 +14,7 @@ namespace Leo{
     int from,to,k;
     void rev_djstl(){
         for(int i=1;i<=n;++i){
-            dist[i]=data[i][to];
+            dist[i]=data[to][i];
             if(dist[i]==0){
                 dist[i]=INF;
             }
@@ -36,8 +36,8 @@ namespace Leo{
                 return;
             }
             for(int i=1;i<=n;++i){
-                if(dist[i] > dist[pos] + data[i][pos]){
-                    dist[i]=dist[pos]+data[i][pos];
+                if(dist[i] > dist[pos] + data[pos][i] and data[pos][i] != 0){
+                    dist[i]=dist[pos]+data[pos][i];
                 }
             }
             ++sum;
