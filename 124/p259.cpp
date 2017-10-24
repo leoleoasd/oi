@@ -37,7 +37,7 @@ namespace Leo{
             }
             for(int i=1;i<=n;++i){
                 if(dist[i] > dist[pos] + data[i][pos]){
-                    dist[i]=dist[pos]+dist[i][pos];
+                    dist[i]=dist[pos]+data[i][pos];
                 }
             }
         }
