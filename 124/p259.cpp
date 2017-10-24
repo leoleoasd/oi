@@ -3,8 +3,9 @@
 #include <cstdlib>
 #include <queue>
 
-using namespace std;
-
+//using namespace std;
+#define cin std::cin
+#define cout std::cout
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
@@ -28,7 +29,7 @@ namespace Leo{
             }
         }
     }
-int max = -1;
+    int max = -1;
 }
 using namespace Leo;
 int main(){
