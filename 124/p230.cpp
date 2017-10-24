@@ -1,5 +1,9 @@
 #include <iostream>
+#include <stdint.h>
 using namespace std;
+#define MAXN 1000000
+#define int long long
+
 int n,m;
 int data[MAXN][MAXN];
 int rank[MAXN]={0};
@@ -41,7 +45,7 @@ inline void merge(int a,int b){
     }
 }
 
-int main(){
+int32_t main(){
     cin>>n;
     init();
     int tmp;
