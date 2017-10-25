@@ -17,16 +17,16 @@ int main(){
                 ++a11pos;
             }
             a21[a21pos][0]++;
-            if(a21[a21pos][0]>=21 or a21[a21pos][1]>=21){
+            if((a11[a11pos][0]>=21 or a11[a11pos][1]>=21)and abs(a11[a11pos][0]-a11[a11pos][1])>=2 ){
                 ++a21pos;
             }
         }else{
             a11[a11pos][1]++;
-            if(a11[a11pos][0]>=11 or a11[a11pos][1]>=11){
+            if((a11[a11pos][0]>=11 or a11[a11pos][1]>=11)and abs(a11[a11pos][0]-a11[a11pos][1])>=2 ){
                 ++a11pos;
             }
             a21[a21pos][1]++;
-            if(a21[a21pos][0]>=21 or a21[a21pos][1]>=21){
+            if((a11[a11pos][0]>=21 or a11[a11pos][1]>=21)and abs(a11[a11pos][0]-a11[a11pos][1])>=2 ){
                 ++a21pos;
             }
         }
