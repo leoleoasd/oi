@@ -55,7 +55,10 @@ int main(){
         data[a].push_back(node(b,c));
     }
     SPFA(1);
-    for(int i=1;i<=n;++i){
+    for(int i=2;i<=n;++i){
+        if(dist[i]==INF){
+            cout<<-32767<<" ";
+        }else
         cout<<dist[i]<<" ";
     }
     return 0;
