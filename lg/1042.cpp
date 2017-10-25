@@ -27,6 +27,7 @@ int main(){
                 ++a21pos;
             }
         }
+        cin>>tmp;
     }
     for(int i=0;i<=a11pos;++i){
         cout<<a11[i][0]<<":"<<a11[i][1]<<endl;
