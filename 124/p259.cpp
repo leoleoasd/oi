@@ -20,7 +20,7 @@ namespace Leo{
             val=b;
         }
     };
-    vector<node> data,_data;
+    vector<node> data[MAXN],_data[MAXN];
     bool visited[MAXN]={false};
     int dist[MAXN]={0};
     int n,m;
@@ -89,8 +89,8 @@ int main(){
     int a,b,c;
     for(int i=0;i<m;++i){
         cin>>a>>b>>c;
-        data[a].push_back(b,c);
-        _data[b].push_back(a,c);
+        data[a].push_back(node(b,c));
+        _data[b].push_back(node(a,c));
     }
     cin>>from>>to>>k;
     rev_djstl();
