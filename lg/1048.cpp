@@ -9,14 +9,14 @@ int main(){
     cin>>t>>m;
     for(int i=1;i<=m;++i){
         cin>>v[i];
+        cin>>w[i];
     }
     f[0]=0;
-    cout<<m;
     return 0;
     for(int i=1;i<=m;++i){
         for(int j=t;j>=0;--j){
             if(j>v[i]){
-                f[j] = max(f[j],f[j-v[i]]+v[i]);
+                f[j] = max(f[j],f[j-w[i]]+v[i]);
             }
         }
     }
