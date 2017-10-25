@@ -25,7 +25,7 @@ int main(){
         dp[0][i] = i > w[0] ? w[0]*r[0] : 0;
     }
     for(int i=1;i<m;++i){
-        for(int j=0;j<=n;++j){
+        for(int j=n;j>=w[i];--j){
             if(j-w[i]>=0){
                 dp[i][j]=max(dp[i][j-1],dp[i-1][j-w[i]]+w[i]*r[i]);
             }
