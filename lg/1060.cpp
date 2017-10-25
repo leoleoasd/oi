@@ -9,7 +9,6 @@ int n,m;
 int dp[MAXN][30020]={0};
 void output(){
     for(int i=0;i<m;++i){
-        for(int )
     }
 }
 int main(){
