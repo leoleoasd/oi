@@ -5,9 +5,9 @@ int abs(int i){
 }
 int main(){
     char tmp;
-    int a11[3000][2]={0};
+    int a11[50000][2]={0};
     int a11pos = 0;
-    int a21[3000][2]={0};
+    int a21[50000][2]={0};
     int a21pos = 0;
     cin>>tmp;
     while(tmp != 'E'){
