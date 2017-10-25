@@ -45,14 +45,14 @@ void djstl(){
                 l_pos=i;
             }
         }
-        if(data[l_max].L > data[0].L+m or data[l_max].L < data[0].L+m){
+        if(data[l_min].L > data[0].L+m or data[l_min].L < data[0].L+m){
             ++sum;
-            v[l_max]=1;
+            v[l_min]=1;
             continue;
         }
-        for(int i=0;i<data[l_max].size();++i){
-            if(dist[data[l_max][i].to] > dist[l_max] + data[l_max][i].val){
-                dist[data[l_max][i].to]=dist[l_max] + data[l_max][i].val;
+        for(int i=0;i<data[l_min].size();++i){
+            if(dist[data[l_min][i].to] > dist[l_min] + data[l_min][i].val){
+                dist[data[l_min][i].to]=dist[l_min] + data[l_min][i].val;
             }
         }
     }
