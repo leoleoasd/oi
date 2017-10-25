@@ -8,7 +8,7 @@ struct cmp{
     }
 };
 int main(){
-    priority_queue<int,vector<int>,smaller<int> > asd;
+    priority_queue<int,vector<int>,lesser<int> > asd;
     asd.push(1);
     asd.push(2);
     asd.push(3);
