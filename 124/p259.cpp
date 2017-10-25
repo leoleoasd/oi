@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <queue>
+#include <vector>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -9,42 +10,43 @@ using std::priority_queue;
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
-    int data[MAXN][MAXN]={0};
+    //int data[MAXN][MAXN]={0};
+    struct node{
+        int to;
+        int val;
+        node(int a,int b){
+            to=a;
+            val=b;
+        }
+    };
+    vector<node> data,_data;
     bool visited[MAXN]={false};
     int dist[MAXN]={0};
     int n,m;
     int from,to,k;
     void rev_djstl(){
+        priority_queue<int , vector<int> , greater<int> > q;  
         for(int i=1;i<=n;++i){
-            dist[i]=data[i][to];
-            if(dist[i]==0){
-                dist[i]=INF;
-            }
+            dist[i]=INF;
         }
         visited[to]=1;
-        int sum = 1;
-        int max = -1;
-        int pos = 0;
-        while(sum != n){
-            max = -1;
-            pos = 0;
-            for(int i=1;i<=n;++i){
-                if(max < dist[i] and !visited[i]){
-                    max = dist[i];
-                    pos = i;
+        dist[to]=0;
+        q.push(to);
+        int u;
+        while(!q.empty()){
+            u = que.top();
+            que.pop();
+            for(int i=0;i<_data[u].size();++i){
+                node v = _data[u][i];
+                if(dist[v.to] > dist[u]+v.val){
+                    dist[v.to]=dist[u]+v.val;
+                    if(!visited[v.to]){
+                        q.push(v.to);
+                        visited[v.to]=true;
+                    }
                 }
             }
-            visited[pos]=1;
-            if(pos == 0 ){
-                cout<<"fatal ERROR!!";
-                return;
-            }
-            for(int i=1;i<=n;++i){
-                if(dist[i] > dist[pos] + data[i][pos] and data[i][pos] != 0){
-                    dist[i]=dist[pos]+data[i][pos];
-                }
-            }
-            ++sum;
+            visited[u]=false;
         }
     }
     struct Node{
@@ -61,9 +63,10 @@ namespace Leo{
     };
     int Astar(){
         priority_queue<Node> que;
+        while(!que.empty()) que.pop();  
         que.push(Node(0,dist[from],from));
-        int len,num;
-        num = len = 0;
+        int num;
+        num = 0;
         while(!que.empty()){
             Node now = que.top();
             que.pop();
@@ -73,10 +76,8 @@ namespace Leo{
             if(num >= k){
                 return now.h;
             }
-            for(int i=1;i<=n;++i){
-                if(data[now.id][i]!=0){
-                    que.push(Node(now.h+data[now.id][i],dist[i],i));
-                }
+            for(int i=0;i<data[now.id].size();++i){
+                que.push(Node(now.h+data[now.id][i].val,dist[data[now.id][i].to],data[now.id][i].to));
             }
         }
     }
@@ -87,7 +88,8 @@ int main(){
     int a,b,c;
     for(int i=0;i<m;++i){
         cin>>a>>b>>c;
-        data[a][b]=c;
+        data[a].push_back(b,c);
+        _data[b].push_back(a,c);
     }
     cin>>from>>to>>k;
     rev_djstl();
