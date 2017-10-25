@@ -12,7 +12,6 @@ int main(){
         ++ways[a[i]];
     }
     sort(a,a+n);
-    return 0;
     for(int i=0;i<=m;++i){
         for(int j=0;j<n and i > a[j];++j){
             ways[i] += ways[i-a[j]];
