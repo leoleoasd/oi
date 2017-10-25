@@ -5,10 +5,10 @@ using namespace std;
 #define MAXN 420
 struct edge{
     int to;
-    int value;
+    int val;
     edge(int a,int b){
         to=a;
-        value=b;
+        val=b;
     }
 };
 struct Node{
