@@ -24,7 +24,6 @@ int main(){
                 dp[j]=dp[j-1];
             }
         }
-        output();
     }
     cout<<dp[n];
     return 0;
