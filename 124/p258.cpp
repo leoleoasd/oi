@@ -33,6 +33,7 @@ int main(){
     for(int i=1;i<=n;++i){
         cin>>a>>b>>c;
         data[0].add(i,a);
+        data[i].add(0,a);
         data[i].L=b;
         for(int j=0;j<c;++j){
             cin>>a>>b;
