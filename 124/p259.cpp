@@ -8,6 +8,7 @@ using std::cout;
 using std::endl;
 using std::priority_queue;
 using std::vector;
+using std::greater;
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
