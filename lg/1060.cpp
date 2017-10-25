@@ -17,7 +17,7 @@ int main(){
     }
     for(int i=1;i<=m;++i){
         for(int j=0;j<=n;++j){
-            dp[i][j]=min(dp[i][j-1],dp[i-1][j-w[i]]+w[i]*rank[i]);
+            dp[i][j]=min(dp[i][j-1],dp[i-1][j-w[i]]+w[i]*r[i]);
         }
     }
     cout<<dp[m][n];
