@@ -31,7 +31,7 @@ void add(string &to,char from,int num){
             }
         }
     }else{
-        for(char i = fron+num-1;i>=from;--i){
+        for(char i = from+num-1;i>=from;--i){
             for(int j=0;i<p2;++j){
                 to+=(i);
             }
