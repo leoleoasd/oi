@@ -13,7 +13,7 @@ int main(){
         cin>>w[i]>>r[i];
     }
     for(int i=0;i<=n;++i){
-        dp[0][i] = i > w[0] ? w[0]*r[0] : 0;
+        dp[i] = i > w[0] ? w[0]*r[0] : 0;
     }
     for(int i=1;i<m;++i){
         for(int j=n;j>=w[i];--j){
