@@ -12,7 +12,6 @@ int main(){
         cin>>w[i];
     }
     f[0]=0;
-    return 0;
     for(int i=1;i<=m;++i){
         for(int j=t;j>=0;--j){
             if(j>v[i]){
