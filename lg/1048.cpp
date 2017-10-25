@@ -8,8 +8,8 @@ int main(){
     int v[MAXN]={0};
     cin>>t>>m;
     for(int i=1;i<=m;++i){
-        cin>>v[i];
         cin>>w[i];
+        cin>>v[i];
     }
     f[0]=0;
     for(int i=1;i<=m;++i){
