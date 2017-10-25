@@ -54,7 +54,7 @@ namespace Leo{
         Node(int a,int b,int c){
             h=a; g=b; id=c; 
         }    
-        bool const operator < (Node a)
+        bool operator < (Node a) const
         {
             return h+g > a.h+a.g;
         }
