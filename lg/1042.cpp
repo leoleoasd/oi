@@ -8,7 +8,7 @@ int main(){
     int a21pos = 0;
     cin>>tmp;
     while(tmp != 'E'){
-        if(tmp == "W"){
+        if(tmp == 'W'){
             a11[a11pos][0]++;
             if(a11[a11pos][0]+a11[a11pos][1]==11){
                 ++a11pos;
