@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+using namespace std;
 int p1,p2,p3;
 bool is_word(char a){
     return a <= 'z' and a >= 'a';
