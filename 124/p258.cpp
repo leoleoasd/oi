@@ -46,6 +46,7 @@ int main(){
         for(int j=0;j<data[i].size();++j){
             cout<<"("<<data[i][j].to<<","<<data[i][j].value<<") ";
         }
+        cout<<endl;
     }
     return 0;
 }
