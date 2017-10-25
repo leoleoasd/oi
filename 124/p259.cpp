@@ -36,8 +36,8 @@ namespace Leo{
         q.push(to);
         int u;
         while(!q.empty()){
-            u = que.top();
-            que.pop();
+            u = q.top();
+            q.pop();
             for(int i=0;i<_data[u].size();++i){
                 node v = _data[u][i];
                 if(dist[v.to] > dist[u]+v.val){
