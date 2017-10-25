@@ -6,6 +6,7 @@
 using std::cin;
 using std::cout;
 using std::queue;
+using std::vector;
 #define MAXN 420
 #define INF 0xfffffff
 namespace Leo{
