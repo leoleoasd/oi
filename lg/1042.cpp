@@ -17,7 +17,7 @@ int main(){
                 ++a11pos;
             }
             a21[a21pos][0]++;
-            if((a11[a11pos][0]>=21 or a11[a11pos][1]>=21)and abs(a11[a11pos][0]-a11[a11pos][1])>=2 ){
+            if((a21[a21pos][0]>=21 or a21[a21pos][1]>=21)and abs(a21[a21pos][0]-a21[a21pos][1])>=2 ){
                 ++a21pos;
             }
         }else{
@@ -26,7 +26,7 @@ int main(){
                 ++a11pos;
             }
             a21[a21pos][1]++;
-            if((a11[a11pos][0]>=21 or a11[a11pos][1]>=21)and abs(a11[a11pos][0]-a11[a11pos][1])>=2 ){
+            if((a21[a21pos][0]>=21 or a21[a21pos][1]>=21)and abs(a21[a21pos][0]-a21[a21pos][1])>=2 ){
                 ++a21pos;
             }
         }
