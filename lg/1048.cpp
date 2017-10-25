@@ -12,7 +12,7 @@ int main(){
     f[0]=0;
     
     for(int i=1;i<=m;++i){
-        for(int j=t;j>=-;--j){
+        for(int j=t;j>=0;--j){
             if(j>v[i]){
                 f[j] = max(f[j],f[j-v[i]]+v[i]);
             }
