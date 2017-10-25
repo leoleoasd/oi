@@ -15,7 +15,7 @@ struct Node{
     int id;
     int L;
     vector<struct edge> r;
-    int operator[](const int pos){
+    edge operator[](const int pos){
         return r[pos];
     }
     int size(){
