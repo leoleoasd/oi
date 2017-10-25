@@ -8,7 +8,7 @@ int r[MAXN]={0};
 int n,m;
 int dp[MAXN][30020]={0};
 void output(){
-    cout<<"--------------------------";
+    cout<<"--------------------------"<<endl;
     for(int i=0;i<m;++i){
         for(int j=0;j<=n;j+=100){
             cout<<dp[i][j]<<" ";
