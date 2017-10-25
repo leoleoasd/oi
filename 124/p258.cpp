@@ -27,6 +27,36 @@ struct Node{
 };
 Node data[MAXN];
 int n,m;
+int dist[MAXN]={0};
+#define INF 0xfffffff
+void djstl(){
+    bitset<MAXN> vis;
+    for(int i=0;i<=n;++i){
+        dist[i]=INF;
+    }
+    dist[0]=0;
+    vis[0]=1;
+    int l_min = INF;
+    int l_pos = 0;
+    for(int sum = 0;sum < n; ++sum){
+        for(int i=0;i<=n;++i){
+            if(dist[i]>l_min){
+                dist[i]=l_min;
+                l_pos=i;
+            }
+        }
+        if(data[l_max].L > data[0].L+m or data[l_max].L < data[0].L+m){
+            ++sum;
+            v[l_max]=1;
+            continue;
+        }
+        for(int i=0;i<data[l_max].size();++i){
+            if(dist[data[l_max][i].to] > dist[l_max] + data[l_max][i].val){
+                dist[data[l_max][i].to]=dist[l_max] + data[l_max][i].val;
+            }
+        }
+    }
+}
 int main(){
     cin>>m>>n;
     int a,b,c;
@@ -41,6 +71,8 @@ int main(){
             data[i].add(a,b);
         }
     }
+    djstl();
+    cout<<dist[1]<<endl;
     for(int i=0;i<=n;++i){
         cout<<i<<": ";
         for(int j=0;j<data[i].size();++j){
