@@ -19,7 +19,7 @@ void add(string &to,char from,int num){
     }
     if(p1==3){
         for(int i=0;i<num*p2;++i)
-            to.append("*");
+            to+=("*");
     }
     if(is_word(from) and p1==2){
         from += 'A'-'a';
@@ -27,13 +27,13 @@ void add(string &to,char from,int num){
     if(p3==1){
         for(char i = from;i < from+num;++i){
             for(int j=0;i<p2;++j){
-                to.append(i);
+                to+=(i);
             }
         }
     }else{
         for(char i = fron+num-1;i>=from;--i){
             for(int j=0;i<p2;++j){
-                to.append(i);
+                to+=(i);
             }
         }
     }
@@ -44,13 +44,13 @@ int main(){
     cin>>from;
     for(int i=0;i<from.size();++i){
         if(from[i]!='-'){
-            to.append(from[i]);
+            to+=(from[i]);
             continue;
         }
         if(judge(from[i-1])==judge(from[i+1])){
             add(to,from[i-1],from[i+1]-from[i-1]-1);
         }else{
-            to.append(from[i]);
+            to+=(from[i]);
             continue;
         }
     }
