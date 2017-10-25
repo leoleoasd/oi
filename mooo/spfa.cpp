@@ -55,5 +55,8 @@ int main(){
         data[a].push_back(node(b,c));
     }
     SPFA(1);
+    for(int i=1;i<=n;++i){
+        cout<<dist[i]<<" ";
+    }
     return 0;
 }
