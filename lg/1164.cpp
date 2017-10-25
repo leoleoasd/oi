@@ -16,6 +16,6 @@ int main(){
     for(int i=1;i<=n;i++)
     for(int j=m;j>=a[i];j--)
     ways[j]+=ways[j-a[i]];
-    cout<<ways[m-1];
+    cout<<ways[m];
     return 0;
 }
