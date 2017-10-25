@@ -11,13 +11,11 @@ int main(){
         cin>>a[i];
         //++ways[a[i]];
     }
-    for(int i=0;i<m;i++)//初始化为f[1-n]=-inf，f[0]=0,相当于在0容量背包里装0合法，其余容量装0不合法 
-      ways[i]=0;
-      ways[0]=1;
+    ways[0]=1;
     sort(a,a+n);
     for(int i=0;i<=m;++i){
         for(int j=0;j<n and i > a[j];++j){
-            ways[i] += ways[i-a[j]];
+            ways[j] += ways[j-a[i]];
         }
     }
     cout<<ways[m-1];
