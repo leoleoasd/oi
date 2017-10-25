@@ -4,6 +4,7 @@ int main(){
     #define MAXN 1020
     int t,m;
     int f[MAXN]={0};
+    int w[MAXN]={0};
     int v[MAXN]={0};
     cin>>t>>m;
     for(int i=1;i<=m;++i){
