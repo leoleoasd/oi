@@ -47,7 +47,7 @@ void djstl(){
         }
         if(data[l_min].L > data[0].L+m or data[l_min].L < data[0].L+m){
             ++sum;
-            v[l_min]=1;
+            vis[l_min]=1;
             continue;
         }
         for(int i=0;i<data[l_min].size();++i){
@@ -76,7 +76,7 @@ int main(){
     for(int i=0;i<=n;++i){
         cout<<i<<": ";
         for(int j=0;j<data[i].size();++j){
-            cout<<"("<<data[i][j].to<<","<<data[i][j].value<<") ";
+            cout<<"("<<data[i][j].to<<","<<data[i][j].val<<") ";
         }
         cout<<endl;
     }
