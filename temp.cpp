@@ -1,10 +1,17 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
+struct cmp{
+    bool operator()(int a,int b){
+        return a<b;
+    }
+}
 int main(){
-    vector<int> v;
-    v[0]=123;
-    v[1]=234;
-    cout<<v.operator[](1);
+    priority_queue<int,vector<int>,greater<int> > asd;
+    asd.push(1);
+    asd.push(2);
+    asd.push(3);
+    cout<<asd.top();
     return 0;
 }
