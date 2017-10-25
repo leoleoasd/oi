@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+    #define MAXN 1020
+    int t,m;
+    int f[MAXN]={0};
+    int v[MAXN]={0};
+    cin>>t>>m;
+    for(int i=1;i<=m;++i){
+        cin>>v[i];
+    }
+    f[0]=0;
+    
+    for(int i=1;i<=m;++i){
+        for(int j=t;j>=-;--j){
+            if(j>v[i]){
+                f[j] = max(f[j],f[j-v[i]]+v[i]);
+            }
+        }
+    }
+    cout<<f[t];
+    return 0;
+}
