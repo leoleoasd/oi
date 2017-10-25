@@ -13,11 +13,9 @@ int main(){
     }
     ways[0]=1;
     sort(a,a+n);
-    for(int i=0;i<=m;++i){
-        for(int j=0;j<n and i > a[j];++j){
-            ways[j] += ways[j-a[i]];
-        }
-    }
+    for(i=1;i<=n;i++)
+    for(j=m;j>=v[i];j--)
+    ways[j]+=ways[j-a[i]];
     cout<<ways[m-1];
     return 0;
 }
