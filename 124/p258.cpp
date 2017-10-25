@@ -34,25 +34,29 @@ void djstl(){
     for(int i=0;i<=n;++i){
         dist[i]=INF;
     }
+    for(int i=0;i<data[0].size();++i){
+        dist[data[0][i].to]=data[0][i].val;
+    }
     dist[0]=0;
     vis[0]=1;
     int l_min = INF;
     int l_pos = 0;
     for(int sum = 0;sum < n; ++sum){
+        l_min=INF;
         for(int i=0;i<=n;++i){
-            if(dist[i]>l_min){
-                dist[i]=l_min;
+            if(dist[i]<l_min and !vis[i]){
+                l_min=dist[i];
                 l_pos=i;
             }
         }
-        if(data[l_min].L > data[0].L+m or data[l_min].L < data[0].L+m){
-            ++sum;
-            vis[l_min]=1;
+        if(data[l_pos].L > data[1].L+m or data[l_pos].L < data[1].L-m){
+            vis[l_pos]=1;
             continue;
         }
-        for(int i=0;i<data[l_min].size();++i){
-            if(dist[data[l_min][i].to] > dist[l_min] + data[l_min][i].val){
-                dist[data[l_min][i].to]=dist[l_min] + data[l_min][i].val;
+        vis[l_pos]=1;
+        for(int i=0;i<data[l_pos].size();++i){
+            if(dist[data[l_pos][i].to] > dist[l_pos] + data[l_pos][i].val){
+                dist[data[l_pos][i].to]=dist[l_pos] + data[l_pos][i].val;
             }
         }
     }
@@ -73,6 +77,7 @@ int main(){
     }
     djstl();
     cout<<dist[1]<<endl;
+    /*
     for(int i=0;i<=n;++i){
         cout<<i<<": ";
         for(int j=0;j<data[i].size();++j){
@@ -80,5 +85,9 @@ int main(){
         }
         cout<<endl;
     }
+    for(int i=0;i<=n;++i){
+        cout<<dist[i]<<" ";
+    }
+    */
     return 0;
 }
