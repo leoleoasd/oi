@@ -6,7 +6,7 @@ struct cmp{
     bool operator()(int a,int b){
         return a<b;
     }
-}
+};
 int main(){
     priority_queue<int,vector<int>,greater<int> > asd;
     asd.push(1);
