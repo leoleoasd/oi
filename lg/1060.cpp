@@ -6,16 +6,7 @@ using namespace std;
 int w[MAXN]={0};
 int r[MAXN]={0};
 int n,m;
-int dp[MAXN][30020]={0};
-void output(){
-    cout<<"--------------------------"<<endl;
-    for(int i=0;i<m;++i){
-        for(int j=0;j<=n;j+=100){
-            cout<<dp[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-}
+int dp[30020]={0};
 int main(){
     cin>>n>>m;
     for(int i=0;i<m;++i){
@@ -27,14 +18,14 @@ int main(){
     for(int i=1;i<m;++i){
         for(int j=n;j>=w[i];--j){
             if(j-w[i]>=0){
-                dp[i][j]=max(dp[i-1][j],dp[i-1][j-w[i]]+w[i]*r[i]);
+                dp[j]=max(dp[j],dp[j-w[i]]+w[i]*r[i]);
             }
             else{
-                dp[i][j]=dp[i][j-1];
+                dp[j]=dp[j-1];
             }
         }
         output();
     }
-    cout<<dp[m-1][n];
+    cout<<dp[n];
     return 0;
 }
