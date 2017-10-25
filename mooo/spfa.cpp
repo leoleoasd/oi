@@ -7,6 +7,7 @@ using std::cin;
 using std::cout;
 using std::queue;
 using std::vector;
+using std::bitset;
 #define MAXN 420
 #define INF 0xfffffff
 namespace Leo{
@@ -18,7 +19,7 @@ namespace Leo{
             value=b;
         }
     }
-    vector<node> data[MAXN];
+    std::vector<struct node> data[MAXN];
     int n,m;
     int dist[MAXN]={0};
     void SPFA(int from){
@@ -30,8 +31,8 @@ namespace Leo{
         queue<int> que;
         que.push(from);
         inqueue[from]=true;
-        while(!que.emppty()){
-            int now = que.top();
+        while(!que.empty()){
+            int now = que.front();
             que.pop();
             inqueue[now]=false;
             int len = data[now].size();
