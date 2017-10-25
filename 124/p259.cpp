@@ -60,14 +60,14 @@ namespace Leo{
         }
     };
     int Astar(){
-        piority_queue<Node> que;
+        priority_queue<Node> que;
         que.push(0,dist[from],from);
         int len,num;
         num = len = 0;
         while(!que.empty()){
             Node now = que.top();
             que.pop();
-            if(que.id==to){
+            if(now.id==to){
                 ++num;
             }
             if(num >= k){
