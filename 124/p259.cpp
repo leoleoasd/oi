@@ -5,6 +5,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::priority_queue;
 #define MAXN 1020
 #define INF 0xfffffff
 namespace Leo{
@@ -38,13 +39,45 @@ namespace Leo{
                 cout<<"fatal ERROR!!";
                 return;
             }
-            cout<<pos<<endl;
             for(int i=1;i<=n;++i){
                 if(dist[i] > dist[pos] + data[i][pos] and data[i][pos] != 0){
                     dist[i]=dist[pos]+data[i][pos];
                 }
             }
             ++sum;
+        }
+    }
+    struct Node{
+        int h;  //当前已经走了多远
+        int g;  //到达目标点所需的代价
+        int id;
+        Node(int a,int b,int c){
+            h=a; g=b; id=c; 
+        }    
+        bool const operator < (Anode a)
+        {
+            return h+g > a.h+a.g;
+        }
+    };
+    int Astar(){
+        piority_queue<Node> que;
+        que.push(0,dist[from],from);
+        int len,num;
+        num = len = 0;
+        while(!que.empty()){
+            Node now = que.top();
+            que.pop();
+            if(que.id==to){
+                ++num;
+            }
+            if(num >= k){
+                return now.h;
+            }
+            for(int i=1;i<=n;++i){
+                if(data[now.id][i]!=0){
+                    que.push(Node(now.h+data[now.id][i],dist[i],i));
+                }
+            }
         }
     }
 }
@@ -58,12 +91,6 @@ int main(){
     }
     cin>>from>>to>>k;
     rev_djstl();
-    for(int i=1;i<=n;++i){
-        if(dist[i]==INF){
-            cout<<"-1 ";
-            continue;
-        }
-        cout<<dist[i]<<" ";
-    }
+    cout<<Astar();
     return 0;
 }
