@@ -61,7 +61,7 @@ namespace Leo{
     };
     int Astar(){
         priority_queue<Node> que;
-        que.push(0,dist[from],from);
+        que.push(Node(0,dist[from],from));
         int len,num;
         num = len = 0;
         while(!que.empty()){
