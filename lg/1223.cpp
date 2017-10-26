@@ -20,7 +20,7 @@ struct P{
 };
 int main(){
     int n;
-    #define MAXN 1000
+    #define MAXN 1050
     P data[MAXN];
     cin>>n;
     for(int i=0;i<n;++i){
@@ -34,6 +34,6 @@ int main(){
         output += i * data[i].time;
     }
     cout<<endl;
-    printf("%.2f",output/n);//<<output/n;
+    printf("%.2f",output/n);
     return 0;
 }
