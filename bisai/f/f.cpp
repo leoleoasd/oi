@@ -29,7 +29,7 @@ node P[MAXN];
 
 int main(){
     cin>>r>>c;
-    while(r!=0 and c!=0){
+    while(!r==0 and !c==0){
         cout<<123<<endl;
         cin>>r>>c;
     }
