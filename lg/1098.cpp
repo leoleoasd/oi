@@ -20,19 +20,20 @@ void add(string &to,char from,int num){
     if(p1==3){
         for(int i=0;i<num*p2;++i)
             to+=("*");
+        return 0;
     }
     if(is_word(from) and p1==2){
         from += 'A'-'a';
     }
     if(p3==1){
         for(char i = from;i < from+num;++i){
-            for(int j=0;i<p2;++j){
+            for(int j=0;j<p2;++j){
                 to+=(i);
             }
         }
     }else{
         for(char i = from+num-1;i>=from;--i){
-            for(int j=0;i<p2;++j){
+            for(int j=0;j<p2;++j){
                 to+=(i);
             }
         }
@@ -48,7 +49,7 @@ int main(){
             continue;
         }
         if(judge(from[i-1])==judge(from[i+1])){
-            add(to,from[i-1],from[i+1]-from[i-1]-1);
+            add(to,from[i-1]+1,from[i+1]-from[i-1]-1);
         }else{
             to+=(from[i]);
             continue;
