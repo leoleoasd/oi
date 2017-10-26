@@ -12,8 +12,8 @@ struct P{
         id=b;
     }
     bool operator<(struct P a){
-        if(time > a.time){
-            return true;
+        if(time != a.time){
+            return time>a.id;
         }
         return id < a.id;
     }
