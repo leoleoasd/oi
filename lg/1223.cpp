@@ -27,7 +27,7 @@ int main(){
         data[i].id=i;
     }
     sort(data,data+n);
-    for(int i=n;i>1;--i){
+    for(int i=n;i>0;--i){
         cout<<data[i-1].id+1<<" ";
     }
     return 0;
