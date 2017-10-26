@@ -5,7 +5,7 @@ using namespace std;
 #define MAXN 16
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
-int r,c,now,sum;
+int r,c,now;
 int output;
 struct node{
     int x;
@@ -32,6 +32,7 @@ int main(){
     cin>>r>>c;
     char tmp;
     while(!r==0 and !c==0){
+        pos=0;
         for(int i=1;i<=r;++i){
             for(int j=1;j<=c;++j){
                 cin>>tmp;
@@ -40,13 +41,13 @@ int main(){
                 }else{
                     data[i][j]=tmp-'0';
                     P[pos]=node(i,j,data[i][j]);
-                    ++sum;
+                    ++pos;
                 }
             }
         }
         sort(P,P+pos);
         for(int i=0;i<pos;++i){
-            cout<<P[i].x<<P[i].y<<P[i].value;
+            cout<<P[i].x<<" "<<P[i].y<<" "<<P[i].value<<endl;;
         }
         cin>>r>>c;
     }
