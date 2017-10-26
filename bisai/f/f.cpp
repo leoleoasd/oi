@@ -5,7 +5,7 @@ using namespace std;
 #define MAXN 16
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
-int r,c;,now,sum;
+int r,c,now,sum;
 struct node{
     int x;
     int y;
