@@ -7,6 +7,7 @@ int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
 int r,c,now;
 int output;
+int maxa;
 struct node{
     int x;
     int y;
@@ -31,6 +32,46 @@ bool cmp(node a,node b){
 }
 node P[MAXN];
 int pos;
+int dfs(int x,int y,int & ret){
+    if(x<1 o r y<1 or x>r or y>r or data[x][y]==-1){
+        return 0;
+    }
+    node P[4];
+    int p=0;
+    if(x>1){
+        P[p].x=x-1;
+        P[p].y=y;
+        P[p].value=data[x-1][y];
+        ++p;
+    }
+    if(y>1){
+        P[p].x=x;
+        P[p].y=y-1;
+        P[p].value=data[x][y-1];
+        ++p;
+    }
+    if(x<r){
+        P[p].x=x+1;
+        P[p].y=y;
+        P[p].value=data[x+1][y];
+        ++p;
+    }
+    if(y<c){
+        P[p].x=x;
+        P[p].y=y+1;
+        P[p].value=data[x][y+1];
+        ++p;
+    }
+    sort(P,P+p,cmp);
+    ret = ret * 10 + data[x][y];
+    int maxa = -1;
+    int tmp = ret;
+    for(int i=0;i<p;++i){
+        dfs(P[i].x,P[i].y,tmp);
+        maxa = max(tmp,maxa);
+    }
+    ret = maxa;
+}
 int main(){
     cin>>r>>c;
     char tmp;
@@ -49,9 +90,18 @@ int main(){
             }
         }
         sort(P,P+pos,cmp);
+        maxa = -1;
+        output = 0;
+        int ret;
         for(int i=0;i<pos;++i){
-            cout<<P[i].x<<" "<<P[i].y<<" "<<P[i].value<<endl;;
+            ret=0;
+            dfs(P[i].x,P[i].y,ret);
+            maxa = max(maxa,ret);
+            if(now == pos){
+                break;
+            }
         }
+        cout<<output<<endl;
         cin>>r>>c;
     }
     return 0;
