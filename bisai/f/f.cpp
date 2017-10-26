@@ -1,13 +1,21 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+#include <cmath>
 using namespace std;
+
+ifstream fin("f.in");
+ofstream fout("f.out");
+#define cin fin
+#define cout fout
+
 #define MAXN 16
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
 int r,c,now;
 int output;
 int maxa;
+#define max(A,B) (((A)>(B))?(A):(B))
 struct node{
     int x;
     int y;
@@ -33,9 +41,10 @@ bool cmp(node a,node b){
 node P[MAXN];
 int pos;
 int dfs(int x,int y,int & ret){
-    if(x<1 or y<1 or x>r or y>r or data[x][y]==-1){
+    if(x<1 or y<1 or x>r or y>c or data[x][y]==-1 or vis[x][y]){
         return 0;
     }
+    vis[x][y]=true;
     node P[4];
     int p=0;
     if(x>1){
@@ -67,10 +76,12 @@ int dfs(int x,int y,int & ret){
     int maxa = -1;
     int tmp = ret;
     for(int i=0;i<p;++i){
+        tmp = ret;
         dfs(P[i].x,P[i].y,tmp);
         maxa = max(tmp,maxa);
     }
     ret = maxa;
+    vis[x][y]=false;
 }
 int main(){
     cin>>r>>c;
@@ -97,11 +108,11 @@ int main(){
             ret=0;
             dfs(P[i].x,P[i].y,ret);
             maxa = max(maxa,ret);
-            if(now == pos){
+            if((int)log10(maxa) == pos-1){
                 break;
             }
         }
-        cout<<output<<endl;
+        cout<<maxa<<endl;
         cin>>r>>c;
     }
     return 0;
