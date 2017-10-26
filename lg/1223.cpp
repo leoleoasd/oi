@@ -28,9 +28,9 @@ int main(){
     }
     sort(data,data+n);
     float output = 0;
-    for(int i=n;i>0;--i){
-        cout<<data[i-1].id+1<<" ";
-        output += i * data[i-1].time;
+    for(int i=n-1;i>=0;--i){
+        cout<<data[i].id+1<<" ";
+        output += i * data[i].time;
     }
     cout<<endl<<output/n;
     return 0;
