@@ -11,10 +11,10 @@ struct P{
         id=b;
     }
     bool operator<(struct P a){
-        if(time < a.time){
+        if(time > a.time){
             return true;
         }
-        return id < a.id;
+        return id > a.id;
     }
 };
 int main(){
