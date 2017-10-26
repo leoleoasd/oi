@@ -10,7 +10,7 @@ void solve(){
     for(int i=1;i<=n;++i){
         maxx = 0;
         for(int j=1;j<i;++j){
-            if(data[i]<=data[j])
+            if(data[i]>=data[j])
                 maxx = max(maxx,dp[j]);
         }
         dp[i] = maxx+1;
