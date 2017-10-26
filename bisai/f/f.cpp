@@ -3,12 +3,6 @@
 #include <algorithm>
 #include <cmath>
 using namespace std;
-
-ifstream fin("f.in");
-ofstream fout("f.out");
-#define cin fin
-#define cout fout
-
 #define MAXN 16
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
@@ -79,6 +73,9 @@ int dfs(int x,int y,int & ret){
         tmp = ret;
         dfs(P[i].x,P[i].y,tmp);
         maxa = max(tmp,maxa);
+        if((int)log10(maxa) == pos-1){
+            break;
+        }
     }
     ret = maxa;
     vis[x][y]=false;
