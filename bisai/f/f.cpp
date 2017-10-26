@@ -44,16 +44,9 @@ int main(){
                 }
             }
         }
-        sort(P,P+sum);
-        for(int i=1;i<=r;++i){
-            for(int j=1;j<=c;++j){
-                if(data[i][j]==-1){
-                    cout<<"#";
-                }else{
-                    cout<<data[i][j];
-                }
-            }
-            cout<<endl;
+        sort(P,P+pos);
+        for(int i=0;i<pos;++i){
+            cout<<P[i].x<<P[i].y<<P[i].value;
         }
         cin>>r>>c;
     }
