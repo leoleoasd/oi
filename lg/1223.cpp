@@ -11,10 +11,10 @@ struct P{
         id=b;
     }
     bool operator<(struct P a){
-        if(time < a.time){
+        if(time > a.time){
             return true;
         }
-        return id < a.id;
+        return id > a.id;
     }
 };
 int main(){
@@ -27,8 +27,8 @@ int main(){
         data[i].id=i;
     }
     sort(data,data+n);
-    for(int i=0;i<n;++i){
-        cout<<data[i].id+1<<" ";
+    for(int i=n;i>1;--i){
+        cout<<data[i-1].id+1<<" ";
     }
     return 0;
 }
