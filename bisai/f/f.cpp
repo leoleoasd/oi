@@ -115,6 +115,9 @@ int main(){
                 break;
             }
         }
+        if(maxa==-1){
+            maxa=0;
+        }
         cout<<maxa<<endl;
         cin>>r>>c;
     }
