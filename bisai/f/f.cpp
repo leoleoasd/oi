@@ -33,7 +33,7 @@ bool cmp(node a,node b){
 node P[MAXN];
 int pos;
 int dfs(int x,int y,int & ret){
-    if(x<1 o r y<1 or x>r or y>r or data[x][y]==-1){
+    if(x<1 or y<1 or x>r or y>r or data[x][y]==-1){
         return 0;
     }
     node P[4];
