@@ -21,7 +21,7 @@ struct node{
 };
 
 int main(){
-    cout<<(node(1,2,3)<node(1,2,2));
+    cout<<(node(1,2,3)<node(1,2,4));
     //cin>>r>>c;
     
     return 0;
