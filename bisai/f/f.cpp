@@ -45,7 +45,7 @@ int main(){
                 }
             }
         }
-        sort(P,P+pos,greater<node>);
+        sort(P,P+pos,greater<struct node> pr);
         for(int i=0;i<pos;++i){
             cout<<P[i].x<<" "<<P[i].y<<" "<<P[i].value<<endl;;
         }
