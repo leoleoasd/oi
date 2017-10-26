@@ -5,6 +5,7 @@ using namespace std;
 struct P{
     int time;
     int id;
+    P(){}
     P(int a,int b){
         time=a;
         id=b;
