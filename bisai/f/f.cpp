@@ -9,6 +9,6 @@ bool vis[MAXN][MAXN]={false};
 
 
 int main(){
-    cout<<~10;
+    cout<<~0x7fffffff;
     return 0;
 }
