@@ -26,6 +26,9 @@ struct node{
         return value > a.value;
     }
 };
+bool cmp(node a,node b){
+    return a.value > b.value;
+}
 node P[MAXN];
 int pos;
 int main(){
@@ -45,7 +48,7 @@ int main(){
                 }
             }
         }
-        sort(P,P+pos,greater<struct node> pr);
+        sort(P,P+pos,cmp);
         for(int i=0;i<pos;++i){
             cout<<P[i].x<<" "<<P[i].y<<" "<<P[i].value<<endl;;
         }
