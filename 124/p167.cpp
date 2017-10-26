@@ -13,7 +13,7 @@ void solve(){
             if(num[i]>num[j])
             maxx = max(maxx,dp[j]);
         }
-        dp[i] = dp[j]+1;
+        dp[i] = maxx+1;
     }
 }
 int main(){
