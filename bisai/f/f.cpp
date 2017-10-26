@@ -10,20 +10,20 @@ ofstream fout("f.out");
 #define cout fout
 
 #define MAXN 16
-int data[MAXN][MAXN]={0};
+long long  data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
-int r,c,now;
-int output;
-int maxa;
+long long  r,c,now;
+long long output;
+long long  maxa;
 #define max(A,B) (((A)>(B))?(A):(B))
 struct node{
-    int x;
-    int y;
-    int value;
+    long long  x;
+    long long  y;
+    long long  value;
     node(){
         x=y=value=0;
     }
-    node(int a,int b,int c){
+    node(long long  a,long long  b,long long  c){
         x=a;
         y=b;
         value=c;
@@ -38,15 +38,15 @@ struct node{
 bool cmp(node a,node b){
     return a.value > b.value;
 }
-node P[MAXN];
-int pos;
-int dfs(int x,int y,int & ret){
+node P[MAXN*MAXN];
+long long  pos;
+long long  dfs(long long  x,long long  y,long long  & ret){
     if(x<1 or y<1 or x>r or y>c or data[x][y]==-1 or vis[x][y]){
         return 0;
     }
     vis[x][y]=true;
     node P[4];
-    int p=0;
+    long long  p=0;
     if(x>1){
         P[p].x=x-1;
         P[p].y=y;
@@ -73,13 +73,13 @@ int dfs(int x,int y,int & ret){
     }
     sort(P,P+p,cmp);
     ret = ret * 10 + data[x][y];
-    int maxa = -1;
-    int tmp = ret;
+    long long  maxa = -1;
+    long long  tmp = ret;
     for(int i=0;i<p;++i){
         tmp = ret;
         dfs(P[i].x,P[i].y,tmp);
         maxa = max(tmp,maxa);
-        if((int)log10(maxa) == pos-1){
+        if((long long )log10(maxa) == pos-1){
             break;
         }
     }
@@ -106,12 +106,12 @@ int main(){
         sort(P,P+pos,cmp);
         maxa = -1;
         output = 0;
-        int ret;
+        long long  ret;
         for(int i=0;i<pos;++i){
             ret=0;
             dfs(P[i].x,P[i].y,ret);
             maxa = max(maxa,ret);
-            if((int)log10(maxa) == pos-1){
+            if((long long )log10(maxa) == pos-1){
                 break;
             }
         }
