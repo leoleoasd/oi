@@ -27,8 +27,11 @@ int main(){
         data[i].id=i;
     }
     sort(data,data+n);
+    float output = 0;
     for(int i=n;i>0;--i){
         cout<<data[i-1].id+1<<" ";
+        output += i * data[i-1].time;
     }
+    cout<<endl<<output;
     return 0;
 }
