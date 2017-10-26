@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <cstdio>
 using namespace std;
 
 struct P{
@@ -32,6 +33,7 @@ int main(){
         cout<<data[i].id+1<<" ";
         output += i * data[i].time;
     }
-    cout<<endl<<output/n;
+    cout<<endl;
+    printf("%.2f",output/n);//<<output/n;
     return 0;
 }
