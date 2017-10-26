@@ -32,6 +32,6 @@ int main(){
         cout<<data[i-1].id+1<<" ";
         output += i * data[i-1].time;
     }
-    cout<<endl<<output;
+    cout<<endl<<output/n;
     return 0;
 }
