@@ -14,7 +14,7 @@ struct P{
         if(time > a.time){
             return true;
         }
-        return id > a.id;
+        return id < a.id;
     }
 };
 int main(){
