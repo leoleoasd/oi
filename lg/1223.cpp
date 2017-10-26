@@ -13,7 +13,7 @@ struct P{
     }
     bool operator<(struct P a){
         if(time != a.time){
-            return time>a.id;
+            return time>a.time;
         }
         return id < a.id;
     }
