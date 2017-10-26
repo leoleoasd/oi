@@ -15,7 +15,7 @@ struct node{
         y=b;
         value=c;
     }
-    bool operater<(node a){
+    bool operator<(node a){
         return value < a.value;
     }
 }
