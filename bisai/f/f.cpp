@@ -3,6 +3,12 @@
 #include <algorithm>
 #include <cmath>
 using namespace std;
+
+ifstream fin("f.in");
+ofstream fout("f.out");
+#define cin fin
+#define cout fout
+
 #define MAXN 16
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
