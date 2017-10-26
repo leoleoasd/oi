@@ -18,7 +18,7 @@ struct node{
     bool operator<(node a){
         return value < a.value;
     }
-}
+};
 
 int main(){
     cout<<(node(1,2,3)<node(1,2,2));
