@@ -29,7 +29,7 @@ int main(){
     sort(data,data+n);
     float output = 0;
     for(int i=n;i>0;--i){
-        cout<<data[i-1].id+1<<" ";
+        cout<<data[i-1].time+1<<" ";
         output += i * data[i-1].time;
     }
     cout<<endl<<output/n;
