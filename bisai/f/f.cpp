@@ -6,6 +6,7 @@ using namespace std;
 int data[MAXN][MAXN]={0};
 bool vis[MAXN][MAXN]={false};
 int r,c,now,sum;
+int output;
 struct node{
     int x;
     int y;
@@ -26,11 +27,34 @@ struct node{
     }
 };
 node P[MAXN];
-
+int pos;
 int main(){
     cin>>r>>c;
+    char tmp;
     while(!r==0 and !c==0){
-        cout<<123<<endl;
+        for(int i=1;i<=r;++i){
+            for(int j=1;j<=c;++j){
+                cin>>tmp;
+                if(tmp=='#'){
+                    data[i][j]=-1;
+                }else{
+                    data[i][j]=tmp-'0';
+                    P[pos]=node(i,j,data[i][j]);
+                    ++sum;
+                }
+            }
+        }
+        sort(P,P+sum);
+        for(int i=1;i<=r;++i){
+            for(int j=1;j<=c;++j){
+                if(data[i][j]==-1){
+                    cout<<"#";
+                }else{
+                    cout<<data[i][j];
+                }
+            }
+            cout<<endl;
+        }
         cin>>r>>c;
     }
     return 0;
