@@ -48,7 +48,7 @@ long long  dfs(long long  x,long long  y,long long  & ret){
     node P[4];
     long long  p=0;
     if(x>1){
-        P[p].x=x-1;
+        P[p].x=x-1;                                
         P[p].y=y;
         P[p].value=data[x-1][y];
         ++p;
