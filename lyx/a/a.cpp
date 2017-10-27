@@ -5,7 +5,7 @@
 using namespace std;
 #define MAXN 10000000
 int ap[MAXN]={0};
-vector<int> data[MAXN](vector<int>(0));
+vector<int> data[MAXN];//(vector<int>(0));
 int n,q;
 ifstream fin("a.in");
 ofstream fout("a.out");
