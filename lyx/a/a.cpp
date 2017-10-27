@@ -4,7 +4,7 @@
 #include <vector>
 #include <stdint.h>
 using namespace std;
-#define MAXN 1000000
+#define MAXN 1000020
 int ap[8080]={0};
 vector<int8_t> data[MAXN];
 int n,q;
