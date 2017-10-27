@@ -4,8 +4,8 @@
 #include <vector>
 using namespace std;
 #define MAXN 8080
-int data[MAXN]={0};
-vector<int> ap[MAXN];
+int ap[MAXN]={0};
+vector<int> data[MAXN];
 int n,q;
 int calc(int a,int l,int r){
     int ret = 0;
@@ -30,8 +30,8 @@ void solve(int x,int y){
 int main(){
     cin>>n>>q;
     for(int i=0;i<n;++i){
-        cin>>data[i];
-        ap[data[i]].push_back(i);
+        cin>>ap[i];
+        data[ap[i]].push_back(i);
     }
     int x,y;
     for(int i=0;i<q;++i){
