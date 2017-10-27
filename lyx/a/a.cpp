@@ -2,9 +2,10 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
+#include <stdint.h>
 using namespace std;
-#define MAXN 1000000020
-int data[MAXN]={0};
+#define MAXN 1000000000
+int8_t data[MAXN]={0};
 int rd[MAXN]={0};
 int main(){
     return 0;
