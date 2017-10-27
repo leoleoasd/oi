@@ -1,5 +1,5 @@
 #include <iostream>
-#include <fsttream>
+#include <fstream>
 #include <cstdlib>
 #include <vector>
 using namespace std;
