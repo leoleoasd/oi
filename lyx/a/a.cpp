@@ -2,12 +2,10 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
-#include <map>
 using namespace std;
 #define MAXN 8080
 int ap[MAXN]={0};
-//vector<int> data[MAXN];
-map<int,vector<int> > data;
+vector<int> data[MAXN];
 int n,q;
 ifstream fin("a.in");
 ofstream fout("a.out");
