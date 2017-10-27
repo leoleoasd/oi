@@ -5,7 +5,7 @@
 #include <stdint.h>
 using namespace std;
 #define MAXN 336870912
-int ap[MAXN]={0};
+int ap[8080]={0};
 vector<int> data[MAXN];
 int n,q;
 ifstream fin("a.in");
