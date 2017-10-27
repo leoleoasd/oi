@@ -4,10 +4,11 @@
 #include <vector>
 #include <stdint.h>
 using namespace std;
-#define MAXN 236870912
-uint8_t data[MAXN]={0};
-int rd[MAXN]={0};
+#define MAXN 336870912
+int data[MAXN]={0};
+int rd[8080]={0};
 int main(){
+    data[MAXN-1]=1;//for(int i=0;i<123;++i)data[i]=1;
     return 0;
 }
 /*
