@@ -8,7 +8,7 @@ def main():
     t = sys.argv[1]
     print("judging question "+t)
     print("using filename "+t+'.cpp')
-    system("g++ -g -O2 -o "+t+" "+t+".cpp"+byxx)
+    system("g++ -g  -o "+t+" "+t+".cpp"+byxx)
     print("Compile Endded")
     print("------------------------------------------------------------------------")
     system("bash -c \"time "+t+"\"")
