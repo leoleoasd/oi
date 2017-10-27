@@ -31,9 +31,6 @@ void pre_calculate(){
             qzh[sy][j]=sum;
         }
     }
-    for(int i=0;i<n;++i){
-        cout<<qzh[find(1)][i]<<" ";
-    }
 }
 int get(int x,int pos){
     int sy = find(x);
