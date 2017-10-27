@@ -2,6 +2,10 @@
 #include <fstream>
 #include <map>
 using namespace std;
+ifstream fin("a.in");
+ofstream fout("a.out");
+#define cin fin
+#define cout fout
 #define MAXN 8080
 map<int,int> SY;
 int qzh[MAXN][MAXN]={0};
