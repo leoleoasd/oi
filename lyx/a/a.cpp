@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <vector>
 using namespace std;
-#define MAXN 8080
+#define MAXN 808000
 int ap[MAXN]={0};
 vector<int> data[MAXN];
 int n,q;
