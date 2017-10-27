@@ -32,7 +32,7 @@ void pre_calculate(){
         }
     }
     for(int i=0;i<n;++i){
-        cout<<qzh[1][i]<<" ";
+        cout<<qzh[find(1)][i]<<" ";
     }
 }
 void solve(int x,int y){
