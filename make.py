@@ -8,7 +8,7 @@ try:
     f.write(str(n)+" "+str(q)+"\n")
     a = []
     for i in range(0,n):
-        tmp = random.randint(1,1000000)
+        tmp = random.randint(1,20)
         a.append(tmp)
         f.write(str(a[-1])+" ")
     f.write("\n")
