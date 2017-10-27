@@ -3,7 +3,7 @@
 import random
 try:
     f = open('a.in', 'w')
-    n = 100
+    n = 1000
     q = 1000
     f.write(str(n)+" "+str(q)+"\n")
     a = []
