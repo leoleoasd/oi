@@ -7,6 +7,10 @@ using namespace std;
 int ap[MAXN]={0};
 vector<int> data[MAXN];
 int n,q;
+ifstream fin("a.in");
+ofstream fout("a.out");
+#define cin fin
+#define cout fout
 int calc(int a,int l,int r){
     int ret = 0;
     for(int i=0;i<data[a].size();++i){
