@@ -4,7 +4,7 @@
 using namespace std;
 #define MAXN 8080
 map<int,int> SY;
-int qzh[MAXN];
+int qzh[MAXN][MAXN];
 int pos = 0;
 int data[MAXN];
 int n,q;
@@ -17,7 +17,22 @@ int find(int i){
 }
 void pre_calculate(){
     for(int i=0;i<n;++i){
-        
+        int sy = find(data[i]);
+        if(sy==-1){
+            SY[data[i]]=pos;
+            sy = pos;
+            ++pos;
+        }
+        int sum = 0;
+        for(int j=0;j<n;++j){
+            if(data[j]==data[i]){
+                ++sum;
+            }
+            qzh[sy][j]=sum;
+        }
+    }
+    for(int i=0;i<n;++i){
+        cout<<qzh[0][i]<<" ";
     }
 }
 void solve(int x,int y){
