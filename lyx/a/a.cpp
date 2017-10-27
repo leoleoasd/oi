@@ -31,7 +31,7 @@ inline void solve(int x,int y){
     }
     cout<<ret<<endl;
 }
-inline int main(){
+int main(){
     cin>>n>>q;
     for(register int i=0;i<n;++i){
         cin>>ap[i];
