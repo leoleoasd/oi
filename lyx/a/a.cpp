@@ -3,7 +3,13 @@
 #include <cstdlib>
 #include <vector>
 using namespace std;
-#define MAXN 1000020
+#define MAXN 1000000020
+int data[MAXN]={0};
+int rd[MAXN]={0};
+int main(){
+    return 0;
+}
+/*
 int ap[MAXN]={0};
 vector<int> data[MAXN](vector<int>(0));
 int n,q;
@@ -43,4 +49,4 @@ int main(){
         solve(x,y);
     }
     return 0;
-}
+}*/
