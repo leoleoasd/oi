@@ -15,10 +15,13 @@ int find(int i){
         return SY.find(i)->second;
     }
 }
-void precaoculate(){
+void pre_calculate(){
     for(int i=0;i<n;++i){
         
     }
+}
+void solve(int x,int y){
+    
 }
 int main(){
     cin>>n>>q;
