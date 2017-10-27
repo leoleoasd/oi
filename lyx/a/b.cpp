@@ -4,9 +4,9 @@
 using namespace std;
 #define MAXN 8080
 map<int,int> SY;
-int qzh[MAXN][MAXN];
+int qzh[MAXN][MAXN]={0};
 int pos = 0;
-int data[MAXN];
+int data[MAXN]={0};
 int n,q;
 int find(int i){
     if(SY.find(i)==SY.end()){
@@ -35,8 +35,30 @@ void pre_calculate(){
         cout<<qzh[find(1)][i]<<" ";
     }
 }
+int get(int x,int pos){
+    int sy = find(x);
+    if(x==-1){
+        return 0;
+    }
+    return qzh[x][pos]; 
+}
+int calc(int x,int l,int r){
+    if(l==0){
+        return get(x,r);
+    }else{
+        return get(x,r)-get(x,l-1);
+    }
+}
 void solve(int x,int y){
-    
+    int ret = 0;
+    for(int i=0;i<n;++i){
+        for(int j=0;j<n-i;++j){
+            if(calc(x,i,i+j)==calc(y,i,i+j)){
+                ++ret;
+            }
+        }
+    }
+    cout<<ret<<endl;
 }
 int main(){
     cin>>n>>q;
