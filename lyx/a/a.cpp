@@ -4,7 +4,7 @@
 #include <vector>
 #include <stdint.h>
 using namespace std;
-#define MAXN 336870912
+#define MAXN 236870912
 uint8_t data[MAXN]={0};
 int rd[MAXN]={0};
 int main(){
