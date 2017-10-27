@@ -5,7 +5,7 @@
 using namespace std;
 #define MAXN 8080
 int ap[MAXN]={0};
-vector<int> data[MAXN](1);
+vector<int> data(1)[MAXN];
 int n,q;
 ifstream fin("a.in");
 ofstream fout("a.out");
