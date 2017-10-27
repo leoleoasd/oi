@@ -5,7 +5,7 @@
 #include <stdint.h>
 using namespace std;
 #define MAXN 1000000000
-int8_t data[MAXN]={0};
+uint8_t data[MAXN]={0};
 int rd[MAXN]={0};
 int main(){
     return 0;
