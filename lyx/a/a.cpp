@@ -6,7 +6,7 @@ using namespace std;
 #define MAXN 8080
 int ap[MAXN]={0};
 //vector<int> data[MAXN];
-vector< vector<int> > data;
+map<int, map<int,int> > data;
 int n,q;
 ifstream fin("a.in");
 ofstream fout("a.out");
