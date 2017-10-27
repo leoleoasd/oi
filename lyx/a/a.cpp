@@ -5,15 +5,8 @@
 #include <stdint.h>
 using namespace std;
 #define MAXN 336870912
-int8_t data[MAXN]={0};
-int rd[8080]={0};
-int main(){
-    data[MAXN-1]=1;//for(int i=0;i<123;++i)data[i]=1;
-    return 0;
-}
-/*
 int ap[MAXN]={0};
-vector<int> data[MAXN](vector<int>(0));
+vector<int> data[MAXN];
 int n,q;
 ifstream fin("a.in");
 ofstream fout("a.out");
