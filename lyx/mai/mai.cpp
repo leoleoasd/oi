@@ -29,13 +29,7 @@ int main(){
         for(int j=w;j>=0;j--){
             for(int k=1;k<=j;k++)
                 dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
-            for(int i=0;i<=w;++i){
-                cout<<dp[i]<<" ";
-            }
         }
-    for(int i=0;i<=w;++i){
-        cout<<dp[i]<<" ";
-    }
     cout<<dp[w]<<endl;
     return 0;
 }
