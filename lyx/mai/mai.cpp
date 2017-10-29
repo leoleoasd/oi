@@ -14,14 +14,14 @@ int dp[MAXN]={0};
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
     ios::sync_with_stdio(false);
-    cin>>w>>n>>d;
+    cin>>w>>n>>D;
     for(int i=1;i<=n;++i){
         cin>>d[i];
     }
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
     }
-    for(int k=1;k<=d;++k){
+    for(int k=1;k<=D;++k){
         for(int v = 0;v<w;++v){
             for(int i=1;i<=n;++i){
                 if(c[i]==k and v > a[i]){
@@ -30,6 +30,6 @@ int main(){
             }
         }
     }
-    cout<<dp[d]<<endl;
+    cout<<dp[w]<<endl;
     return 0;
 }
