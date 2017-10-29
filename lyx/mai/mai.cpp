@@ -24,7 +24,7 @@ int main(){
     for(int i=1;i<=n;i++)
         for(int j=w;j>=0;j--)
             for(int k=1;k<=j;k++)
-                f[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
+                dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
                 /*
     for(int k=1;k<=D;++k){
         for(int v = w;v>=0;--v){
