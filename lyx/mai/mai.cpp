@@ -16,7 +16,7 @@ ifstream fin("mai.in");
 ofstream fout("mai.out");
 #define cin fin
 //#define cout fout
-vector<int> SP[MAXN]={0};
+vector<int> SP[MAXN];
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
     ios::sync_with_stdio(false);
