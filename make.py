@@ -8,11 +8,11 @@ try:
     d=20
     f.write(str(w)+" "+str(n)+" "+str(d)+" ")
     for i in range(0,d):
-        tmp = random.randint(1,1000000)
+        tmp = random.randint(1,10)
         f.write(str(tmp)+" ")
     f.write("\n")
     for i in range(0,n):
-        f.write(str(random.randint(0,1000000))+" "+str(random.randint(0,1000000))+" "+str(random.randint(0,1000000))+" "+"\n")
+        f.write(str(random.randint(0,10))+" "+str(random.randint(0,10))+" "+str(random.randint(0,10))+" "+"\n")
 finally:
     if f:
         f.close()
