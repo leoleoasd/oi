@@ -26,7 +26,6 @@ int main(){
             for(int i=1;i<=n;++i){
                 if(c[i]==k and v > a[i]){
                     dp[v]=max(dp[v],dp[v-a[i]]+b[i]*d[k]);
-                    cout<<123<<endl;
                 }
             }
         }
