@@ -15,7 +15,7 @@ int dp[MAXN]={0};
 int main(){
     ios::sync_with_stdio(false);
     cin>>w>>n>>D;
-    for(int i=1;i<=n;++i){
+    for(int i=1;i<=D;++i){
         cin>>d[i];
     }
     for(int i=1;i<=n;++i){
