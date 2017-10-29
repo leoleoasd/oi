@@ -19,12 +19,13 @@ ofstream fout("mai.out");
 vector<int> SP[MAXN]={(vector<int>(0))};
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
+    cout<<123;
     ios::sync_with_stdio(false);
     cin>>w>>n>>D;
     for(int i=1;i<=D;++i){
         cin>>d[i];
     }
-    cout<<123;
+
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
         SP[c[i]].push_back(i);
