@@ -3,9 +3,9 @@
 import random
 try:
     f = open('mai.in', 'w')
-    w=5000
-    n=5000
-    d=5000
+    w=20
+    n=20
+    d=20
     f.write(str(w)+" "+str(n)+" "+str(d)+" ")
     for i in range(0,d):
         tmp = random.randint(1,1000000)
