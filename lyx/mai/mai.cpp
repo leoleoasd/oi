@@ -27,7 +27,7 @@ int main(){
     }
     for(int i=1;i<=D;i++)
         for(int j=w;j>=0;j--)
-            for(int k=1;k<=j;k++)
+            for(int k=1;k<=n;k++)
                 if(a[k]<j)
                     dp[j]=max(dp[j],dp[j-a[k]]+d[i]*b[k]);
                 //dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
