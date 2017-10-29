@@ -25,7 +25,7 @@ int main(){
         for(int v = 0;v<w;++v){
             for(int i=1;i<=n;++i){
                 if(c[i]==k and v > a[i]){
-                    dp[v]=max(dp[v],dp[v-a[i]]+b[i]*d[k])
+                    dp[v]=max(dp[v],dp[v-a[i]]+b[i]*d[k]);
                 }
             }
         }
