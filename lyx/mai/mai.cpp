@@ -25,10 +25,11 @@ int main(){
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
     }
-    for(int i=1;i<=n;i++)
-        for(int j=w;j>=0;j--){
+    for(int i=1;i<=D;i++)
+        for(int j=w;j>=1;j--){
             for(int k=1;k<=j;k++)
-                dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
+                dp[j]=max(dp[j],dp[j-k]+d[i]*b[k]);
+                //dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
         }
     cout<<dp[w]<<endl;
     return 0;
