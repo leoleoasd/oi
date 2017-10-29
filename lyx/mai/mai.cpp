@@ -11,6 +11,10 @@ int n;
 int D;
 int dp[MAXN]={0};
 // 转移方程 f[k][v]=max{f[k-1][v],f[k-1][v-c[i]]+w[i]|物品i属于组k}
+ifstream fin("mai.in");
+ofstream fout("mai.out");
+#define cin fin
+//#define cout fout
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
     ios::sync_with_stdio(false);
