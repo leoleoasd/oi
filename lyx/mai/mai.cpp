@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 using namespace std;
 #define MAXN 5050
 int a[MAXN]={0};
@@ -15,6 +16,7 @@ ifstream fin("mai.in");
 ofstream fout("mai.out");
 #define cin fin
 //#define cout fout
+vector<int> SP[MAXN]={0};
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
     ios::sync_with_stdio(false);
@@ -24,12 +26,13 @@ int main(){
     }
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
+        SP[c[i]].push_back(i);
     }
     for(int i=1;i<=D;i++)
         for(int j=w;j>=0;j--)
-            for(int k=1;k<=n;k++)
-                if(a[k]<=j and c[k]==i)
-                    dp[j]=max(dp[j],dp[j-a[k]]+d[i]*b[k]);
+            for(int k=0;k<=SP[i].size();k++)
+                if(a[SP[i][k]]<=j)
+                    dp[j]=max(dp[j],dp[j-a[SP[i][k]]]+d[i]*b[SP[i][k]]);
     cout<<dp[w]<<endl;
     return 0;
 }
