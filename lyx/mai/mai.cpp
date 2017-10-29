@@ -24,6 +24,7 @@ int main(){
     for(int i=1;i<=D;++i){
         cin>>d[i];
     }
+    cout<<123;
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
         SP[c[i]].push_back(i);
