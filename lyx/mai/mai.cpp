@@ -28,7 +28,7 @@ int main(){
     for(int i=1;i<=D;i++)
         for(int j=w;j>=1;j--){
             for(int k=1;k<=j;k++)
-                dp[j]=max(dp[j],dp[j-k]+d[i]*b[k]);
+                dp[j]=max(dp[j],dp[j-k]+d[k]*b[i]);
                 //dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
         }
     cout<<dp[w]<<endl;
