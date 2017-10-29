@@ -28,6 +28,7 @@ int main(){
         cin>>a[i]>>b[i]>>c[i];
         SP[c[i]].push_back(i);
     }
+    cout<<1;
     for(int i=1;i<=D;i++)
         for(int j=w;j>=0;j--)
             for(int k=0;k<=SP[i].size();k++)
