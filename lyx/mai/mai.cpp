@@ -21,9 +21,9 @@ int main(){
     for(int i=1;i<=n;++i){
         cin>>a[i]>>b[i]>>c[i];
     }
-    for(i=1;i<=n;i++)
-        for(j=w;j>=0;j--)
-            for(k=1;k<=j;k++)
+    for(int i=1;i<=n;i++)
+        for(int j=w;j>=0;j--)
+            for(int k=1;k<=j;k++)
                 f[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
                 /*
     for(int k=1;k<=D;++k){
