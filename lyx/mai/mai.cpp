@@ -25,16 +25,9 @@ int main(){
         for(int j=w;j>=0;j--)
             for(int k=1;k<=j;k++)
                 dp[j]=max(dp[j],dp[j-k]+b[i]*d[k]);
-                /*
-    for(int k=1;k<=D;++k){
-        for(int v = w;v>=0;--v){
-            for(int i=1;i<=n;++i){
-                if(c[i]==k and v > a[i]){
-                    dp[v]=max(dp[v],dp[v-a[i]]+b[i]*d[k]);
-                }
-            }
-        }
-    }*/
+    for(int i=0;i<=w;++i){
+        cout<<dp[i]<<" ";
+    }
     cout<<dp[w]<<endl;
     return 0;
 }
