@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <stdint.h>
 using namespace std;
 #define MAXN 5050
 long long a[MAXN]={0};
@@ -17,7 +18,6 @@ ofstream fout("mai.out");
 //#define cout fout
 #define max(A,B) ((A)>(B)?(A):(B))
 int main(){
-    cout<<sizeof(a);
     ios::sync_with_stdio(false);
     cin>>w>>n>>D;
     for(long long i=1;i<=D;++i){
