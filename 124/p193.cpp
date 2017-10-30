@@ -13,8 +13,7 @@ struct p{
         c=z;
     }
     int a,b,c;
-};
-struct p cz[MAXN];
+} cz[MAXN];
 
 int father[MAXN]={0};
 int rank[MAXN]={0};
