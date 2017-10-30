@@ -5,9 +5,13 @@ using namespace std;
 #define size 100
 struct Bint{
     bitset<size> data;
+    Bint(bitset<size> a){
+        data = a;
+    }
     Bint operator+(Bint a){
         if(data&a.data==0){
-            return data xor a.data;
+
+             return Bint(data xor a.data);
         }
     }
 };
