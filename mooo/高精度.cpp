@@ -29,6 +29,7 @@ int main(){
     cout<<d.data.to_string()<<endl;
     cout<<d.data[1]<<endl;
     cout<<c.data[1]<<endl;
+    cout<<(d.data[1] xor c.daya[1])<<endl;
     cout<<((c.data xor b.data)).to_string()<<endl;
     //cout<<(a+b).data.to_string()<<endl;
     return 0;
