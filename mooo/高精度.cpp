@@ -9,7 +9,7 @@ struct Bint{
         data = a;
     }
     Bint operator+(Bint a){
-        if(data&a.data==0){
+        if(data&a.data){
 
              return Bint(data xor a.data);
         }
