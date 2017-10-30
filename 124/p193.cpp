@@ -94,10 +94,6 @@ int main(){
         for(int j=i;j<=n;++j){
             if(data[i][j])merge(i,j);
         }
-    for(int i=1;i<=n;++i){
-        cout<<getfather(i)<<" ";
-    }
-    cout<<endl;
     for(int i=0;i<q;++i){
         solve(cz[i].a,cz[i].b,cz[i].c);
     }
