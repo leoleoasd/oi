@@ -101,7 +101,7 @@ int main(){
     for(int i=0;i<q;++i){
         solve(cz[i].a,cz[i].b,cz[i].c);
     }
-    for(int i=0;i<output.size();++i){
+    for(int i=output.size()-1;i>=0;--i){
         cout<<output[i]<<endl;
     }
     return 0;
