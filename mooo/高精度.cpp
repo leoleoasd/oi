@@ -8,11 +8,13 @@ struct Bint{
     Bint(bitset<size> a){
         data = a;
     }
+    Bint(){}
     Bint operator+(Bint a){
         if((data & a.data).any()){
 
              return Bint(data xor a.data);
         }
+        return Bint();
     }
 };
 int main(){
