@@ -1,7 +1,10 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-using namespace std;
+//using namespace std;
+using std::cin;
+using std::cout;
+using std::vector;
 #define MAXN 5050
 vector<int> output;
 int data[MAXN][MAXN]={0};
