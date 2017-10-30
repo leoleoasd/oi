@@ -7,6 +7,7 @@ vector<int> output;
 int data[MAXN][MAXN]={0};
 int n,m,q;
 struct p{
+    p(){}
     p(int x,int y,int z){
         a=x;
         b=y;
