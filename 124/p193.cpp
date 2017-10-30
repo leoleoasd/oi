@@ -6,6 +6,7 @@ using std::cin;
 using std::cout;
 using std::vector;
 using std::ios;
+using std::endl;
 #define MAXN 5050
 vector<int> output;
 int data[MAXN][MAXN]={0};
