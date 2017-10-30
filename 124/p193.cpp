@@ -57,6 +57,7 @@ void solve(int cmd,int x,int y){
     }
     if(cmd==2){
         output.push_back(getfather(x)==getfather(y));
+        return;
     }
     int out = 0;
     for(int i=1;i<=n;++i){
