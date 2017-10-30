@@ -14,7 +14,7 @@ struct Bint{
     Bint operator+(Bint a){
         cout<<"正在把"<<data.to_string()<<endl;
         cout<<"   和"<<a.data.to_string()<<endl;
-        cout<"相加"
+        cout<<"相加";
         if((data & a.data).any()){
              return Bint(data xor a.data);
         }
