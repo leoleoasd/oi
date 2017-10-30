@@ -2,7 +2,7 @@
 #include <bitset>
 #include <cstdio>
 using namespace std;
-#define size 100
+#define size 10
 struct Bint{
     bitset<size> data;
     Bint(bitset<size> a){
