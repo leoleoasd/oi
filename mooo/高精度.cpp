@@ -21,6 +21,6 @@ struct Bint{
 int main(){
     Bint a(2);
     Bint b(3);
-    cout<<(a+b).data.to_string();
+    cout<<(a).data.to_string();
     return 0;
 }
