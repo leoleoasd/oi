@@ -11,7 +11,7 @@ int main(){
     while(cin>>tmp){
         if(tmp!='#')
             data[i]=1;
-        ++i
+        ++i;
     }
     for(int j=0;j<i;++j){
         if(data[j]!=0){
