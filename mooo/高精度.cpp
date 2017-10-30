@@ -24,6 +24,7 @@ int main(){
     cout<<(a).data.to_string()<<endl;
     cout<<(b).data.to_string()<<endl;
     cout<<((a.data & b.data)<<1).to_string()<<endl;
+    cout<<(a.data xor b.data).to_string()<<endl;
     cout<<(a+b).data.to_string()<<endl;
     return 0;
 }
