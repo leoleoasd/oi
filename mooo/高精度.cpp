@@ -13,10 +13,9 @@ struct Bint{
     Bint(unsigned long long a){data = bitset<size>(a);}
     Bint operator+(Bint a){
         if((data & a.data).any()){
-
              return Bint(data xor a.data);
         }
-        return Bint();
+        return Bint((data & a.data)<<1)+Bint(data xor a.data);
     }
 };
 int main(){
