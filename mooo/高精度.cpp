@@ -12,9 +12,9 @@ struct Bint{
     Bint(int a){data = bitset<size>(a);}
     Bint(unsigned long long a){data = bitset<size>(a);}
     Bint operator+(Bint a){
-        cout<<"正在把"<<data.to_string()<<endl;
-        cout<<"    和"<<a.data.to_string()<<endl;
-        cout<<"相加";
+        //cout<<"正在把"<<data.to_string()<<endl;
+        //cout<<"    和"<<a.data.to_string()<<endl;
+        //cout<<"相加";
         if(!(data & a.data).any()){
              return Bint(data xor a.data);
         }
@@ -24,7 +24,7 @@ struct Bint{
 int main(){
     Bint a(2);
     Bint b(3);
-    cout<<(a+b).data.to_string()<<endl;
+    cout<<(a+b).data.to_ulong()<<endl;
     //cout<<(a+b).data.to_string()<<endl;
     return 0;
 }
