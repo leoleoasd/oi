@@ -28,6 +28,6 @@ int main(){
     cout<<c.data.to_string()<<endl;
     cout<<d.data.to_string()<<endl;
     cout<<((c.data & b.data)<<1).to_string()<<endl;
-    cout<<(a+b).data.to_string()<<endl;
+    //cout<<(a+b).data.to_string()<<endl;
     return 0;
 }
