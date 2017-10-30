@@ -95,6 +95,10 @@ int main(){
             cz[i]=p(3,0,0);
         }
     }
+    for(int i=0;i<q;++i){
+        cout<<"第"<<i<<"个操作"<<cz[i].a<<" "<<cz[i].b<<" "<<cz[i].c<<endl;
+        //solve(cz[i].a,cz[i].b,cz[i].c);
+    }
     for(int i=1;i<=n;++i)
         for(int j=i;j<=n;++j){
             if(data[i][j])merge(i,j);
