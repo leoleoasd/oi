@@ -10,7 +10,7 @@ struct Bint{
     }
     Bint(){}
     Bint(int a){data = bitset<size>(a);}
-    Bint(unsigned long long a)(data = bitset<size>(a);)
+    Bint(unsigned long long a){data = bitset<size>(a);}
     Bint operator+(Bint a){
         if((data & a.data).any()){
 
