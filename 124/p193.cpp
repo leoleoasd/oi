@@ -22,11 +22,9 @@ struct p{
 } cz[MAXN];
 
 int father[MAXN]={0};
-int rank[MAXN]={0};
 inline void init(){
     for(int i=1;i<MAXN;++i){
         father[i]=i;
-        rank[i]=1;
     }
 }
 
@@ -48,12 +46,8 @@ inline void merge(int a,int b){
     }
     if(fa>fb){
         father[fa]=fb;
-        rank[fb]+=rank[fa];
-        rank[fa]=0;
     }else{
         father[fb]=fa;
-        rank[fa]+=rank[fb];
-        rank[fb]=0;
     }
 }
 void solve(int cmd,int x,int y){
@@ -95,14 +89,14 @@ int main(){
             cz[i]=p(3,0,0);
         }
     }
-    for(int i=0;i<q;++i){
-        cout<<"第"<<i<<"个操作"<<cz[i].a<<" "<<cz[i].b<<" "<<cz[i].c<<endl;
-        //solve(cz[i].a,cz[i].b,cz[i].c);
-    }
     for(int i=1;i<=n;++i)
         for(int j=i;j<=n;++j){
             if(data[i][j])merge(i,j);
         }
+    for(int i=1;i<=n;++i){
+        cout<<getfather(i)<<" ";
+    }
+    cout<<endl;
     for(int i=0;i<q;++i){
         solve(cz[i].a,cz[i].b,cz[i].c);
     }
