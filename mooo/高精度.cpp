@@ -9,6 +9,7 @@ struct Bint{
         data = a;
     }
     Bint(){}
+    Bint(int a){data = bitset<size>(a)}
     Bint operator+(Bint a){
         if((data & a.data).any()){
 
