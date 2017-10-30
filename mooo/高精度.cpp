@@ -21,7 +21,7 @@ struct Bint{
 int main(){
     Bint a(-200);
     Bint b(300);
-    cout<<~(a+b).data.to_ulong()<<endl;
+    cout<<~((a+b).data).to_ulong()<<endl;
     //cout<<(a+b).data.to_string()<<endl;
     return 0;
 }
