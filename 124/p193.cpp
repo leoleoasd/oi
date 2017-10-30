@@ -14,7 +14,7 @@ struct p{
     }
     int a,b,c;
 };
-p cz[MAXN];
+struct p cz[MAXN];
 
 int father[MAXN]={0};
 int rank[MAXN]={0};
