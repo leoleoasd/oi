@@ -100,7 +100,7 @@ int main(){
             if(data[i][j])merge(i,j);
         }
     for(int i=0;i<q;++i){
-        solve(cz[i].a,cz[i],b,cz[i].c);
+        solve(cz[i].a,cz[i].b,cz[i].c);
     }
     for(int i=0;i<output.size();++i){
         cout<<output[i]<<endl;
