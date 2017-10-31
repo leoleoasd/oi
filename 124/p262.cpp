@@ -30,14 +30,11 @@ int main(){
     int now = 0;
     for(int i=0;i<m;++i){
         cin>>a>>b;
-        cout<<a<<" "<<b<<" ";
         if(a==0)a=-1;
         f = -(a*toys[now].cx);
-        cout<<f*b<<" ";
         now += f*b;
         now += n;
         now %= n;
-        cout<<f<<" "<<now<<endl;
     }
     cout<<toys[now].name;
     return 0;
