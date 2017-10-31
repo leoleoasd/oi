@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n,p;
-    cin>>n;
-    for(int i=2;i<n;++i){
-        if(n%i==0){
-            cout<<"no";
-            return 0;
-        }
+    int maxa = -1;
+    int tmp;
+    for(int i=0;i<10;++i){
+        cin>>tmp;
+        if(maxa < tmp)maxa = tmp;
     }
-    cout<<"yes";
+    cout<<maxa;
     return 0;
 }
