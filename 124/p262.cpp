@@ -35,7 +35,7 @@ int main(){
         now += f*b;
         now += n;
         now %= n;
-        cout<<now<<endl;
+        cout<<f<<" "now<<endl;
     }
     cout<<toys[now].name;
     return 0;
