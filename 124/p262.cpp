@@ -33,6 +33,7 @@ int main(){
         if(a==0)a=-1;
         f = -(a*toys[now].cx);
         now += f*b;
+        now += n;
         now %= n;
         cout<<now<<endl;
     }
