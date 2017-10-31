@@ -1,12 +1,11 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int maxa = -1;
-    int tmp;
-    for(int i=0;i<10;++i){
-        cin>>tmp;
-        if(maxa < tmp)maxa = tmp;
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;++i){
+        if(i%4==0 or i%6==0)
+            cout<<i<<" ";
     }
-    cout<<maxa;
     return 0;
 }
