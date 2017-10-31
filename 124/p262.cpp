@@ -36,6 +36,6 @@ int main(){
         now %= n;
         cout<<now<<endl;
     }
-    cout<<toy[now].name;
+    cout<<toys[now].name;
     return 0;
 }
