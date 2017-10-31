@@ -15,7 +15,7 @@ struct toy{
     toy(){}
 };
 #define MAXN 100020
-toy toys[MAXN]={0};
+toy toys[MAXN];
 int main(){
     int n,m;
     string tmp;
