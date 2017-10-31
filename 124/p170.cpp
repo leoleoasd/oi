@@ -3,15 +3,13 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-    for(int i=2;i<=n;++i){
-        if(n%i==0){
-            bool flag = false;
-            for(int j=2;j<i;++j){
-                if(i%j==0) flag = true;
-            }
-            if(i==2) flag = false;
-            flag ? (0) : (cout<<i<<" ");
-        }
+    int data[50]={0};
+    data[0]=0;
+    data[1]=1;
+    data[2]=1;
+    for(int i=3;i<=n;++i){
+        data[i]=data[i-1]+data[i-2];
     }
+    cout<<data[n];
     return 0;
 }
