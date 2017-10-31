@@ -34,7 +34,8 @@ int main(){
         f = -(a*toys[now].cx);
         now += f*b;
         now %= n;
+        cout<<now<<endl;
     }
-    cout<<now;
+    cout<<toy[now].name;
     return 0;
 }
