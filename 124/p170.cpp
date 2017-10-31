@@ -5,7 +5,7 @@ int main(){
     cin>>n>>p;
     int i=1;
     for(;n<p;++i){
-        n*=1.005
+        n*=1.005;
     }
     cout<<i;
     return 0;
