@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     double n,p;
     cin>>n>>p;
-    int i=1
+    int i=1;
     for(;n<p;++i){
         n*=1.005
     }
