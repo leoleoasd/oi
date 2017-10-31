@@ -1,9 +1,12 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int a,b;
-    cin>>a;
-    b=1;
-    cout<<(b<<a);
+    double n,p;
+    cin>>n>>p;
+    int i=1
+    for(;n<p;++i){
+        n*=1.005
+    }
+    cout<<i;
     return 0;
 }
