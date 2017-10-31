@@ -2,11 +2,9 @@
 using namespace std;
 int main(){
     double n,p;
-    cin>>n>>p;
-    int i=1;
-    for(;n<p;++i){
-        n*=1.005;
+    cin>>n;
+    for(int i=1;i<=n;++i){
+        if(n%i==0)cout<<i<<" ";
     }
-    cout<<i;
     return 0;
 }
