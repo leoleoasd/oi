@@ -31,19 +31,30 @@ void solve(char ope){
         int m = orig.size()/2;
         if(orig.size()%2==1){
             ne[m]=orig[m];
+            for(int i=0;i<m;++i){
+                ne[i+m+1]=orig[i];
+            }
+            for(int i=m+1;i<orig.size();++i){
+                ne[i-m-1]=orig[i];
+            }
+            for(int i=0;i<orig.size();++i){
+                if(ne[i]==0)cout<<"!";
+                cout<<ne[i]<<" ";
+            }
         }else{
+            for(int i=0;i<m;++i){
+                ne[i+m]=orig[i];
+            }
             --m;
+            for(int i=m+1;i<orig.size();++i){
+                ne[i-m-1]=orig[i];
+            }
+            for(int i=0;i<orig.size();++i){
+                if(ne[i]==0)cout<<"!";
+                cout<<ne[i]<<" ";
+            }
         }
-        for(int i=0;i<m;++i){
-            ne[i+m+1]=orig[i];
-        }
-        for(int i=m+1;i<orig.size();++i){
-            ne[i-m-1]=orig[i];
-        }
-        for(int i=0;i<orig.size();++i){
-            if(ne[i]==0)cout<<"!";
-            cout<<ne[i]<<" ";
-        }
+
         orig=ne;
     }
 }
