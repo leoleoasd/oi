@@ -35,7 +35,7 @@ void solve(char ope){
             --m;
         }
         for(int i=0;i<m;++i){
-            ne[i+m]=orig[i];
+            ne[i+m+1]=orig[i];
         }
         for(int i=m+1;i<orig.size();++i){
             ne[i-m]=orig[i];
@@ -46,7 +46,7 @@ void solve(char ope){
         orig=ne;
     }
 }
-
+//2//
 int main(){
     cin>>ope>>orig;
     for(int i=ope.size()-1;i>=0;--i){
