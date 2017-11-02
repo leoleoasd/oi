@@ -38,7 +38,7 @@ void solve(char ope){
             ne[i+m+1]=orig[i];
         }
         for(int i=m+1;i<orig.size();++i){
-            ne[i-m]=orig[i];
+            ne[i-m-1]=orig[i];
         }
         for(int i=0;i<orig.size();++i){
             if(ne[i]==0)cout<<"!";
