@@ -41,6 +41,7 @@ void solve(char ope){
             ne[i-m]=orig[i];
         }
         for(int i=0;i<orig.size();++i){
+            if(ne[i]==0)cout<<"!";
             cout<<ne[i]<<" ";
         }
         orig=ne;
