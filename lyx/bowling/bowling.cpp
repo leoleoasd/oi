@@ -42,6 +42,6 @@ int main(){
             ans = max(ans,f[i][j]);
         }
     }
-    cout << ans;
+    cout << ans-1;
     return 0;
 }
