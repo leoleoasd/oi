@@ -58,6 +58,15 @@ void solve(char ope){
         orig=ne;
         return;
     }
+    if(ope=='M'){
+        for(int i=0;i<orig.size();++i){
+            if('0' <= orig[i] and orig[i] < '9'){
+                orig[i]+=1;
+            }else if(orig[i]=='9'){
+                orig[i]='0';
+            }
+        }
+    }
 }
 //2//
 int main(){
