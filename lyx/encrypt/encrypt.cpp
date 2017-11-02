@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#define FILE "encrypt
+#define FILE "encrypt"
 using std::ifstream;
 using std::ofstream;
 ifstream fin(FILE.in");
