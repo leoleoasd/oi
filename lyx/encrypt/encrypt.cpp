@@ -6,6 +6,7 @@ using std::ifstream;
 using std::ofstream;
 ifstream fin("FILE.in");
 ofstream fout("FILE.out");
+fout<<123;
 using std::cin;
 using std::cout;
 using std::string;
