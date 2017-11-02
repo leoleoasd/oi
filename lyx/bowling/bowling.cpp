@@ -21,7 +21,7 @@ int main(){
         sum[i] = sum[i-1]+x[i];
     }
     for (long i=n+1;i<n+w+1;i++){
-        sum[i] = sum[i-1];a
+        sum[i] = sum[i-1];
     }
     long long ans = -926359016;
     for (long i=1;i<n+w+1;i++){
