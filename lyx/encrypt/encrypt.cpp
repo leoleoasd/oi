@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <fstream>
+#define FILE encrypt
+ifstream fin("FILE.in");
+ofstream fout("FILE.out");
 using std::cin;
 using std::cout;
 using std::string;
