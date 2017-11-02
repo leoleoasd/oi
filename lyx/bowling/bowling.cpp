@@ -33,10 +33,10 @@ int main(){
     }
     for (long i=2;i<k+1;i++){
         for (long j=1;j<n+w+1;j++){
-            for (long l=0;l<=j-w-1>?0;l++){
+            for (long l=0;l<=max(j-w-1,0);l++){
                 f[i][j]=max(f[i][j],f[i-1][l]+sum[j]-sum[(j-w)>0?j-w:0]);
             }
-            for (long l=j-1;l>=((j-w)>?0);l--){
+            for (long l=j-1;l>=max((j-w),0);l--){
                 f[i][j]=max(f[i][j],f[i-1][l]+sum[j]-sum[l]);
             }
             ans = max(ans,f[i][j]);
