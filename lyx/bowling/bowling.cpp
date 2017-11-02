@@ -2,7 +2,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
-using std::max;
+#define max(A,B) ((A) > (B) ? (A) : (B))
 #define MAXN 10020
 int x[MAXN]={0};
 int sum[MAXN]={0};
