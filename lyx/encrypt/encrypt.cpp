@@ -14,6 +14,7 @@ void solve(char ope){
         string ne;
         for(int i=orig.size()-1,j=0;i>=0;--i,++j){
             ne[j]=orig[i];
+            cout<<2;
         }
         orig = ne;
         cout<<ne;
