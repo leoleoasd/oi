@@ -9,7 +9,7 @@ string ope;
 string orig;
 
 void solve(char ope){
-    if(ope=="A"){
+    if(ope=='A'){
         string ne;
         for(int i=orig.size()-1,j=0;i>=0;--i,++j){
             ne[j]=orig[i];
