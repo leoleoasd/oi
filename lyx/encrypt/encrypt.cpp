@@ -24,6 +24,7 @@ int main(){
     cin>>ope>>orig;
     for(int i=ope.size()-1;i>=0;--i){
         solve(ope[i]);
+        cout<<ope[i];
     }
     cout<<orig;
     return 0;
