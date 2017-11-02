@@ -2,6 +2,13 @@
 #include <cmath>
 using std::cin;
 using std::cout;
+#include <fstream>
+using std::ifstream;
+using std::ofstream;
+ifstream fin("sqrt.in");
+ofstream fout("sqrt.out");
+#define cin fin
+#define cout fout
 using std::endl;
 int main(){
     int n,p,x,y;
