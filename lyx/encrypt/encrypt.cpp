@@ -8,8 +8,8 @@ ofstream fout("encrypt.out");
 #define cin fin
 #define cout fout
 
-using std::cin;
-using std::cout;
+//using std::cin;
+//using std::cout;
 using std::string;
 using std::endl;
 
