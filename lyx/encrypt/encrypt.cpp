@@ -37,10 +37,6 @@ void solve(char ope){
             for(int i=m+1;i<orig.size();++i){
                 ne[i-m-1]=orig[i];
             }
-            for(int i=0;i<orig.size();++i){
-                if(ne[i]==0)cout<<"!";
-                cout<<ne[i]<<" ";
-            }
         }else{
             for(int i=0;i<m;++i){
                 ne[i+m]=orig[i];
@@ -49,13 +45,18 @@ void solve(char ope){
             for(int i=m+1;i<orig.size();++i){
                 ne[i-m-1]=orig[i];
             }
-            for(int i=0;i<orig.size();++i){
-                if(ne[i]==0)cout<<"!";
-                cout<<ne[i]<<" ";
-            }
         }
-
         orig=ne;
+        return;
+    }
+    if(ope=='J'){
+        char ne[30]={'\0'};
+        for(int i=0;i<orig.size();++i){
+            ne[i+1]=orig[i];
+        }
+        ne[0]=orig[orig.size()-1];
+        orig=ne;
+        return;
     }
 }
 //2//
