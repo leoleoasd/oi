@@ -16,6 +16,7 @@ void solve(char ope){
             ne[j]=orig[i];
         }
         orig = ne;
+        cout<<ne;
         return;
     }
 }
