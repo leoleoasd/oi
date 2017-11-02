@@ -2,7 +2,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
-
+using std::max;
 #define MAXN 10020
 int x[MAXN]={0};
 int sum[MAXN]={0};
