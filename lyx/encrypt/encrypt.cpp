@@ -17,6 +17,15 @@ void solve(char ope){
         orig = ne;
         return;
     }
+    if(ope=='C'){
+        char ne[30]={'\0'};
+        for(int i=1;i<orig.size();++i){
+            ne[i-1]=orig[i];
+        }
+        ne[orig.size()-1]=orig[0];
+        orig=ne;
+        return;
+    }
 }
 
 
