@@ -2,6 +2,8 @@
 #include <string>
 #include <fstream>
 #define FILE encrypt
+using std::ifstream;
+using std::ofstream;
 ifstream fin("FILE.in");
 ofstream fout("FILE.out");
 using std::cin;
