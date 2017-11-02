@@ -51,7 +51,7 @@ void solve(char ope){
     }
     if(ope=='J'){
         char ne[30]={'\0'};
-        for(int i=0;i<orig.size();++i){
+        for(int i=0;i<orig.size()-1;++i){
             ne[i+1]=orig[i];
         }
         ne[0]=orig[orig.size()-1];
