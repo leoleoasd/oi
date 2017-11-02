@@ -40,6 +40,9 @@ void solve(char ope){
         for(int i=m+1;i<orig.size();++i){
             ne[i-m]=orig[i];
         }
+        for(int i=0;i<orig.size();++i){
+            cout<<ne[i]<<" ";
+        }
         orig=ne;
     }
 }
