@@ -26,8 +26,23 @@ void solve(char ope){
         orig=ne;
         return;
     }
+    if(ope=='E'){
+        char ne[30]={'\0'};
+        int m = orig.size()/2;
+        if(orig.size()%2==1){
+            ne[m]=orig[m];
+        }else{
+            --m;
+        }
+        for(int i=0;i<m;++i){
+            ne[i+m]=orig[i];
+        }
+        for(int i=m+1;i<orig.size();++i){
+            ne[i-m-1]=orig[i];
+        }
+        orig=ne;
+    }
 }
-
 
 int main(){
     cin>>ope>>orig;
