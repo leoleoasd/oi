@@ -1,12 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#define FILE encrypt
+#define FILE "encrypt
 using std::ifstream;
 using std::ofstream;
-ifstream fin("FILE.in");
-ofstream fout("FILE.out");
-fout<<123;
+ifstream fin(FILE.in");
+ofstream fout(FILE.out");
 using std::cin;
 using std::cout;
 using std::string;
