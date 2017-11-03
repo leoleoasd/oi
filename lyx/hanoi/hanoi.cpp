@@ -18,6 +18,7 @@ void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
         source.pop();
         target.push(tmp);
         ++nowstep;
+        cout<<"Moving"<<tmp<<endl;
         if(nowstep > k) return;
         hanoi_n(spare,target,source,n-1);
     }
