@@ -1,16 +1,17 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-stack<int> source;
-stack<int> target;
-stack<int> spare;
-stack<int> k_source;
-stack<int> k_target;
-stack<int> k_spare;
-int n,k;
-int nowstep=0;
-int tmp;
-void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
+#define ULL unsigned long long
+stack<ULL> source;
+stack<ULL> target;
+stack<ULL> spare;
+stack<ULL> k_source;
+stack<ULL> k_target;
+stack<ULL> k_spare;
+ULL n,k;
+ULL nowstep=0;
+ULL tmp;
+void hanoi_n(stack<ULL>& source,stack<ULL>& target,stack<ULL>& spare,ULL n){
     if(n>0 and nowstep <k){
         hanoi_n(source,spare,target,n-1);
         if(nowstep >= k) return;
@@ -23,7 +24,7 @@ void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
     }
 }
 bool f = false;
-void hanoi_k(stack<int>& k_source,stack<int>& k_target,stack<int>& k_spare,int n){
+void hanoi_k(stack<ULL>& k_source,stack<ULL>& k_target,stack<ULL>& k_spare,ULL n){
     if(f) return;
     if(n>0){
         hanoi_k(k_source,k_target,k_spare,n-1);
@@ -53,7 +54,7 @@ void hanoi_k(stack<int>& k_source,stack<int>& k_target,stack<int>& k_spare,int n
 }
 int main(){
     cin>>n>>k;
-    for(int i=n;i>=1;--i){
+    for(ULL i=n;i>=1;--i){
         source.push(i);
         k_source.push(i);
     }
