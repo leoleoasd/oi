@@ -6,10 +6,12 @@ int main(){
     int x,y;
     int output;
     cin>>x>>y;
+    /*
     if(x==0){
         cout<<0;
         return 0;
     }
+    */
     if(x<=y){
         output = 0;
         for(int i = 1;i<=x;++i){
