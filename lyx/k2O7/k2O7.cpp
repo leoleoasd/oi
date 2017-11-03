@@ -2,6 +2,11 @@
 #include <cmath>
 #include <cstdlib>
 using namespace std;
+#include <fstream>
+ifstream fin("k2O7.in");
+ofstream fout("k2O7.out");
+#define cin fin
+#define cout fout
 #define ULL unsigned long long
 int main(){
     ULL x,y;
