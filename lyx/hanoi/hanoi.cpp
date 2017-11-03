@@ -13,13 +13,13 @@ int tmp;
 void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
     if(n>0 and nowstep <k){
         hanoi_n(source,spare,target,n-1);
-        if(nowstep > k) return;
+        if(nowstep >= k) return;
         tmp = source.top();
         source.pop();
         target.push(tmp);
         ++nowstep;
         cout<<"Moving"<<tmp<<endl;
-        if(nowstep > k) return;
+        if(nowstep >= k) return;
         hanoi_n(spare,target,source,n-1);
     }
 }
