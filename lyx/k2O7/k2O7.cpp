@@ -6,12 +6,6 @@ int main(){
     int x,y;
     int output;
     cin>>x>>y;
-    /*
-    if(x==0){
-        cout<<0;
-        return 0;
-    }
-    */
     if(x<=y){
         output = 0;
         for(int i = 1;i<=x;++i){
@@ -21,5 +15,10 @@ int main(){
         cout<<output;
         return 0;
     }
+    output = 0;
+    for(int i=1;i<=y;++i){
+        output += x % i;
+    }
+    cout<<output;
     return 0;
 }
