@@ -25,6 +25,7 @@ void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
 int main(){
     cin>>n>>k;
     hanoi_n(source,target,spare,n);
+    return 0;
     while(!source.empty()){
         cout<<source.top()<<" ";
         source.pop();
