@@ -23,7 +23,6 @@ void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
     }
 }
 int main(){
-    cout<<123<<endl;
     cin>>n>>k;
     for(int i=1;i<=n;++i){
         source.push(i);
@@ -34,14 +33,14 @@ int main(){
         source.pop();
     }
     cout<<endl;
-    while(!target.empty()){
-        cout<<target.top()<<" ";
-        target.pop();
-    }
-    cout<<endl;
     while(!spare.empty()){
         cout<<spare.top()<<" ";
         spare.pop();
+    }
+    cout<<endl;
+    while(!target.empty()){
+        cout<<target.top()<<" ";
+        target.pop();
     }
     cout<<endl;
     return 0;
