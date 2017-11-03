@@ -2,21 +2,22 @@
 #include <cmath>
 #include <cstdlib>
 using namespace std;
+#define ULL unsigned long long
 int main(){
-    int x,y;
-    int output;
+    ULL x,y;
+    ULL output;
     cin>>x>>y;
-    //if(x<=y){
+    if(x<=y){
         output = 0;
-        for(int i = 1;i<=x;++i){
+        for(ULL i = 1;i<=x;++i){
             output += x % i;
         }
         output += (y-x)*x;
         cout<<output<<endl;;
-    //    return 0;
-    //}
+        return 0;
+
     output = 0;
-    for(int i=1;i<=y;++i){
+    for(ULL i=1;i<=y;++i){
         output += x % i;
     }
     cout<<output;
