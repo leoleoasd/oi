@@ -2,6 +2,11 @@
 #include <stack>
 using namespace std;
 #define ULL unsigned long long
+#include <fstream>
+ifstream fin("hanoi.in");
+ofstream fout("hanoi.out");
+#define cin fin
+#define cout fout
 stack<ULL> source;
 stack<ULL> target;
 stack<ULL> spare;
