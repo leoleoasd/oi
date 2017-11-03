@@ -11,7 +11,12 @@ int main(){
         return 0;
     }
     if(x<=y){
-        cout<<y-x;
+        output = 0;
+        for(int i = 1;i<=x;++i){
+            output += x % i;
+        }
+        output += (y-x)*x;
+        cout<<output;
         return 0;
     }
     return 0;
