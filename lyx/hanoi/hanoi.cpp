@@ -7,12 +7,38 @@ stack<int> spare;
 stack<int> k_source;
 stack<int> k_target;
 stack<int> k_spare;
+int n,k;
+int nowstep=0;
+int tmp;
+void hanoi_n(stack<int>& source,stack<int>& target,stack<int>& spare,int n){
+    if(n>0 and nowstep <k){
+        hanoi_n(source,spare,target,n-1);
+        if(nowstep > k) return;
+        tmp = source.top();
+        source.pop();
+        target.push(tmp);
+        ++nowstep;
+        if(nowstep > k) return;
+        hanoi_n(spare,target,source,n-1);
+    }
+}
 int main(){
-    source.push(1);
-    source.push(2);
-    cout<<(source==target);
-    target.push(1);
-    source.pop();
-    cout<<(source==target);
+    cin>>n>>k;
+    hanoi_n(source,target,spare,n);
+    while(!source.empty()){
+        cout<<source.top()<<" ";
+        source.pop();
+    }
+    cout<<endl;
+    while(!target.empty()){
+        cout<<target.top()<<" ";
+        target.pop();
+    }
+    cout<<endl;
+    while(!spare.empty()){
+        cout<<spare.top()<<" ";
+        spare.pop();
+    }
+    cout<<endl;
     return 0;
 }
