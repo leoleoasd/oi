@@ -10,9 +10,9 @@ stack<int> k_spare;
 int main(){
     source.push(1);
     source.push(2);
-    cout<<source==target;
+    cout<<(source==target);
     target.push(1);
     source.pop();
-    cout<<source==target;
+    cout<<(source==target);
     return 0;
 }
