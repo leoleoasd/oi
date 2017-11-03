@@ -6,7 +6,7 @@ int main(){
     int x,y;
     int output;
     cin>>x>>y;
-    i//f(x<=y){
+    //if(x<=y){
         output = 0;
         for(int i = 1;i<=x;++i){
             output += x % i;
