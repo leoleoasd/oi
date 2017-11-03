@@ -15,7 +15,7 @@ int main(){
         output += (y-x)*x;
         cout<<output<<endl;;
         return 0;
-
+    }
     output = 0;
     for(ULL i=1;i<=y;++i){
         output += x % i;
