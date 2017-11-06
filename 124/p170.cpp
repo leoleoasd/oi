@@ -8,7 +8,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::vector;
-using std::min;
+using std::max;
 
 #define MAXN 42
 #define int long long
