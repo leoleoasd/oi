@@ -23,9 +23,10 @@ int32_t main(){
         get[i][i]=tmp;
     }
     for(int i=0;i<n-1;++i){
-        for(int j=1;j<n-1;++j){
-
+        for(int j=i+1;j<n;++j){
+            get[i][j]=get[i][j-1]*10+get[j][j];
         }
     }
+    
     return 0;
 }
