@@ -28,6 +28,10 @@ int32_t main(){
             get[i][j]=get[i][j-1]*10+get[j][j];
         }
     }
-
+    int a,b;
+    while(1){
+        cin>>a>>b;
+        cout<<get[a][b]<<endl;
+    }
     return 0;
 }
