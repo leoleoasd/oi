@@ -8,6 +8,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::vector;
+using std::min;
 
 #define MAXN 42
 #define int long long
@@ -28,10 +29,20 @@ int32_t main(){
             get[i][j]=get[i][j-1]*10+get[j][j];
         }
     }
-    int a,b;
-    while(1){
-        cin>>a>>b;
-        cout<<get[a][b]<<endl;
+    for(int i=0;i<n-1;++i){
+        for(int j=i;i<n;++j){
+            dp[i][j][0]=get[i][j];
+        }
     }
+    for(int d=1;d<=k;++d){
+        for(int i=0;i<n-d-1;++i){
+            for(int j=i+d;j<n;++j){
+                for(int l = i;l<j;++l){
+                    dp[i][j][d] = max(dp[i][l][d-1]*dp[l][j][d-1]);
+                }
+            }
+        }
+    }
+    cout<<dp[0][n][k];
     return 0;
 }
