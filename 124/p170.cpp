@@ -18,15 +18,16 @@ int get[MAXN][MAXN]={0};
 int tmp = 0;
 int32_t main(){
     cin>>n>>k;
+    cin>>tmp;
     for(int i=0;i<n;++i){
-        scanf("%1d",&tmp);
-        get[i][i]=tmp;
+        get[i][i]=tmp%10;
+        tmp /= 10;
     }
     for(int i=0;i<n-1;++i){
         for(int j=i+1;j<n;++j){
             get[i][j]=get[i][j-1]*10+get[j][j];
         }
     }
-    
+
     return 0;
 }
