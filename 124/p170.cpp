@@ -19,7 +19,7 @@ int tmp = 0;
 int32_t main(){
     cin>>n>>k;
     cin>>tmp;
-    for(int i=0;i<n;++i){
+    for(int i=n-1;i>=0;--i){
         get[i][i]=tmp%10;
         tmp /= 10;
     }
