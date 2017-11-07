@@ -38,6 +38,7 @@ int32_t main(){
         for(int i=0;i<n-d-1;++i){
             for(int j=i+d-1;j<n;++j){
                 for(int l = i;l<j;++l){
+                    cout<<"d"<<d<<"i"<<i<<"j"<<j<<"l"<<l<<"dp"<<dp[0][n-1][k]<<endl;
                     dp[i][j][d] = max(dp[i][j][d],dp[i][l][d-1]*dp[l+1][j][d-1]);
                 }
             }
