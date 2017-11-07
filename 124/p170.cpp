@@ -43,6 +43,6 @@ int32_t main(){
             }
         }
     }
-    cout<<dp[0][n][k];
+    cout<<dp[0][n-1][k];
     return 0;
 }
