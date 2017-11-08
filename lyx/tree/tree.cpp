@@ -2,6 +2,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
+using std::max;
 int main(){
     int t,u,v,w,sum,m;
     cin>>t;
