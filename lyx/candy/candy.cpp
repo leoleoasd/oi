@@ -17,7 +17,7 @@ void solve(){
         k[i] = x[i] * fff;
         dsum += k[i];
     }
-    for(int i=0;dsum != sum;++i){
+    for(int i=0;dsum != sum and i < n;++i){
         ++dsum;
         ++k[i];
     }
