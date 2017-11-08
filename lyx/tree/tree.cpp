@@ -5,6 +5,12 @@ using std::endl;
 using std::max;
 using std::bitset;
 
+std::ifstream fin("tree.in");
+std::ofstream fout("tree.out");
+#define cin fin
+#define cout fout
+
+
 #define MAXN 15020
 int data[MAXN][MAXN]={0};
 int t,u,v,w,sum,m;
