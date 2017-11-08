@@ -11,7 +11,7 @@ def main():
     system("g++ -g  -o "+t+" "+t+".cpp"+byxx)
     print("Compile Endded")
     print("------------------------------------------------------------------------")
-    system("bash -c \"time "+t+"\"")
+    system("./"+t+"\"")
     print("")
     print("------------------------------------------------------------------------")
     print("git committing")
