@@ -53,7 +53,6 @@ void init(){
 int main(){
     cin>>t;
     while(t--){
-
         cin>>n>>m>>y;
         init();
         for(int i=0;i<n;++i){
