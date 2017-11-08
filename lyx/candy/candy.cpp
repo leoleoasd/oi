@@ -1,11 +1,13 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using std::cin;
 using std::cout;
 using std::endl;
 using std::sort;
 #define MAXN 100050
-
+std::ifstream fin("candy.in");
+std::ofstream fout("candy.out");
+#define cin fin
+#define cout fout
 int t,n=0,m,y;
 int x[MAXN]={0};
 int sum;
