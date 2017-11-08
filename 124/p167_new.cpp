@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    #define MAXN 1e5+20
+    #define MAXN 100020
     int n;
     int data[MAXN]={0};
     int dp[MAXN]={0};
