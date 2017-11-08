@@ -39,7 +39,6 @@ int main(){
             data[u][v]=w;
         }
         cout<<findmax(1,3);
-        cout<<(sum+(n*(n-1)/2 - (n-1) )*(m+1)  )<<endl;;
     }
     return 0;
 }
