@@ -11,7 +11,7 @@ int k[MAXN]={0};
 int sum;
 void solve(){
     double fff;
-    fff = (double)y / m;
+    fff = (double)m / y;
     for(int i=0;i<n;++i){
         k[i] = x[i] * fff;
     }
