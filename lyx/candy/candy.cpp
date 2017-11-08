@@ -28,10 +28,12 @@ void solve(){
         k[i].data = x[i] * fff;
         dsum += k[i].data;
     }
+    sort(k,k+n,cmp1);
     for(int i=0;dsum != m and i < n;++i){
         ++dsum;
         ++k[i].data;
     }
+    sort(k,k+n,cmp2);
     for(int i=0;i<n;++i){
         cout<<k[i].data<<" ";
     }
@@ -49,11 +51,6 @@ void init(){
 }
 
 int main(){
-    k[0].data=0;
-    k[1].data=2;
-    k[2].data=1;
-    sort(k,k+3,cmp1);
-    cout<<k[0].data;
     cin>>t;
     while(t--){
         init();
