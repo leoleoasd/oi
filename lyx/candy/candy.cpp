@@ -49,9 +49,9 @@ void init(){
 }
 
 int main(){
-    p[0].id=0;
-    p[1].id=2;
-    p[2].id=1;
+    k[0].id=0;
+    k[1].id=2;
+    k[2].id=1;
     sort(p,p+3,cmp2);
     cout<<p[0].id;
     cin>>t;
