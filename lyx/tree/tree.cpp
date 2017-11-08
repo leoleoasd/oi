@@ -49,9 +49,10 @@ int main(){
         for(int i=1;i<=n;++i){
             for(int j=i+1;j<=n;++j){
                 if(data[i][j]==0){
-                    data[i][j]=findmax(i,j)+1;
+                    output += findmax(i,j)+1;
+                }else{
+                    output += data[i][j];
                 }
-                output += data[i][j];
             }
         }
         cout<<output<<endl;
