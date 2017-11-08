@@ -4,7 +4,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::sort;
-#define MAXN 100000
+#define MAXN 100050
 
 int t,n=0,m,y;
 int x[MAXN]={0};

@@ -4,10 +4,12 @@ using std::cout;
 using std::endl;
 using std::max;
 using std::bitset;
+
+#define MAXN 15020
 int data[MAXN][MAXN]={0};
 int t,u,v,w,sum,m;
 int n;
-
+bitset<MAXN> v;
 void dfs(int from,int to,int & ret){
     if(from==to)return;
     for(int i=1;i<=n;++i){
@@ -15,6 +17,7 @@ void dfs(int from,int to,int & ret){
     }
 }
 int findmax(int from,int to){
+    v=0;
     int ret =  -1;
     dfs(from,to,ret);
     return ret;
@@ -23,7 +26,7 @@ int main(){
     cin>>t;
     while(t--){
         cin>>n;
-        for(int i=1;i<==n;++i)
+        for(int i=1;i<=n;++i)
             for(int j=1;j<=n;++j)
                 data[i][j]=0;
 
