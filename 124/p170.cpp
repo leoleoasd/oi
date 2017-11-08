@@ -39,7 +39,7 @@ int32_t main(){
             for(int j=i+d-1;j<n;++j){
                 for(int l = i;l<j;++l){
                     for(int e = 0;e<d;++e)
-                        dp[i][j][d] = max(dp[i][j][d],dp[i][l][e]*dp[l+1][j][d-e]);
+                        dp[i][j][d] = max(dp[i][j][d],dp[i][l][e]*dp[l+1][j][d-e-1]);
                 }
             }
         }
