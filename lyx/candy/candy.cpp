@@ -53,8 +53,9 @@ void init(){
 int main(){
     cin>>t;
     while(t--){
-        init();
+
         cin>>n>>m>>y;
+        init();
         for(int i=0;i<n;++i){
             cin>>x[i];
         }
