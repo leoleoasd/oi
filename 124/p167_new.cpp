@@ -9,17 +9,15 @@ int main(){
     for(int i=0;i<n;++i){
         cin>>data[i];
     }
+    int len = 0;
     for(int i=0;i<n;++i){
-        for(int j=0;j<n;++j){
-            if(dp[j]<=data[i]){
-                dp[j]=data[i];
-            }
+        if(data[i]>dp[len]){
+            dp[++len]=data[i];
+        }else{
+            dp[upper_bound(dp,dp+len,data[i])-dp]=data[i];
         }
+
     }
-    int m = -1;
-    for(int i=0;i<n;++i){
-        if(dp[i]) m = max(m,i);
-    }
-    cout<<m;
+    cout<<len;
     return 0;
 }
