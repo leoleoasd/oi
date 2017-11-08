@@ -4,4 +4,5 @@ int main(){
     int a;
     a=(5.0)/3;
     cout<<a;
+    return 0;
 }
