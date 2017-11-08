@@ -5,6 +5,7 @@ using std::endl;
 using std::max;
 int main(){
     int t,u,v,w,sum,m;
+    int n;
     cin>>t;
     while(--t){
         cin>>n;
