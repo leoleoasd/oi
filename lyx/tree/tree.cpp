@@ -37,8 +37,18 @@ int main(){
         for(int i=0;i<n-1;++i){
             cin>>u>>v>>w;
             data[u][v]=w;
+            data[v][u]=w;
         }
-        cout<<findmax(1,7);
+        int output = 0;
+        for(int i=1;i<=n;++i){
+            for(int j=1;j<=n;++j){
+                if(data[i][j]==0){
+                    data[i][j]=findmax(i,j)+1;
+                }
+                output += data[i][j];
+            }
+        }
+        cout<<output<<endl;
     }
     return 0;
 }
