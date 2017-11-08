@@ -15,7 +15,7 @@ struct p{
     int data;
 };
 bool cmp1(p a,p b){
-    return a.data > b.data;
+    return a.data < b.data;
 }
 bool cmp2(p a,p b){
     return a.id < b.id;
