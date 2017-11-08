@@ -7,7 +7,7 @@ int main(){
     int t,u,v,w,sum,m;
     int n;
     cin>>t;
-    while(--t){
+    while(t--){
         cin>>n;
         m = -1;
         sum = 0;
