@@ -38,7 +38,7 @@ int main(){
             cin>>u>>v>>w;
             data[u][v]=w;
         }
-        cout<<findmax(1,3);
+        cout<<findmax(1,7);
     }
     return 0;
 }
