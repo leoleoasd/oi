@@ -16,8 +16,7 @@ int main(){
             m = max(w,m);
             sum += w;
         }
-        cout<<sum<<" "<<m;
-        cout<<(sum+(n*(n-1)/2 - (n-1) )*m  )<<endl;;
+        cout<<(sum+(n*(n-1)/2 - (n-1) )*(m+1)  )<<endl;;
     }
     return 0;
 }
