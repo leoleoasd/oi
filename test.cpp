@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int a;
-    a=(5.0)/3;
+    a=(int)((5.0)/3);
     cout<<a;
     return 0;
 }
