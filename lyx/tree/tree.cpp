@@ -9,7 +9,7 @@ using std::bitset;
 int data[MAXN][MAXN]={0};
 int t,u,v,w,sum,m;
 int n;
-bitset<MAXN> v;
+bitset<MAXN> vis;
 void dfs(int from,int to,int & ret){
     if(from==to)return;
     for(int i=1;i<=n;++i){
@@ -17,7 +17,7 @@ void dfs(int from,int to,int & ret){
     }
 }
 int findmax(int from,int to){
-    v=0;
+    vis=0;
     int ret =  -1;
     dfs(from,to,ret);
     return ret;
