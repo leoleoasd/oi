@@ -11,9 +11,9 @@ int k[MAXN]={0};
 int sum;
 void solve(){
     double fff;
-    fff = y/m;
+    fff = (double)y / m;
     for(int i=0;i<n;++i){
-        k[i] = x[i]*fff;
+        k[i] = x[i] * fff;
     }
     for(int i=0;i<n;++i){
         cout<<k[i]<<" ";
