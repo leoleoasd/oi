@@ -52,7 +52,7 @@ int main(){
     k[0].data=0;
     k[1].data=2;
     k[2].data=1;
-    sort(k,k+3,cmp2);
+    sort(k,k+3,cmp1);
     cout<<k[0].id;
     cin>>t;
     while(t--){
