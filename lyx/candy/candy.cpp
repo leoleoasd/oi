@@ -3,7 +3,7 @@
 using std::cin;
 using std::cout;
 using std::endl;
-
+using std::sort;
 #define MAXN 100000
 
 int t,n=0,m,y;
@@ -18,7 +18,7 @@ bool cmp1(p a,p b){
     return a.data > b.data;
 }
 bool cmp2(p a,p b){
-    return a.id > b.id;
+    return a.id < b.id;
 }
 struct p k[MAXN];
 void solve(){
