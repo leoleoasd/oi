@@ -41,7 +41,7 @@ int main(){
         }
         int output = 0;
         for(int i=1;i<=n;++i){
-            for(int j=1;j<=n;++j){
+            for(int j=i;j<=n;++j){
                 if(data[i][j]==0){
                     data[i][j]=findmax(i,j)+1;
                 }
