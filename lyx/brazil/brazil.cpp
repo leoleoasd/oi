@@ -20,7 +20,7 @@ int x,y,n,m;
 int data[305][305]={0};
 int main(){
     ios::sync_with_stdio(false);
-    cin>>x>y>>n>>m;
+    cin>>x>>y>>n>>m;
     int a,b;
     for(int i=1;i<=n;++i){
         cin>>a>>b;
