@@ -15,12 +15,12 @@ struct p{
     int x;
     int y;
 }goodman[305],badman[110];
-int x0,y0,n,m;
+int x,y,n,m;
 #define MAXN 305
 int data[305][305]={0};
 int main(){
     ios::sync_with_stdio(false);
-    cin>>x0>y0>>n>>m;
+    cin>>x>y>>n>>m;
     int a,b;
     for(int i=1;i<=n;++i){
         cin>>a>>b;
@@ -29,7 +29,7 @@ int main(){
         for(int j=1;j<i;++j){
             data[j][i]=data[i][j]=dist(a,b,goodman[j].x,goodman[j].y);
         }
-        data[0][i]=data[i][0]=dist(a,b,x0,y0)*2;
+        data[0][i]=data[i][0]=dist(a,b,x,y)*2;
     }
     for(int i=1;i<=m;++i){
         cin>>a>>b;
