@@ -67,6 +67,17 @@ int main(){
             dis[i]=min(dis[i],dis[pos]+data[pos][i]);
         }
     }
-    cout<<dis[0];
+    cout<<(int)(dis[0]+0.5);
     return 0;
 }
+/*
+
+0 0 5 2
+20 20
+27 -14
+0 16
+-7 -9
+23 38
+22 24
+3 0
+*/
