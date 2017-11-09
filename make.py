@@ -4,5 +4,5 @@ import random
 with open('brazil.in', 'w') as f:
     m=100000
     f.write(str(m)+"\n")
-    for i in range(0,n+m):
+    for i in range(0,m):
         f.write(str(random.randint(1,50))+" ")

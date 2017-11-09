@@ -1,5 +1,11 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
+ifstream fin("england.in");
+ofstream fout("england.out");
+#define cin fin
+#define cout fout
+
 int main(){
     ios::sync_with_stdio(false);
     int n;
