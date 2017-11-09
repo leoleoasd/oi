@@ -11,7 +11,7 @@ int main(){
     }
     int len = 0;
     for(int i=0;i<n;++i){
-        if(data[i]>dp[len]){
+        if(data[i]>=dp[len]){
             dp[++len]=data[i];
         }else{
             dp[upper_bound(dp,dp+len,data[i])-dp]=data[i];
