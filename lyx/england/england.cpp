@@ -29,8 +29,8 @@ int main(){
                 l = max(lo,l);
             }
         }
-        cout<<l;
-        return 0;
+        output = max(output,l * i);
     }
+    cout<<output;
     return 0;
 }
