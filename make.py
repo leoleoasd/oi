@@ -10,5 +10,5 @@ with open('china.in', 'w') as f:
         step = random.randint(0,100)
         pos = random.randint(1,5)
 
-        f.write(str(now+pos)+" "+str(now+pos+step)+" "+str(random.randint(1,100))+"\n")
+        f.write(str(now+pos)+" "+str(now+pos+step)+" "+str(random.randint(1,5))+"\n")
         now = now+pos+step
