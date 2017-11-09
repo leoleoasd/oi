@@ -17,7 +17,7 @@ int main(){
         f = 1;
         l = 0;
         for(int j=0;j<n;++j){
-            if(data[j]>i){
+            if(data[j]>=i){
                 if(f==1){
                     ++lo;
                 }else{
