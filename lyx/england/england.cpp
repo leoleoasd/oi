@@ -30,13 +30,9 @@ int main(){
             }
         }
         l=max(lo,l);
-        /*
-        cout<<"now"<<l<<" "<<i<<endl;
+
+        //cout<<"now"<<l<<" "<<i<<endl;
         output = max(output,l * i);
-        */
-        if(i==4){
-            cout<<i<<" "<<l;
-        }
     }
     cout<<output;
     return 0;
