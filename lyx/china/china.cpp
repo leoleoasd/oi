@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <stdint.h>
 using namespace std;
-#define int int128_t
+#define int int64_t
 int32_t main(){
     int s,n;
     cin>>s>>n;
