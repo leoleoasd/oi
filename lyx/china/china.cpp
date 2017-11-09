@@ -9,7 +9,7 @@ int32_t main(){
     int now = 0;
     int a,b,c;
     int output = 0;
-    for(int i<0;i<n;++i){
+    for(int i=0;i<n;++i){
         cin>>a>>b>>c;
         output += (b-a+1)*c;
         now += (b-a+1);
