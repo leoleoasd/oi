@@ -34,7 +34,7 @@ int main(){
     for(int i=1;i<=m;++i){
         cin>>a>>b;
         for(int i=0;i<=n;++i){
-            for(int j=i;i<=n;++j){
+            for(int j=i;j<=n;++j){
                 if(data[i][j]){
                     if(flag(goodman[i].x,goodman[i].y,goodman[i].x,goodman[i].y,a,b)){
                         data[i][j]=data[j][i]=0;
