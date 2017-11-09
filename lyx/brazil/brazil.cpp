@@ -77,5 +77,6 @@ int main(){
         }
     }
     cout<<(int)(dis[0]+0.5);
+    cout<<dis[0];
     return 0;
 }
