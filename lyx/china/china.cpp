@@ -1,9 +1,15 @@
 #include <iostream>
 #include <algorithm>
 #include <stdint.h>
+#include <fstream>
 using namespace std;
 #define int int64_t
+ifstream fin("china.in");
+ofstream fout("china.out");
+#define cin fin
+#define cout fout
 int32_t main(){
+    ios::sync_with_stdio(false);
     int s,n;
     cin>>s>>n;
     int now = 0;
