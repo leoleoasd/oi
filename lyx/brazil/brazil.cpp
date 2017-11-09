@@ -17,7 +17,7 @@ struct p{
 }goodman[305],badman[110];
 int x,y,n,m;
 #define MAXN 305
-int data[305][305]={0};
+double data[305][305]={0};
 int main(){
     ios::sync_with_stdio(false);
     cin>>x>>y>>n>>m;
