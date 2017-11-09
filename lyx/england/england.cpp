@@ -29,6 +29,7 @@ int main(){
                 l = max(lo,l);
             }
         }
+        cout<<"now"<<l*i<<endl;
         output = max(output,l * i);
     }
     cout<<output;
