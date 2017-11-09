@@ -56,6 +56,7 @@ int main(){
     // DJSTL
     for(int i=0;i<=n;++i){
         dis[i]=data[1][i];
+        if(dis[i]==0) dis[i]=INF;
     }
     dis[1]=INF;
     vis[1]=1;
@@ -71,6 +72,7 @@ int main(){
         }
         vis[pos]=1;
         for(int i=0;i<=n;++i){
+            if(data[pos][i]!=0)
             dis[i]=min(dis[i],dis[pos]+data[pos][i]);
         }
     }
