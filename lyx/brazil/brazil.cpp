@@ -2,6 +2,13 @@
 #include <fstream>
 #include <cmath>
 using namespace std;
+
+ifstream fin("brazil.in");
+ofstream fout("brazil.out");
+#define cin fin
+#define cout fout
+
+
 bool flag(int x1,int y1,int x2,int y2,int x3,int y3){
     if(x1 == x2 and x2==x3){
         return true;
