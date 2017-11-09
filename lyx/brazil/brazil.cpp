@@ -43,6 +43,7 @@ int main(){
             }
         }
     }
+    cout<<123;
     cout<<data[0][1]<<123;
     return 0;
 }
