@@ -36,7 +36,7 @@ int main(){
         for(int i=0;i<=n;++i){
             for(int j=i;j<=n;++j){
                 if(data[i][j]){
-                    if(flag(goodman[i].x,goodman[i].y,goodman[i].x,goodman[i].y,a,b)){
+                    if(flag(goodman[i].x,goodman[i].y,goodman[j].x,goodman[j].y,a,b)){
                         data[i][j]=data[j][i]=0;
                     }
                 }
