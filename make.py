@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import random
-try:
-    f = open('mai.in', 'w')
-    w=20
-    n=20
-    d=20
-    f.write(str(w)+" "+str(n)+" "+str(d)+" ")
-    for i in range(0,d):
-        tmp = random.randint(1,20)
-        f.write(str(tmp)+" ")
-    f.write("\n")
+with open('china.in', 'w') as f:
+    s=2000000000
+    n=500000
+    f.write(str(s)+" "+str(n)+"\n")
+    now = 0
     for i in range(0,n):
-        f.write(str(random.randint(0,20))+" "+str(random.randint(0,20))+" "+str(random.randint(0,20))+" "+"\n")
-finally:
-    if f:
-        f.close()
+        step = random.randint(0,100)
+        pos = random.randint(1,5)
+
+        f.write(str(now+pos)+" "+str(now+pos+step)+" "+str(random.randint(1,100))+"\n")
+        now = now+pos+step
