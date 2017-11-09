@@ -17,7 +17,10 @@ struct p{
 }goodman[305],badman[110];
 int x,y,n,m;
 #define MAXN 305
+#define INF 0x3f3f3f3f
 double data[305][305]={0};
+double dist[MAXN]={0};
+int vis[MAXN]={0};
 int main(){
     ios::sync_with_stdio(false);
     cin>>x>>y>>n>>m;
@@ -43,7 +46,27 @@ int main(){
             }
         }
     }
-    cout<<123;
-    cout<<data[0][1]<<123;
+    // DJSTL
+    for(int i=0;i<=n;++i){
+        dist[i]=data[1][i];
+    }
+    dist[1]=INF;
+    vis[1]=1;
+    int minn;
+    int pos;
+    for(int asdasdasd=0;asdasdasd<n;++asdasdasd){
+        minn = INF;
+        for(int i=0;i<=n;++i){
+            if(minn > dist[i] and vis[i]==0){
+                minn = dist[i];
+                pos = i;
+            }
+        }
+        vis[pos]=1;
+        for(int i=0;i<=n;++i){
+            dist[i]=min(dist[i],dist[pos]+data[pos][i]);
+        }
+    }
+    cout<<dist[0];
     return 0;
 }
