@@ -4,7 +4,7 @@ using namespace std;
 #define MAXN 1020
 int n=0;
 int data[MAXN][MAXN]={0};
-#define INF 0x7fffffff
+#define INF 0x7ffffff
 int main(){
     cin>>n;
     for(int i=1;i<=n;++i)
