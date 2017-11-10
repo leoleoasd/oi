@@ -10,6 +10,12 @@ ofstream fout("brazil.out");
 
 
 bool flag(int x1,int y1,int x2,int y2,int x3,int y3){
+    if((y1<y2 and y2<y3) or (y1> y2 and y2>y3)){
+        return false;
+    }
+    if((x1 < x2 and x2 < x3) or (x1 > x2 and x2 > x3)){
+        return false;
+    }
     if(x1 == x2 and x2==x3){
         return true;
     }
