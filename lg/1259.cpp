@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <functional>
+#include <algorithm>
 using namespace std;
 int gcd(int a,b){
     if(a<b){
