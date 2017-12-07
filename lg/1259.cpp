@@ -2,7 +2,7 @@
 #include <functional>
 #include <algorithm>
 using namespace std;
-int gcd(int a,b){
+int gcd(int a,int b){
     if(a<b){
         swal(a,b);
     }
