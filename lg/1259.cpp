@@ -14,6 +14,6 @@ int gcd(int a,int b){
     return gcd(b,a%b);
 }
 int main(){
-    cout<<gcd(20,15);
+    cout<<gcd(123,321);
     return 0;
 }
