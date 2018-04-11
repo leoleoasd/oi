@@ -41,7 +41,7 @@ int main(){
         aque.push(que.top());
         que.pop();
     }
-    while(aque.top().score == que.top.score()){
+    while(aque.top().score == que.top().score){
         aque.push(que.top());
         que.pop();
     }
