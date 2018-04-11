@@ -13,10 +13,10 @@ class Player{
             this->id=a;
             this->score=b;
         }
-        bool operator<(const Player &b){
+        bool operator<(Player &b){
             return this->score < b.score;
         }
-        bool operator>(const Player &b){
+        bool operator>(Player &b){
             return this->score > b.score;
         }
 };
