@@ -9,9 +9,16 @@ class Player{
             this->score=0;
             this->id=0;
         }
+
+        bool operator<(Player b){
+            return this->score < b.score;
+        }
 };
 
 int main(){
-    Player a;
+    Player a,b;
+    a.score=1;
+    b.score=2;
+    cout<<a<b;
     return 0;
 }
