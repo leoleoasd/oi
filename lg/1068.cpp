@@ -10,7 +10,7 @@ class Player{
             this->id=0;
         }
 
-        bool operator<(Player b){
+        bool operator<(const Player b){
             return this->score < b.score;
         }
 };
