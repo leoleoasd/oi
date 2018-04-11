@@ -16,13 +16,12 @@ class Player{
         bool operator<(const Player &b){
             return this->score < b.score;
         }
-
         bool operator>(const Player &b){
             return this->score > b.score;
         }
 };
 
-priority_queue<PLayer> que;
+priority_queue<Player> que;
 
 int main(){
     int m,n;
