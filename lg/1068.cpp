@@ -42,9 +42,9 @@ int main(){
         que.pop();
     }
     aque.push(que.top());
-    cout<<(que.top().score);
+    cout<<(que.top().score)<<endl;
     while(!aque.empty()){
-        cout<<(aque.top().id)<<" "<<(aque.top().score);
+        cout<<(aque.top().id)<<" "<<(aque.top().score)<<endl;
         aque.pop();
     }
     return 0;
