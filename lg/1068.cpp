@@ -48,7 +48,7 @@ int main(){
         l=que.top().score;
         que.pop();
     }
-    cout<<que.top.score<<endl;
+    cout<<que.top().score<<endl;
     cout<<l<<" "<<aque.size()<<endl;
     while(!aque.empty()){
         cout<<(aque.top().id)<<" "<<(aque.top().score)<<endl;
