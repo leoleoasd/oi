@@ -14,10 +14,14 @@ class Player{
             this->score=b;
         }
         bool operator<(const Player &b) const{
+            if(this->score != b.score)
             return this->score < b.score;
+            return this->id > b.id;
         }
         bool operator>(const Player &b) const{
+            if(this->score != b.score)
             return this->score > b.score;
+            return this->id < b.id;
         }
 };
 
@@ -39,5 +43,9 @@ int main(){
     }
     aque.push(que.top());
     cout<<(que.top().score);
+    while(!aque.empty()){
+        cout<<(aque.top().id)<<" "<<(aque.top().score);
+        aque.pop();
+    }
     return 0;
 }
