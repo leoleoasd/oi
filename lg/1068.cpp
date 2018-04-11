@@ -43,7 +43,7 @@ int main(){
         l=que.top().score;
         que.pop();
     }
-    while(aque.top().score == l){
+    while(que.top().score == l){
         cout<<l<<endl<<endl;
         aque.push(que.top());
         l=que.top().score;
