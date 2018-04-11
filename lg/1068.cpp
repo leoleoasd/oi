@@ -22,6 +22,7 @@ class Player{
 };
 
 priority_queue<Player> que;
+priority_queue<Player> aque;
 
 int main(){
     int m,n;
@@ -32,6 +33,10 @@ int main(){
         Player temp(t1,t2);
         que.push(temp);
     }
-    cout<<que.top().id;
+    for(int i=0;i<m*1.5;++i){
+        aque.push(que.top());
+        que.pop();
+    }
+    cout<<(que.top().score);
     return 0;
 }
