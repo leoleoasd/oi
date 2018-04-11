@@ -10,7 +10,7 @@ int main(){
     for(int i=1;i<=n;++i)
         for(int j=1;j<=n;++j){
             cin>>data[i][j];
-            if(data[i][j]==0) data[i][j]=INF;
+            if(data[i][j]==-1) data[i][j]=INF;
         }
     for(int k=1;k<=n;++k)
         for(int i=1;i<=n;++i)
@@ -19,7 +19,7 @@ int main(){
                     data[i][j]=data[i][k]+data[k][j];
     for(int i=1;i<=n;++i){
         for(int j=1;j<=n;++j){
-            if(data[i][j]==INF)data[i][j]=0;
+            if(data[i][j]==INF)data[i][j]=-1;
             if(i==j)data[i][j]=0;
             cout<<data[i][j]<<" ";
         }
