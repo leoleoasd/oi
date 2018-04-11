@@ -37,15 +37,18 @@ int main(){
         Player temp(t1,t2);
         que.push(temp);
     }
+    int l = 0;
     for(int i=0;i<m*1.5-1;++i){
         aque.push(que.top());
+        l=que.top().score;
         que.pop();
     }
     while(aque.top().score == que.top().score){
         aque.push(que.top());
+        l=que.top().score;
         que.pop();
     }
-    cout<<(aque.top().score)<<" "<<aque.size()<<endl;
+    cout<<l<<" "<<aque.size()<<endl;
     while(!aque.empty()){
         cout<<(aque.top().id)<<" "<<(aque.top().score)<<endl;
         aque.pop();
