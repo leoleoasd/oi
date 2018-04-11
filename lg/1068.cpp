@@ -19,6 +19,6 @@ int main(){
     Player a,b;
     a.score=1;
     b.score=2;
-    cout<<a<b;
+    cout<<(a<b);
     return 0;
 }
