@@ -33,10 +33,11 @@ int main(){
         Player temp(t1,t2);
         que.push(temp);
     }
-    for(int i=0;i<m*1.5;++i){
+    for(int i=0;i<m*1.5-1;++i){
         aque.push(que.top());
         que.pop();
     }
+    aque.push(que.top());
     cout<<(que.top().score);
     return 0;
 }
