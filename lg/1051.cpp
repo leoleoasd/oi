@@ -54,7 +54,7 @@ int main(){
     sort(data,data+n.greater<student>());
     cout<<data[0].name<<endl<<data[0].money<<endl;
     int sum == 0;
-    for(int i=0;i<n;++i;)sum += data[i].money;
+    for(int i=0;i<n;++i)sum += data[i].money;
     cout<<sum;
     return 0;
 }
