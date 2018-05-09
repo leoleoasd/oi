@@ -7,7 +7,7 @@ class student {
         string name;
         int money;
         int id;
-        Student(){
+        student(){
             money=0;
             id=0;
             name="";
@@ -44,10 +44,10 @@ int main(){
         if(qmcj > 90){
             data[i].money += 2000;
         }
-        if(qmcj > 85 and xbsf == "Y"){
+        if(qmcj > 85 and xbsf == 'Y'){
             data[i].money += 1000;
         }
-        if(bjcj > 80 and xsgb == "Y"){
+        if(bjcj > 80 and xsgb == 'Y'){
             data[i].money += 850;
         }
     }

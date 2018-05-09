@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp"
     }
 }
