@@ -23,7 +23,7 @@ int main(){
     data[0].money=20;
     data[1].money=30;
     data[0].id=0;
-    data[1].id=0;
+    data[1].id=1;
     sort(data,data+2);
     cout<<data[0].money<<" "<<data[0].id;
     return 0;
