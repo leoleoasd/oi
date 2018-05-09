@@ -6,17 +6,17 @@ class student{
     int id;
     int yw,sx,yy;
     student(){
-        id=yw=sc=yy=0;
+        id=yw=sx=yy=0;
     }
     bool operator<(const student a) const {
-        if(yw+sc+yy != a.yw+a.sx+a.yy){
-            return yw+sc+yy < a.yw+a.sx+a.yy;
+        if(yw+sx+yy != a.yw+a.sx+a.yy){
+            return yw+sx+yy < a.yw+a.sx+a.yy;
         }
         if(yw != a.yw){
             return yw < a.yw;
         }
         if(sx != a.sx){
-            return sx < a.sx
+            return sx < a.sx;
         }
         if(yy != a.yy){
             return yy < a.yy;
@@ -24,21 +24,21 @@ class student{
         return id > a.id;
     }
     bool operator>(const student a) const {
-        if(yw+sc+yy != a.yw+a.sx+a.yy){
-            return yw+sc+yy > a.yw+a.sx+a.yy;
+        if(yw+sx+yy != a.yw+a.sx+a.yy){
+            return yw+sx+yy > a.yw+a.sx+a.yy;
         }
         if(yw != a.yw){
             return yw > a.yw;
         }
         if(sx != a.sx){
-            return sx > a.sx
+            return sx > a.sx;
         }
         if(yy != a.yy){
             return yy > a.yy;
         }
         return id < a.id;
     }
-}
+};
 student data[MAXN];
 int main(){
     int n;
