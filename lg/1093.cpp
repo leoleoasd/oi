@@ -15,12 +15,6 @@ class student{
         if(yw != a.yw){
             return yw < a.yw;
         }
-        if(sx != a.sx){
-            return sx < a.sx;
-        }
-        if(yy != a.yy){
-            return yy < a.yy;
-        }
         return id > a.id;
     }
     bool operator>(const student a) const {
@@ -29,12 +23,6 @@ class student{
         }
         if(yw != a.yw){
             return yw > a.yw;
-        }
-        if(sx != a.sx){
-            return sx > a.sx;
-        }
-        if(yy != a.yy){
-            return yy > a.yy;
         }
         return id < a.id;
     }
