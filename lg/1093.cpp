@@ -47,7 +47,7 @@ int main(){
         cin>>data[i].yw>>data[i].sx>>data[i].yy;
         data[i].id = i+1;
     }
-    sort(data,data+n;greater<stduent>());
+    sort(data,data+n,greater<stduent>());
     for(int i=0;i<n;++i){
         cout<<data[i].id<<data[i].yw+data[i].yy+data[i].sx;
         cout<<endl;
