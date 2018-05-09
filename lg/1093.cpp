@@ -2,6 +2,7 @@
 using namespace std;
 #define MAXN 305
 class student{
+    public:
     int id;
     int yw,sx,yy;
     student(){
