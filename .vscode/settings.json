@@ -3,6 +3,7 @@
         "valarray": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "__locale": "cpp"
     }
 }

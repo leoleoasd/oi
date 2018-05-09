@@ -48,8 +48,8 @@ int main(){
         data[i].id = i+1;
     }
     sort(data,data+n,greater<student>());
-    for(int i=0;i<n;++i){
-        cout<<data[i].id<<data[i].yw+data[i].yy+data[i].sx;
+    for(int i=0;i<5;++i){
+        cout<<data[i].id<<" "<<data[i].yw+data[i].yy+data[i].sx;
         cout<<endl;
     }
     return 0;
