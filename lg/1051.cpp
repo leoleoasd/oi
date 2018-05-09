@@ -5,13 +5,13 @@ class student {
         string name;
         int money;
         int id;
-        bool operator<(const student B){
+        bool operator<(const student B) const{
             if(money != B.money){
                 return money < B.money;
             }
             return id > B.id;
         }
-        bool operator>(const student B){
+        bool operator>(const student B) const{
             if(money != B.money){
                 return money > B.money;
             }
