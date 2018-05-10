@@ -4,6 +4,11 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "functional": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
     }
 }
