@@ -38,8 +38,7 @@ int main(){
         add(tmp);
     }
     sort(data.begin(),data.end());
-    cout<<data[0];
-    cout<<endl<<data.size();
+    cout<<data[0]<<data[1];
     for(auto t=data.begin()+1;t==data.end();++t){
         if(*t<10){
             cout<<"0";
