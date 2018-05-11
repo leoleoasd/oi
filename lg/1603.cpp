@@ -40,6 +40,7 @@ int main(){
     sort(data.begin(),data.end());
     cout<<data[0];
     for(auto t=data.begin()+1;t==data.end();++t){
+        cout<<"23333";
         if(*t<10){
             cout<<"0";
         }
