@@ -38,12 +38,12 @@ int main(){
         add(tmp);
     }
     sort(data.begin(),data.end());
-    cout<<data[0]<<data[1];
-    for(auto t=data.begin()+1;t==data.end();++t){
-        if(*t<10){
+    cout<<data[0];
+    for(int i = 1;i<data.size();++i){
+        if(data[i]<10){
             cout<<"0";
         }
-        cout<<*t;
+        cout<<data[i];
     }
     return 0;
 }

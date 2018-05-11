@@ -25,6 +25,8 @@
         "scoped_allocator": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "array": "cpp",
+        "string_view": "cpp"
     }
 }
