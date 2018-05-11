@@ -43,7 +43,7 @@ int main(){
         if(*t<10){
             cout<<"0";
         }
-        cout<<t;
+        cout<<*t;
     }
     return 0;
 }
