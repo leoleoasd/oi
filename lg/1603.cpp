@@ -39,5 +39,11 @@ int main(){
     }
     sort(data.begin(),data.end());
     cout<<data[0];
+    for(auto t=data.begin();t==data.end();++t){
+        if(t<10){
+            cout<<"0";
+        }
+        cout<<t;
+    }
     return 0;
 }
