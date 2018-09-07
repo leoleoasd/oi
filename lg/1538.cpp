@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #include<unistd.h>
 using namespace std;
-char numbers[10][5][3] = {
+char numbers[10][3][5] = {
     {
         " - ",
         "| |",
