@@ -74,7 +74,11 @@ char numbers[10][5][5] = {
     }
 };
 int main(){
-
+    cout<<numbers[0][0]<<endl;
+    cout<<numbers[0][1]<<endl;
+    cout<<numbers[0][2]<<endl;
+    cout<<numbers[0][3]<<endl;
+    cout<<numbers[0][4]<<endl;
     return 0;
 }
 
