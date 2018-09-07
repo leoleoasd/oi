@@ -72,7 +72,7 @@ char numbers[10][5][3] = {
         "  |",
         " - "
     }
-}
+};
 int main(){
 
     return 0;
