@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/leo/code/oi/temp1.cpp
-stdio.h
+iostream
 -
-string.h
+algorithm
 -
 

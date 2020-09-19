@@ -5,35 +5,7 @@
 #include <cstring>
 using namespace std;
 
-
-/*
-#include <iostream>
-using namespace std;
-int main(){
-    #define MAXN 1020
-    int t,m;
-    int f[MAXN]={0};
-    int w[MAXN]={0};
-    int v[MAXN]={0};
-    cin>>t>>m;
-    for(int i=1;i<=m;++i){
-        cin>>w[i];
-        cin>>v[i];
-    }
-    f[0]=0;
-    for(int i=1;i<=m;++i){
-        for(int j=t;j>=0;--j){
-            if(j>=w[i]){
-                f[j] = max(f[j],f[j-w[i]]+v[i]);
-            }
-        }
-    }
-    cout<<f[t];
-    return 0;
-}
- */
-
-#define MAXN 10000010
+#define MAXN 100010
 int t[MAXN] = {0};
 int j[MAXN] = {0};
 int dp[MAXN] = {0};
