@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/leo/code/oi/contests/2020ieee/linerly.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+cmath
+-
+

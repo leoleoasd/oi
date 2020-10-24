@@ -131,6 +131,149 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named magical_stones
+
+# Build rule for target.
+magical_stones: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 magical_stones
+.PHONY : magical_stones
+
+# fast build rule for target.
+magical_stones/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/build
+.PHONY : magical_stones/fast
+
+#=============================================================================
+# Target rules for targets named light
+
+# Build rule for target.
+light: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 light
+.PHONY : light
+
+# fast build rule for target.
+light/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/build
+.PHONY : light/fast
+
+#=============================================================================
+# Target rules for targets named wooden
+
+# Build rule for target.
+wooden: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wooden
+.PHONY : wooden
+
+# fast build rule for target.
+wooden/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/build
+.PHONY : wooden/fast
+
+#=============================================================================
+# Target rules for targets named hotel
+
+# Build rule for target.
+hotel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hotel
+.PHONY : hotel
+
+# fast build rule for target.
+hotel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/build
+.PHONY : hotel/fast
+
+#=============================================================================
+# Target rules for targets named linerly
+
+# Build rule for target.
+linerly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linerly
+.PHONY : linerly
+
+# fast build rule for target.
+linerly/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/build
+.PHONY : linerly/fast
+
+#=============================================================================
+# Target rules for targets named B
+
+# Build rule for target.
+B : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 B
+.PHONY : B
+
+# fast build rule for target.
+B/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/build
+.PHONY : B/fast
+
+#=============================================================================
+# Target rules for targets named 1027000E
+
+# Build rule for target.
+1027000E: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1027000E
+.PHONY : 1027000E
+
+# fast build rule for target.
+1027000E/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/build
+.PHONY : 1027000E/fast
+
+#=============================================================================
+# Target rules for targets named 102700D
+
+# Build rule for target.
+102700D: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 102700D
+.PHONY : 102700D
+
+# fast build rule for target.
+102700D/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/build
+.PHONY : 102700D/fast
+
+#=============================================================================
+# Target rules for targets named 102700B
+
+# Build rule for target.
+102700B: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 102700B
+.PHONY : 102700B
+
+# fast build rule for target.
+102700B/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/build
+.PHONY : 102700B/fast
+
+#=============================================================================
+# Target rules for targets named 1011
+
+# Build rule for target.
+1011: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1011
+.PHONY : 1011
+
+# fast build rule for target.
+1011/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/build
+.PHONY : 1011/fast
+
+#=============================================================================
+# Target rules for targets named huoche
+
+# Build rule for target.
+huoche: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 huoche
+.PHONY : huoche
+
+# fast build rule for target.
+huoche/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/build
+.PHONY : huoche/fast
+
+#=============================================================================
 # Target rules for targets named i
 
 # Build rule for target.
@@ -157,6 +300,19 @@ a/fast:
 .PHONY : a/fast
 
 #=============================================================================
+# Target rules for targets named temp1
+
+# Build rule for target.
+temp1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 temp1
+.PHONY : temp1
+
+# fast build rule for target.
+temp1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/build
+.PHONY : temp1/fast
+
+#=============================================================================
 # Target rules for targets named answer
 
 # Build rule for target.
@@ -168,6 +324,58 @@ answer: cmake_check_build_system
 answer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/answer.dir/build.make CMakeFiles/answer.dir/build
 .PHONY : answer/fast
+
+#=============================================================================
+# Target rules for targets named tangram
+
+# Build rule for target.
+tangram: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tangram
+.PHONY : tangram
+
+# fast build rule for target.
+tangram/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/build
+.PHONY : tangram/fast
+
+#=============================================================================
+# Target rules for targets named 1010
+
+# Build rule for target.
+1010: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1010
+.PHONY : 1010
+
+# fast build rule for target.
+1010/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/build
+.PHONY : 1010/fast
+
+#=============================================================================
+# Target rules for targets named 1877
+
+# Build rule for target.
+1877: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1877
+.PHONY : 1877
+
+# fast build rule for target.
+1877/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/build
+.PHONY : 1877/fast
+
+#=============================================================================
+# Target rules for targets named 1005
+
+# Build rule for target.
+1005: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1005
+.PHONY : 1005
+
+# fast build rule for target.
+1005/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/build
+.PHONY : 1005/fast
 
 #=============================================================================
 # Target rules for targets named kruskal
@@ -196,6 +404,19 @@ ans/fast:
 .PHONY : ans/fast
 
 #=============================================================================
+# Target rules for targets named dfs
+
+# Build rule for target.
+dfs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dfs
+.PHONY : dfs
+
+# fast build rule for target.
+dfs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/build
+.PHONY : dfs/fast
+
+#=============================================================================
 # Target rules for targets named neicundizhi
 
 # Build rule for target.
@@ -209,30 +430,30 @@ neicundizhi/fast:
 .PHONY : neicundizhi/fast
 
 #=============================================================================
-# Target rules for targets named huoche
+# Target rules for targets named 1003
 
 # Build rule for target.
-huoche: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 huoche
-.PHONY : huoche
+1003: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1003
+.PHONY : 1003
 
 # fast build rule for target.
-huoche/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/build
-.PHONY : huoche/fast
+1003/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/build
+.PHONY : 1003/fast
 
 #=============================================================================
-# Target rules for targets named 1877
+# Target rules for targets named nisauc
 
 # Build rule for target.
-1877: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1877
-.PHONY : 1877
+nisauc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nisauc
+.PHONY : nisauc
 
 # fast build rule for target.
-1877/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/build
-.PHONY : 1877/fast
+nisauc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/build
+.PHONY : nisauc/fast
 
 #=============================================================================
 # Target rules for targets named tempc
@@ -313,6 +534,19 @@ tl/fast:
 .PHONY : tl/fast
 
 #=============================================================================
+# Target rules for targets named g
+
+# Build rule for target.
+g : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 g
+.PHONY : g
+
+# fast build rule for target.
+g/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/build
+.PHONY : g/fast
+
+#=============================================================================
 # Target rules for targets named taowa
 
 # Build rule for target.
@@ -324,19 +558,6 @@ taowa: cmake_check_build_system
 taowa/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/taowa.dir/build.make CMakeFiles/taowa.dir/build
 .PHONY : taowa/fast
-
-#=============================================================================
-# Target rules for targets named temp1
-
-# Build rule for target.
-temp1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 temp1
-.PHONY : temp1
-
-# fast build rule for target.
-temp1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/build
-.PHONY : temp1/fast
 
 #=============================================================================
 # Target rules for targets named I
@@ -363,46 +584,6 @@ random: cmake_check_build_system
 random/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/build
 .PHONY : random/fast
-
-#=============================================================================
-# Target rules for targets named dfs
-
-# Build rule for target.
-dfs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dfs
-.PHONY : dfs
-
-# fast build rule for target.
-dfs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/build
-.PHONY : dfs/fast
-
-A.o: A.cpp.o
-
-.PHONY : A.o
-
-# target to build an object file
-A.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/A.cpp.o
-.PHONY : A.cpp.o
-
-A.i: A.cpp.i
-
-.PHONY : A.i
-
-# target to preprocess a source file
-A.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/A.cpp.i
-.PHONY : A.cpp.i
-
-A.s: A.cpp.s
-
-.PHONY : A.s
-
-# target to generate assembly for a file
-A.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/A.cpp.s
-.PHONY : A.cpp.s
 
 F.o: F.cpp.o
 
@@ -674,6 +855,438 @@ contests/2020ccpc/1/i.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/contests/2020ccpc/1/i.cpp.s
 .PHONY : contests/2020ccpc/1/i.cpp.s
 
+contests/2020ccpc/1003.o: contests/2020ccpc/1003.cpp.o
+
+.PHONY : contests/2020ccpc/1003.o
+
+# target to build an object file
+contests/2020ccpc/1003.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/contests/2020ccpc/1003.cpp.o
+.PHONY : contests/2020ccpc/1003.cpp.o
+
+contests/2020ccpc/1003.i: contests/2020ccpc/1003.cpp.i
+
+.PHONY : contests/2020ccpc/1003.i
+
+# target to preprocess a source file
+contests/2020ccpc/1003.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/contests/2020ccpc/1003.cpp.i
+.PHONY : contests/2020ccpc/1003.cpp.i
+
+contests/2020ccpc/1003.s: contests/2020ccpc/1003.cpp.s
+
+.PHONY : contests/2020ccpc/1003.s
+
+# target to generate assembly for a file
+contests/2020ccpc/1003.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/contests/2020ccpc/1003.cpp.s
+.PHONY : contests/2020ccpc/1003.cpp.s
+
+contests/2020ccpc/1005.o: contests/2020ccpc/1005.cpp.o
+
+.PHONY : contests/2020ccpc/1005.o
+
+# target to build an object file
+contests/2020ccpc/1005.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/contests/2020ccpc/1005.cpp.o
+.PHONY : contests/2020ccpc/1005.cpp.o
+
+contests/2020ccpc/1005.i: contests/2020ccpc/1005.cpp.i
+
+.PHONY : contests/2020ccpc/1005.i
+
+# target to preprocess a source file
+contests/2020ccpc/1005.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/contests/2020ccpc/1005.cpp.i
+.PHONY : contests/2020ccpc/1005.cpp.i
+
+contests/2020ccpc/1005.s: contests/2020ccpc/1005.cpp.s
+
+.PHONY : contests/2020ccpc/1005.s
+
+# target to generate assembly for a file
+contests/2020ccpc/1005.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/contests/2020ccpc/1005.cpp.s
+.PHONY : contests/2020ccpc/1005.cpp.s
+
+contests/2020ccpc/1010.o: contests/2020ccpc/1010.cpp.o
+
+.PHONY : contests/2020ccpc/1010.o
+
+# target to build an object file
+contests/2020ccpc/1010.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/contests/2020ccpc/1010.cpp.o
+.PHONY : contests/2020ccpc/1010.cpp.o
+
+contests/2020ccpc/1010.i: contests/2020ccpc/1010.cpp.i
+
+.PHONY : contests/2020ccpc/1010.i
+
+# target to preprocess a source file
+contests/2020ccpc/1010.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/contests/2020ccpc/1010.cpp.i
+.PHONY : contests/2020ccpc/1010.cpp.i
+
+contests/2020ccpc/1010.s: contests/2020ccpc/1010.cpp.s
+
+.PHONY : contests/2020ccpc/1010.s
+
+# target to generate assembly for a file
+contests/2020ccpc/1010.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/contests/2020ccpc/1010.cpp.s
+.PHONY : contests/2020ccpc/1010.cpp.s
+
+contests/2020ccpc/1011.o: contests/2020ccpc/1011.cpp.o
+
+.PHONY : contests/2020ccpc/1011.o
+
+# target to build an object file
+contests/2020ccpc/1011.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/contests/2020ccpc/1011.cpp.o
+.PHONY : contests/2020ccpc/1011.cpp.o
+
+contests/2020ccpc/1011.i: contests/2020ccpc/1011.cpp.i
+
+.PHONY : contests/2020ccpc/1011.i
+
+# target to preprocess a source file
+contests/2020ccpc/1011.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/contests/2020ccpc/1011.cpp.i
+.PHONY : contests/2020ccpc/1011.cpp.i
+
+contests/2020ccpc/1011.s: contests/2020ccpc/1011.cpp.s
+
+.PHONY : contests/2020ccpc/1011.s
+
+# target to generate assembly for a file
+contests/2020ccpc/1011.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/contests/2020ccpc/1011.cpp.s
+.PHONY : contests/2020ccpc/1011.cpp.s
+
+contests/2020ccpc/2/g.o: contests/2020ccpc/2/g.cpp.o
+
+.PHONY : contests/2020ccpc/2/g.o
+
+# target to build an object file
+contests/2020ccpc/2/g.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/contests/2020ccpc/2/g.cpp.o
+.PHONY : contests/2020ccpc/2/g.cpp.o
+
+contests/2020ccpc/2/g.i: contests/2020ccpc/2/g.cpp.i
+
+.PHONY : contests/2020ccpc/2/g.i
+
+# target to preprocess a source file
+contests/2020ccpc/2/g.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/contests/2020ccpc/2/g.cpp.i
+.PHONY : contests/2020ccpc/2/g.cpp.i
+
+contests/2020ccpc/2/g.s: contests/2020ccpc/2/g.cpp.s
+
+.PHONY : contests/2020ccpc/2/g.s
+
+# target to generate assembly for a file
+contests/2020ccpc/2/g.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/contests/2020ccpc/2/g.cpp.s
+.PHONY : contests/2020ccpc/2/g.cpp.s
+
+contests/2020ieee/A.o: contests/2020ieee/A.cpp.o
+
+.PHONY : contests/2020ieee/A.o
+
+# target to build an object file
+contests/2020ieee/A.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/contests/2020ieee/A.cpp.o
+.PHONY : contests/2020ieee/A.cpp.o
+
+contests/2020ieee/A.i: contests/2020ieee/A.cpp.i
+
+.PHONY : contests/2020ieee/A.i
+
+# target to preprocess a source file
+contests/2020ieee/A.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/contests/2020ieee/A.cpp.i
+.PHONY : contests/2020ieee/A.cpp.i
+
+contests/2020ieee/A.s: contests/2020ieee/A.cpp.s
+
+.PHONY : contests/2020ieee/A.s
+
+# target to generate assembly for a file
+contests/2020ieee/A.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/contests/2020ieee/A.cpp.s
+.PHONY : contests/2020ieee/A.cpp.s
+
+contests/2020ieee/hotel.o: contests/2020ieee/hotel.cpp.o
+
+.PHONY : contests/2020ieee/hotel.o
+
+# target to build an object file
+contests/2020ieee/hotel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/contests/2020ieee/hotel.cpp.o
+.PHONY : contests/2020ieee/hotel.cpp.o
+
+contests/2020ieee/hotel.i: contests/2020ieee/hotel.cpp.i
+
+.PHONY : contests/2020ieee/hotel.i
+
+# target to preprocess a source file
+contests/2020ieee/hotel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/contests/2020ieee/hotel.cpp.i
+.PHONY : contests/2020ieee/hotel.cpp.i
+
+contests/2020ieee/hotel.s: contests/2020ieee/hotel.cpp.s
+
+.PHONY : contests/2020ieee/hotel.s
+
+# target to generate assembly for a file
+contests/2020ieee/hotel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/contests/2020ieee/hotel.cpp.s
+.PHONY : contests/2020ieee/hotel.cpp.s
+
+contests/2020ieee/linerly.o: contests/2020ieee/linerly.cpp.o
+
+.PHONY : contests/2020ieee/linerly.o
+
+# target to build an object file
+contests/2020ieee/linerly.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/contests/2020ieee/linerly.cpp.o
+.PHONY : contests/2020ieee/linerly.cpp.o
+
+contests/2020ieee/linerly.i: contests/2020ieee/linerly.cpp.i
+
+.PHONY : contests/2020ieee/linerly.i
+
+# target to preprocess a source file
+contests/2020ieee/linerly.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/contests/2020ieee/linerly.cpp.i
+.PHONY : contests/2020ieee/linerly.cpp.i
+
+contests/2020ieee/linerly.s: contests/2020ieee/linerly.cpp.s
+
+.PHONY : contests/2020ieee/linerly.s
+
+# target to generate assembly for a file
+contests/2020ieee/linerly.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/contests/2020ieee/linerly.cpp.s
+.PHONY : contests/2020ieee/linerly.cpp.s
+
+contests/2020ieee/magical_stones.o: contests/2020ieee/magical_stones.cpp.o
+
+.PHONY : contests/2020ieee/magical_stones.o
+
+# target to build an object file
+contests/2020ieee/magical_stones.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/contests/2020ieee/magical_stones.cpp.o
+.PHONY : contests/2020ieee/magical_stones.cpp.o
+
+contests/2020ieee/magical_stones.i: contests/2020ieee/magical_stones.cpp.i
+
+.PHONY : contests/2020ieee/magical_stones.i
+
+# target to preprocess a source file
+contests/2020ieee/magical_stones.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/contests/2020ieee/magical_stones.cpp.i
+.PHONY : contests/2020ieee/magical_stones.cpp.i
+
+contests/2020ieee/magical_stones.s: contests/2020ieee/magical_stones.cpp.s
+
+.PHONY : contests/2020ieee/magical_stones.s
+
+# target to generate assembly for a file
+contests/2020ieee/magical_stones.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/contests/2020ieee/magical_stones.cpp.s
+.PHONY : contests/2020ieee/magical_stones.cpp.s
+
+contests/2020ieee/nisauc.o: contests/2020ieee/nisauc.cpp.o
+
+.PHONY : contests/2020ieee/nisauc.o
+
+# target to build an object file
+contests/2020ieee/nisauc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/contests/2020ieee/nisauc.cpp.o
+.PHONY : contests/2020ieee/nisauc.cpp.o
+
+contests/2020ieee/nisauc.i: contests/2020ieee/nisauc.cpp.i
+
+.PHONY : contests/2020ieee/nisauc.i
+
+# target to preprocess a source file
+contests/2020ieee/nisauc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/contests/2020ieee/nisauc.cpp.i
+.PHONY : contests/2020ieee/nisauc.cpp.i
+
+contests/2020ieee/nisauc.s: contests/2020ieee/nisauc.cpp.s
+
+.PHONY : contests/2020ieee/nisauc.s
+
+# target to generate assembly for a file
+contests/2020ieee/nisauc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/contests/2020ieee/nisauc.cpp.s
+.PHONY : contests/2020ieee/nisauc.cpp.s
+
+contests/2020ieee/tangram.o: contests/2020ieee/tangram.cpp.o
+
+.PHONY : contests/2020ieee/tangram.o
+
+# target to build an object file
+contests/2020ieee/tangram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/contests/2020ieee/tangram.cpp.o
+.PHONY : contests/2020ieee/tangram.cpp.o
+
+contests/2020ieee/tangram.i: contests/2020ieee/tangram.cpp.i
+
+.PHONY : contests/2020ieee/tangram.i
+
+# target to preprocess a source file
+contests/2020ieee/tangram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/contests/2020ieee/tangram.cpp.i
+.PHONY : contests/2020ieee/tangram.cpp.i
+
+contests/2020ieee/tangram.s: contests/2020ieee/tangram.cpp.s
+
+.PHONY : contests/2020ieee/tangram.s
+
+# target to generate assembly for a file
+contests/2020ieee/tangram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/contests/2020ieee/tangram.cpp.s
+.PHONY : contests/2020ieee/tangram.cpp.s
+
+contests/2020ieee/wooden.o: contests/2020ieee/wooden.cpp.o
+
+.PHONY : contests/2020ieee/wooden.o
+
+# target to build an object file
+contests/2020ieee/wooden.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/contests/2020ieee/wooden.cpp.o
+.PHONY : contests/2020ieee/wooden.cpp.o
+
+contests/2020ieee/wooden.i: contests/2020ieee/wooden.cpp.i
+
+.PHONY : contests/2020ieee/wooden.i
+
+# target to preprocess a source file
+contests/2020ieee/wooden.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/contests/2020ieee/wooden.cpp.i
+.PHONY : contests/2020ieee/wooden.cpp.i
+
+contests/2020ieee/wooden.s: contests/2020ieee/wooden.cpp.s
+
+.PHONY : contests/2020ieee/wooden.s
+
+# target to generate assembly for a file
+contests/2020ieee/wooden.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/contests/2020ieee/wooden.cpp.s
+.PHONY : contests/2020ieee/wooden.cpp.s
+
+contests/2020ieee/预选/1027000E.o: contests/2020ieee/预选/1027000E.cpp.o
+
+.PHONY : contests/2020ieee/预选/1027000E.o
+
+# target to build an object file
+contests/2020ieee/预选/1027000E.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/contests/2020ieee/预选/1027000E.cpp.o
+.PHONY : contests/2020ieee/预选/1027000E.cpp.o
+
+contests/2020ieee/预选/1027000E.i: contests/2020ieee/预选/1027000E.cpp.i
+
+.PHONY : contests/2020ieee/预选/1027000E.i
+
+# target to preprocess a source file
+contests/2020ieee/预选/1027000E.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/contests/2020ieee/预选/1027000E.cpp.i
+.PHONY : contests/2020ieee/预选/1027000E.cpp.i
+
+contests/2020ieee/预选/1027000E.s: contests/2020ieee/预选/1027000E.cpp.s
+
+.PHONY : contests/2020ieee/预选/1027000E.s
+
+# target to generate assembly for a file
+contests/2020ieee/预选/1027000E.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/contests/2020ieee/预选/1027000E.cpp.s
+.PHONY : contests/2020ieee/预选/1027000E.cpp.s
+
+contests/2020ieee/预选/102700B.o: contests/2020ieee/预选/102700B.cpp.o
+
+.PHONY : contests/2020ieee/预选/102700B.o
+
+# target to build an object file
+contests/2020ieee/预选/102700B.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/contests/2020ieee/预选/102700B.cpp.o
+.PHONY : contests/2020ieee/预选/102700B.cpp.o
+
+contests/2020ieee/预选/102700B.i: contests/2020ieee/预选/102700B.cpp.i
+
+.PHONY : contests/2020ieee/预选/102700B.i
+
+# target to preprocess a source file
+contests/2020ieee/预选/102700B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/contests/2020ieee/预选/102700B.cpp.i
+.PHONY : contests/2020ieee/预选/102700B.cpp.i
+
+contests/2020ieee/预选/102700B.s: contests/2020ieee/预选/102700B.cpp.s
+
+.PHONY : contests/2020ieee/预选/102700B.s
+
+# target to generate assembly for a file
+contests/2020ieee/预选/102700B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/contests/2020ieee/预选/102700B.cpp.s
+.PHONY : contests/2020ieee/预选/102700B.cpp.s
+
+contests/2020ieee/预选/102700D.o: contests/2020ieee/预选/102700D.cpp.o
+
+.PHONY : contests/2020ieee/预选/102700D.o
+
+# target to build an object file
+contests/2020ieee/预选/102700D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/contests/2020ieee/预选/102700D.cpp.o
+.PHONY : contests/2020ieee/预选/102700D.cpp.o
+
+contests/2020ieee/预选/102700D.i: contests/2020ieee/预选/102700D.cpp.i
+
+.PHONY : contests/2020ieee/预选/102700D.i
+
+# target to preprocess a source file
+contests/2020ieee/预选/102700D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/contests/2020ieee/预选/102700D.cpp.i
+.PHONY : contests/2020ieee/预选/102700D.cpp.i
+
+contests/2020ieee/预选/102700D.s: contests/2020ieee/预选/102700D.cpp.s
+
+.PHONY : contests/2020ieee/预选/102700D.s
+
+# target to generate assembly for a file
+contests/2020ieee/预选/102700D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/contests/2020ieee/预选/102700D.cpp.s
+.PHONY : contests/2020ieee/预选/102700D.cpp.s
+
+contests/2020ieee/预选/B.o: contests/2020ieee/预选/B.cpp.o
+
+.PHONY : contests/2020ieee/预选/B.o
+
+# target to build an object file
+contests/2020ieee/预选/B.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/contests/2020ieee/预选/B.cpp.o
+.PHONY : contests/2020ieee/预选/B.cpp.o
+
+contests/2020ieee/预选/B.i: contests/2020ieee/预选/B.cpp.i
+
+.PHONY : contests/2020ieee/预选/B.i
+
+# target to preprocess a source file
+contests/2020ieee/预选/B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/contests/2020ieee/预选/B.cpp.i
+.PHONY : contests/2020ieee/预选/B.cpp.i
+
+contests/2020ieee/预选/B.s: contests/2020ieee/预选/B.cpp.s
+
+.PHONY : contests/2020ieee/预选/B.s
+
+# target to generate assembly for a file
+contests/2020ieee/预选/B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/contests/2020ieee/预选/B.cpp.s
+.PHONY : contests/2020ieee/预选/B.cpp.s
+
 contests/hashcode2020/random.o: contests/hashcode2020/random.cpp.o
 
 .PHONY : contests/hashcode2020/random.o
@@ -727,6 +1340,33 @@ contests/hashcode2020/tl.s: contests/hashcode2020/tl.cpp.s
 contests/hashcode2020/tl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tl.dir/build.make CMakeFiles/tl.dir/contests/hashcode2020/tl.cpp.s
 .PHONY : contests/hashcode2020/tl.cpp.s
+
+contests/light.o: contests/light.cpp.o
+
+.PHONY : contests/light.o
+
+# target to build an object file
+contests/light.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/contests/light.cpp.o
+.PHONY : contests/light.cpp.o
+
+contests/light.i: contests/light.cpp.i
+
+.PHONY : contests/light.i
+
+# target to preprocess a source file
+contests/light.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/contests/light.cpp.i
+.PHONY : contests/light.cpp.i
+
+contests/light.s: contests/light.cpp.s
+
+.PHONY : contests/light.s
+
+# target to generate assembly for a file
+contests/light.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/contests/light.cpp.s
+.PHONY : contests/light.cpp.s
 
 huoche.o: huoche.c.o
 
@@ -898,28 +1538,41 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 1003"
+	@echo "... 1005"
+	@echo "... 1010"
+	@echo "... 1011"
+	@echo "... 1027000E"
+	@echo "... 102700B"
+	@echo "... 102700D"
 	@echo "... 1877"
 	@echo "... A"
+	@echo "... B"
 	@echo "... F"
 	@echo "... I"
 	@echo "... a"
 	@echo "... ans"
 	@echo "... answer"
 	@echo "... dfs"
+	@echo "... g"
 	@echo "... genddddd"
+	@echo "... hotel"
 	@echo "... huoche"
 	@echo "... i"
 	@echo "... kruskal"
+	@echo "... light"
+	@echo "... linerly"
+	@echo "... magical_stones"
 	@echo "... neicundizhi"
+	@echo "... nisauc"
 	@echo "... random"
+	@echo "... tangram"
 	@echo "... taowa"
 	@echo "... temp"
 	@echo "... temp1"
 	@echo "... tempc"
 	@echo "... tl"
-	@echo "... A.o"
-	@echo "... A.i"
-	@echo "... A.s"
+	@echo "... wooden"
 	@echo "... F.o"
 	@echo "... F.i"
 	@echo "... F.s"
@@ -950,12 +1603,63 @@ help:
 	@echo "... contests/2020ccpc/1/i.o"
 	@echo "... contests/2020ccpc/1/i.i"
 	@echo "... contests/2020ccpc/1/i.s"
+	@echo "... contests/2020ccpc/1003.o"
+	@echo "... contests/2020ccpc/1003.i"
+	@echo "... contests/2020ccpc/1003.s"
+	@echo "... contests/2020ccpc/1005.o"
+	@echo "... contests/2020ccpc/1005.i"
+	@echo "... contests/2020ccpc/1005.s"
+	@echo "... contests/2020ccpc/1010.o"
+	@echo "... contests/2020ccpc/1010.i"
+	@echo "... contests/2020ccpc/1010.s"
+	@echo "... contests/2020ccpc/1011.o"
+	@echo "... contests/2020ccpc/1011.i"
+	@echo "... contests/2020ccpc/1011.s"
+	@echo "... contests/2020ccpc/2/g.o"
+	@echo "... contests/2020ccpc/2/g.i"
+	@echo "... contests/2020ccpc/2/g.s"
+	@echo "... contests/2020ieee/A.o"
+	@echo "... contests/2020ieee/A.i"
+	@echo "... contests/2020ieee/A.s"
+	@echo "... contests/2020ieee/hotel.o"
+	@echo "... contests/2020ieee/hotel.i"
+	@echo "... contests/2020ieee/hotel.s"
+	@echo "... contests/2020ieee/linerly.o"
+	@echo "... contests/2020ieee/linerly.i"
+	@echo "... contests/2020ieee/linerly.s"
+	@echo "... contests/2020ieee/magical_stones.o"
+	@echo "... contests/2020ieee/magical_stones.i"
+	@echo "... contests/2020ieee/magical_stones.s"
+	@echo "... contests/2020ieee/nisauc.o"
+	@echo "... contests/2020ieee/nisauc.i"
+	@echo "... contests/2020ieee/nisauc.s"
+	@echo "... contests/2020ieee/tangram.o"
+	@echo "... contests/2020ieee/tangram.i"
+	@echo "... contests/2020ieee/tangram.s"
+	@echo "... contests/2020ieee/wooden.o"
+	@echo "... contests/2020ieee/wooden.i"
+	@echo "... contests/2020ieee/wooden.s"
+	@echo "... contests/2020ieee/预选/1027000E.o"
+	@echo "... contests/2020ieee/预选/1027000E.i"
+	@echo "... contests/2020ieee/预选/1027000E.s"
+	@echo "... contests/2020ieee/预选/102700B.o"
+	@echo "... contests/2020ieee/预选/102700B.i"
+	@echo "... contests/2020ieee/预选/102700B.s"
+	@echo "... contests/2020ieee/预选/102700D.o"
+	@echo "... contests/2020ieee/预选/102700D.i"
+	@echo "... contests/2020ieee/预选/102700D.s"
+	@echo "... contests/2020ieee/预选/B.o"
+	@echo "... contests/2020ieee/预选/B.i"
+	@echo "... contests/2020ieee/预选/B.s"
 	@echo "... contests/hashcode2020/random.o"
 	@echo "... contests/hashcode2020/random.i"
 	@echo "... contests/hashcode2020/random.s"
 	@echo "... contests/hashcode2020/tl.o"
 	@echo "... contests/hashcode2020/tl.i"
 	@echo "... contests/hashcode2020/tl.s"
+	@echo "... contests/light.o"
+	@echo "... contests/light.i"
+	@echo "... contests/light.s"
 	@echo "... huoche.o"
 	@echo "... huoche.i"
 	@echo "... huoche.s"

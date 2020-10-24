@@ -77,27 +77,27 @@ include CMakeFiles/A.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/A.dir/flags.make
 
-CMakeFiles/A.dir/A.cpp.o: CMakeFiles/A.dir/flags.make
-CMakeFiles/A.dir/A.cpp.o: ../A.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A.dir/A.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/A.dir/A.cpp.o -c /Users/leo/code/oi/A.cpp
+CMakeFiles/A.dir/contests/2020ieee/A.cpp.o: CMakeFiles/A.dir/flags.make
+CMakeFiles/A.dir/contests/2020ieee/A.cpp.o: ../contests/2020ieee/A.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/A.dir/contests/2020ieee/A.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/A.dir/contests/2020ieee/A.cpp.o -c /Users/leo/code/oi/contests/2020ieee/A.cpp
 
-CMakeFiles/A.dir/A.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A.dir/A.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leo/code/oi/A.cpp > CMakeFiles/A.dir/A.cpp.i
+CMakeFiles/A.dir/contests/2020ieee/A.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/A.dir/contests/2020ieee/A.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leo/code/oi/contests/2020ieee/A.cpp > CMakeFiles/A.dir/contests/2020ieee/A.cpp.i
 
-CMakeFiles/A.dir/A.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A.dir/A.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leo/code/oi/A.cpp -o CMakeFiles/A.dir/A.cpp.s
+CMakeFiles/A.dir/contests/2020ieee/A.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/A.dir/contests/2020ieee/A.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leo/code/oi/contests/2020ieee/A.cpp -o CMakeFiles/A.dir/contests/2020ieee/A.cpp.s
 
 # Object files for target A
 A_OBJECTS = \
-"CMakeFiles/A.dir/A.cpp.o"
+"CMakeFiles/A.dir/contests/2020ieee/A.cpp.o"
 
 # External object files for target A
 A_EXTERNAL_OBJECTS =
 
-A : CMakeFiles/A.dir/A.cpp.o
+A : CMakeFiles/A.dir/contests/2020ieee/A.cpp.o
 A : CMakeFiles/A.dir/build.make
 A : CMakeFiles/A.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable A"

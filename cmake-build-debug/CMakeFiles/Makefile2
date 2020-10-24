@@ -73,25 +73,41 @@ CMAKE_BINARY_DIR = /Users/leo/code/oi/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/magical_stones.dir/all
+all: CMakeFiles/light.dir/all
+all: CMakeFiles/wooden.dir/all
+all: CMakeFiles/hotel.dir/all
+all: CMakeFiles/linerly.dir/all
+all: CMakeFiles/B.dir/all
+all: CMakeFiles/1027000E.dir/all
+all: CMakeFiles/102700D.dir/all
+all: CMakeFiles/102700B.dir/all
+all: CMakeFiles/1011.dir/all
+all: CMakeFiles/huoche.dir/all
 all: CMakeFiles/i.dir/all
 all: CMakeFiles/a.dir/all
+all: CMakeFiles/temp1.dir/all
 all: CMakeFiles/answer.dir/all
+all: CMakeFiles/tangram.dir/all
+all: CMakeFiles/1010.dir/all
+all: CMakeFiles/1877.dir/all
+all: CMakeFiles/1005.dir/all
 all: CMakeFiles/kruskal.dir/all
 all: CMakeFiles/ans.dir/all
+all: CMakeFiles/dfs.dir/all
 all: CMakeFiles/neicundizhi.dir/all
-all: CMakeFiles/huoche.dir/all
-all: CMakeFiles/1877.dir/all
+all: CMakeFiles/1003.dir/all
+all: CMakeFiles/nisauc.dir/all
 all: CMakeFiles/tempc.dir/all
 all: CMakeFiles/F.dir/all
 all: CMakeFiles/temp.dir/all
 all: CMakeFiles/genddddd.dir/all
 all: CMakeFiles/A.dir/all
 all: CMakeFiles/tl.dir/all
+all: CMakeFiles/g.dir/all
 all: CMakeFiles/taowa.dir/all
-all: CMakeFiles/temp1.dir/all
 all: CMakeFiles/I.dir/all
 all: CMakeFiles/random.dir/all
-all: CMakeFiles/dfs.dir/all
 
 .PHONY : all
 
@@ -101,27 +117,340 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/magical_stones.dir/clean
+clean: CMakeFiles/light.dir/clean
+clean: CMakeFiles/wooden.dir/clean
+clean: CMakeFiles/hotel.dir/clean
+clean: CMakeFiles/linerly.dir/clean
+clean: CMakeFiles/B.dir/clean
+clean: CMakeFiles/1027000E.dir/clean
+clean: CMakeFiles/102700D.dir/clean
+clean: CMakeFiles/102700B.dir/clean
+clean: CMakeFiles/1011.dir/clean
+clean: CMakeFiles/huoche.dir/clean
 clean: CMakeFiles/i.dir/clean
 clean: CMakeFiles/a.dir/clean
+clean: CMakeFiles/temp1.dir/clean
 clean: CMakeFiles/answer.dir/clean
+clean: CMakeFiles/tangram.dir/clean
+clean: CMakeFiles/1010.dir/clean
+clean: CMakeFiles/1877.dir/clean
+clean: CMakeFiles/1005.dir/clean
 clean: CMakeFiles/kruskal.dir/clean
 clean: CMakeFiles/ans.dir/clean
+clean: CMakeFiles/dfs.dir/clean
 clean: CMakeFiles/neicundizhi.dir/clean
-clean: CMakeFiles/huoche.dir/clean
-clean: CMakeFiles/1877.dir/clean
+clean: CMakeFiles/1003.dir/clean
+clean: CMakeFiles/nisauc.dir/clean
 clean: CMakeFiles/tempc.dir/clean
 clean: CMakeFiles/F.dir/clean
 clean: CMakeFiles/temp.dir/clean
 clean: CMakeFiles/genddddd.dir/clean
 clean: CMakeFiles/A.dir/clean
 clean: CMakeFiles/tl.dir/clean
+clean: CMakeFiles/g.dir/clean
 clean: CMakeFiles/taowa.dir/clean
-clean: CMakeFiles/temp1.dir/clean
 clean: CMakeFiles/I.dir/clean
 clean: CMakeFiles/random.dir/clean
-clean: CMakeFiles/dfs.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/magical_stones.dir
+
+# All Build rule for target.
+CMakeFiles/magical_stones.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target magical_stones"
+.PHONY : CMakeFiles/magical_stones.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/magical_stones.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/magical_stones.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/magical_stones.dir/rule
+
+# Convenience name for target.
+magical_stones: CMakeFiles/magical_stones.dir/rule
+
+.PHONY : magical_stones
+
+# clean rule for target.
+CMakeFiles/magical_stones.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magical_stones.dir/build.make CMakeFiles/magical_stones.dir/clean
+.PHONY : CMakeFiles/magical_stones.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/light.dir
+
+# All Build rule for target.
+CMakeFiles/light.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target light"
+.PHONY : CMakeFiles/light.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/light.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/light.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/light.dir/rule
+
+# Convenience name for target.
+light: CMakeFiles/light.dir/rule
+
+.PHONY : light
+
+# clean rule for target.
+CMakeFiles/light.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/light.dir/build.make CMakeFiles/light.dir/clean
+.PHONY : CMakeFiles/light.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/wooden.dir
+
+# All Build rule for target.
+CMakeFiles/wooden.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=69,70 "Built target wooden"
+.PHONY : CMakeFiles/wooden.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wooden.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wooden.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/wooden.dir/rule
+
+# Convenience name for target.
+wooden: CMakeFiles/wooden.dir/rule
+
+.PHONY : wooden
+
+# clean rule for target.
+CMakeFiles/wooden.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wooden.dir/build.make CMakeFiles/wooden.dir/clean
+.PHONY : CMakeFiles/wooden.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hotel.dir
+
+# All Build rule for target.
+CMakeFiles/hotel.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target hotel"
+.PHONY : CMakeFiles/hotel.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hotel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hotel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/hotel.dir/rule
+
+# Convenience name for target.
+hotel: CMakeFiles/hotel.dir/rule
+
+.PHONY : hotel
+
+# clean rule for target.
+CMakeFiles/hotel.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hotel.dir/build.make CMakeFiles/hotel.dir/clean
+.PHONY : CMakeFiles/hotel.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/linerly.dir
+
+# All Build rule for target.
+CMakeFiles/linerly.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target linerly"
+.PHONY : CMakeFiles/linerly.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/linerly.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linerly.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/linerly.dir/rule
+
+# Convenience name for target.
+linerly: CMakeFiles/linerly.dir/rule
+
+.PHONY : linerly
+
+# clean rule for target.
+CMakeFiles/linerly.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linerly.dir/build.make CMakeFiles/linerly.dir/clean
+.PHONY : CMakeFiles/linerly.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/B.dir
+
+# All Build rule for target.
+CMakeFiles/B.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target B"
+.PHONY : CMakeFiles/B.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/B.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/B.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/B.dir/rule
+
+# Convenience name for target.
+B : CMakeFiles/B.dir/rule
+
+.PHONY : B
+
+# clean rule for target.
+CMakeFiles/B.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/B.dir/build.make CMakeFiles/B.dir/clean
+.PHONY : CMakeFiles/B.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1027000E.dir
+
+# All Build rule for target.
+CMakeFiles/1027000E.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target 1027000E"
+.PHONY : CMakeFiles/1027000E.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1027000E.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1027000E.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1027000E.dir/rule
+
+# Convenience name for target.
+1027000E: CMakeFiles/1027000E.dir/rule
+
+.PHONY : 1027000E
+
+# clean rule for target.
+CMakeFiles/1027000E.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1027000E.dir/build.make CMakeFiles/1027000E.dir/clean
+.PHONY : CMakeFiles/1027000E.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/102700D.dir
+
+# All Build rule for target.
+CMakeFiles/102700D.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target 102700D"
+.PHONY : CMakeFiles/102700D.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/102700D.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/102700D.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/102700D.dir/rule
+
+# Convenience name for target.
+102700D: CMakeFiles/102700D.dir/rule
+
+.PHONY : 102700D
+
+# clean rule for target.
+CMakeFiles/102700D.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700D.dir/build.make CMakeFiles/102700D.dir/clean
+.PHONY : CMakeFiles/102700D.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/102700B.dir
+
+# All Build rule for target.
+CMakeFiles/102700B.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target 102700B"
+.PHONY : CMakeFiles/102700B.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/102700B.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/102700B.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/102700B.dir/rule
+
+# Convenience name for target.
+102700B: CMakeFiles/102700B.dir/rule
+
+.PHONY : 102700B
+
+# clean rule for target.
+CMakeFiles/102700B.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/102700B.dir/build.make CMakeFiles/102700B.dir/clean
+.PHONY : CMakeFiles/102700B.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1011.dir
+
+# All Build rule for target.
+CMakeFiles/1011.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target 1011"
+.PHONY : CMakeFiles/1011.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1011.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1011.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1011.dir/rule
+
+# Convenience name for target.
+1011: CMakeFiles/1011.dir/rule
+
+.PHONY : 1011
+
+# clean rule for target.
+CMakeFiles/1011.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1011.dir/build.make CMakeFiles/1011.dir/clean
+.PHONY : CMakeFiles/1011.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/huoche.dir
+
+# All Build rule for target.
+CMakeFiles/huoche.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target huoche"
+.PHONY : CMakeFiles/huoche.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/huoche.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/huoche.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/huoche.dir/rule
+
+# Convenience name for target.
+huoche: CMakeFiles/huoche.dir/rule
+
+.PHONY : huoche
+
+# clean rule for target.
+CMakeFiles/huoche.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/clean
+.PHONY : CMakeFiles/huoche.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/i.dir
@@ -130,7 +459,7 @@ clean: CMakeFiles/dfs.dir/clean
 CMakeFiles/i.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target i"
 .PHONY : CMakeFiles/i.dir/all
 
 # Build rule for subdir invocation for target.
@@ -157,7 +486,7 @@ CMakeFiles/i.dir/clean:
 CMakeFiles/a.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target a"
 .PHONY : CMakeFiles/a.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,13 +507,40 @@ CMakeFiles/a.dir/clean:
 .PHONY : CMakeFiles/a.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/temp1.dir
+
+# All Build rule for target.
+CMakeFiles/temp1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=63,64 "Built target temp1"
+.PHONY : CMakeFiles/temp1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/temp1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/temp1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/temp1.dir/rule
+
+# Convenience name for target.
+temp1: CMakeFiles/temp1.dir/rule
+
+.PHONY : temp1
+
+# clean rule for target.
+CMakeFiles/temp1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/clean
+.PHONY : CMakeFiles/temp1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/answer.dir
 
 # All Build rule for target.
 CMakeFiles/answer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/answer.dir/build.make CMakeFiles/answer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/answer.dir/build.make CMakeFiles/answer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target answer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target answer"
 .PHONY : CMakeFiles/answer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -205,13 +561,121 @@ CMakeFiles/answer.dir/clean:
 .PHONY : CMakeFiles/answer.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tangram.dir
+
+# All Build rule for target.
+CMakeFiles/tangram.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=57,58 "Built target tangram"
+.PHONY : CMakeFiles/tangram.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tangram.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tangram.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tangram.dir/rule
+
+# Convenience name for target.
+tangram: CMakeFiles/tangram.dir/rule
+
+.PHONY : tangram
+
+# clean rule for target.
+CMakeFiles/tangram.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tangram.dir/build.make CMakeFiles/tangram.dir/clean
+.PHONY : CMakeFiles/tangram.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1010.dir
+
+# All Build rule for target.
+CMakeFiles/1010.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target 1010"
+.PHONY : CMakeFiles/1010.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1010.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1010.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1010.dir/rule
+
+# Convenience name for target.
+1010: CMakeFiles/1010.dir/rule
+
+.PHONY : 1010
+
+# clean rule for target.
+CMakeFiles/1010.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1010.dir/build.make CMakeFiles/1010.dir/clean
+.PHONY : CMakeFiles/1010.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1877.dir
+
+# All Build rule for target.
+CMakeFiles/1877.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target 1877"
+.PHONY : CMakeFiles/1877.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1877.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1877.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1877.dir/rule
+
+# Convenience name for target.
+1877: CMakeFiles/1877.dir/rule
+
+.PHONY : 1877
+
+# clean rule for target.
+CMakeFiles/1877.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/clean
+.PHONY : CMakeFiles/1877.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1005.dir
+
+# All Build rule for target.
+CMakeFiles/1005.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target 1005"
+.PHONY : CMakeFiles/1005.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1005.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1005.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1005.dir/rule
+
+# Convenience name for target.
+1005: CMakeFiles/1005.dir/rule
+
+.PHONY : 1005
+
+# clean rule for target.
+CMakeFiles/1005.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1005.dir/build.make CMakeFiles/1005.dir/clean
+.PHONY : CMakeFiles/1005.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/kruskal.dir
 
 # All Build rule for target.
 CMakeFiles/kruskal.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kruskal.dir/build.make CMakeFiles/kruskal.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kruskal.dir/build.make CMakeFiles/kruskal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target kruskal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target kruskal"
 .PHONY : CMakeFiles/kruskal.dir/all
 
 # Build rule for subdir invocation for target.
@@ -238,7 +702,7 @@ CMakeFiles/kruskal.dir/clean:
 CMakeFiles/ans.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ans.dir/build.make CMakeFiles/ans.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ans.dir/build.make CMakeFiles/ans.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target ans"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target ans"
 .PHONY : CMakeFiles/ans.dir/all
 
 # Build rule for subdir invocation for target.
@@ -259,13 +723,40 @@ CMakeFiles/ans.dir/clean:
 .PHONY : CMakeFiles/ans.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/dfs.dir
+
+# All Build rule for target.
+CMakeFiles/dfs.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target dfs"
+.PHONY : CMakeFiles/dfs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dfs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dfs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/dfs.dir/rule
+
+# Convenience name for target.
+dfs: CMakeFiles/dfs.dir/rule
+
+.PHONY : dfs
+
+# clean rule for target.
+CMakeFiles/dfs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/clean
+.PHONY : CMakeFiles/dfs.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/neicundizhi.dir
 
 # All Build rule for target.
 CMakeFiles/neicundizhi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neicundizhi.dir/build.make CMakeFiles/neicundizhi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neicundizhi.dir/build.make CMakeFiles/neicundizhi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target neicundizhi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=51,52 "Built target neicundizhi"
 .PHONY : CMakeFiles/neicundizhi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -286,58 +777,58 @@ CMakeFiles/neicundizhi.dir/clean:
 .PHONY : CMakeFiles/neicundizhi.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/huoche.dir
+# Target rules for target CMakeFiles/1003.dir
 
 # All Build rule for target.
-CMakeFiles/huoche.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target huoche"
-.PHONY : CMakeFiles/huoche.dir/all
+CMakeFiles/1003.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 1003"
+.PHONY : CMakeFiles/1003.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/huoche.dir/rule: cmake_check_build_system
+CMakeFiles/1003.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/huoche.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1003.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/huoche.dir/rule
+.PHONY : CMakeFiles/1003.dir/rule
 
 # Convenience name for target.
-huoche: CMakeFiles/huoche.dir/rule
+1003: CMakeFiles/1003.dir/rule
 
-.PHONY : huoche
+.PHONY : 1003
 
 # clean rule for target.
-CMakeFiles/huoche.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/huoche.dir/build.make CMakeFiles/huoche.dir/clean
-.PHONY : CMakeFiles/huoche.dir/clean
+CMakeFiles/1003.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1003.dir/build.make CMakeFiles/1003.dir/clean
+.PHONY : CMakeFiles/1003.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/1877.dir
+# Target rules for target CMakeFiles/nisauc.dir
 
 # All Build rule for target.
-CMakeFiles/1877.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 1877"
-.PHONY : CMakeFiles/1877.dir/all
+CMakeFiles/nisauc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=53,54 "Built target nisauc"
+.PHONY : CMakeFiles/nisauc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/1877.dir/rule: cmake_check_build_system
+CMakeFiles/nisauc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1877.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nisauc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/1877.dir/rule
+.PHONY : CMakeFiles/nisauc.dir/rule
 
 # Convenience name for target.
-1877: CMakeFiles/1877.dir/rule
+nisauc: CMakeFiles/nisauc.dir/rule
 
-.PHONY : 1877
+.PHONY : nisauc
 
 # clean rule for target.
-CMakeFiles/1877.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1877.dir/build.make CMakeFiles/1877.dir/clean
-.PHONY : CMakeFiles/1877.dir/clean
+CMakeFiles/nisauc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nisauc.dir/build.make CMakeFiles/nisauc.dir/clean
+.PHONY : CMakeFiles/nisauc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tempc.dir
@@ -346,7 +837,7 @@ CMakeFiles/1877.dir/clean:
 CMakeFiles/tempc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempc.dir/build.make CMakeFiles/tempc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempc.dir/build.make CMakeFiles/tempc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target tempc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=65,66 "Built target tempc"
 .PHONY : CMakeFiles/tempc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -373,7 +864,7 @@ CMakeFiles/tempc.dir/clean:
 CMakeFiles/F.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/F.dir/build.make CMakeFiles/F.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/F.dir/build.make CMakeFiles/F.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target F"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target F"
 .PHONY : CMakeFiles/F.dir/all
 
 # Build rule for subdir invocation for target.
@@ -400,7 +891,7 @@ CMakeFiles/F.dir/clean:
 CMakeFiles/temp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp.dir/build.make CMakeFiles/temp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp.dir/build.make CMakeFiles/temp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target temp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=61,62 "Built target temp"
 .PHONY : CMakeFiles/temp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -427,7 +918,7 @@ CMakeFiles/temp.dir/clean:
 CMakeFiles/genddddd.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genddddd.dir/build.make CMakeFiles/genddddd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genddddd.dir/build.make CMakeFiles/genddddd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target genddddd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target genddddd"
 .PHONY : CMakeFiles/genddddd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -454,7 +945,7 @@ CMakeFiles/genddddd.dir/clean:
 CMakeFiles/A.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/A.dir/build.make CMakeFiles/A.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target A"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target A"
 .PHONY : CMakeFiles/A.dir/all
 
 # Build rule for subdir invocation for target.
@@ -481,7 +972,7 @@ CMakeFiles/A.dir/clean:
 CMakeFiles/tl.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tl.dir/build.make CMakeFiles/tl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tl.dir/build.make CMakeFiles/tl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target tl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=67,68 "Built target tl"
 .PHONY : CMakeFiles/tl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -502,13 +993,40 @@ CMakeFiles/tl.dir/clean:
 .PHONY : CMakeFiles/tl.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/g.dir
+
+# All Build rule for target.
+CMakeFiles/g.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target g"
+.PHONY : CMakeFiles/g.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/g.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/g.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/g.dir/rule
+
+# Convenience name for target.
+g : CMakeFiles/g.dir/rule
+
+.PHONY : g
+
+# clean rule for target.
+CMakeFiles/g.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/clean
+.PHONY : CMakeFiles/g.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/taowa.dir
 
 # All Build rule for target.
 CMakeFiles/taowa.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/taowa.dir/build.make CMakeFiles/taowa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/taowa.dir/build.make CMakeFiles/taowa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target taowa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=59,60 "Built target taowa"
 .PHONY : CMakeFiles/taowa.dir/all
 
 # Build rule for subdir invocation for target.
@@ -529,40 +1047,13 @@ CMakeFiles/taowa.dir/clean:
 .PHONY : CMakeFiles/taowa.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/temp1.dir
-
-# All Build rule for target.
-CMakeFiles/temp1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target temp1"
-.PHONY : CMakeFiles/temp1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/temp1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/temp1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/temp1.dir/rule
-
-# Convenience name for target.
-temp1: CMakeFiles/temp1.dir/rule
-
-.PHONY : temp1
-
-# clean rule for target.
-CMakeFiles/temp1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/temp1.dir/build.make CMakeFiles/temp1.dir/clean
-.PHONY : CMakeFiles/temp1.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/I.dir
 
 # All Build rule for target.
 CMakeFiles/I.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/I.dir/build.make CMakeFiles/I.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/I.dir/build.make CMakeFiles/I.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target I"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target I"
 .PHONY : CMakeFiles/I.dir/all
 
 # Build rule for subdir invocation for target.
@@ -589,7 +1080,7 @@ CMakeFiles/I.dir/clean:
 CMakeFiles/random.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target random"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=55,56 "Built target random"
 .PHONY : CMakeFiles/random.dir/all
 
 # Build rule for subdir invocation for target.
@@ -608,33 +1099,6 @@ random: CMakeFiles/random.dir/rule
 CMakeFiles/random.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/random.dir/build.make CMakeFiles/random.dir/clean
 .PHONY : CMakeFiles/random.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/dfs.dir
-
-# All Build rule for target.
-CMakeFiles/dfs.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/leo/code/oi/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target dfs"
-.PHONY : CMakeFiles/dfs.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/dfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dfs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leo/code/oi/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/dfs.dir/rule
-
-# Convenience name for target.
-dfs: CMakeFiles/dfs.dir/rule
-
-.PHONY : dfs
-
-# clean rule for target.
-CMakeFiles/dfs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfs.dir/build.make CMakeFiles/dfs.dir/clean
-.PHONY : CMakeFiles/dfs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
